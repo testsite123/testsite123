@@ -485,6 +485,11 @@ a:hover {
     transition: .1s;
   }
   
+  body {
+    overflow-x: hidden;
+  }
+
+  
   #header .head-center .shipping {
       font-size: .5em;
       margin: 15px 5px;

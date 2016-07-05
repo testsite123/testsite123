@@ -370,7 +370,7 @@ a:hover {
 @media only screen and (max-width: 1192px) {
 
   * {
-    transition: .3s;
+    transition: .1s;
   }
   
   #header .head-center {
@@ -417,7 +417,7 @@ a:hover {
 @media only screen and (max-width: 992px) {
 
   * {
-    transition: .3s;
+    transition: .1s;
   }
 
   #header .logo {
@@ -482,7 +482,7 @@ a:hover {
 @media only screen and (max-width: 768px) {
   
   * {
-    transition: .3s;
+    transition: .1s;
   }
   
   #header .head-center .shipping {
@@ -555,7 +555,7 @@ a:hover {
 @media only screen and (max-width: 600px) {
   
   * {
-    transition: .3s;
+    transition: .1s;
   }
   
   #header .logo {

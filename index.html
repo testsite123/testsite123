@@ -2,203 +2,266 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>web-page</title>
+	<title>Test Project Litma</title>
 
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/screen.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="slick1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick1/slick/slick-theme.css"/>
 </head>
 <body>
-	<!--HEADER-->
-	<div id="header">
-		<div class="logo">
-			<img src="images/logo.png" alt="Logo">
-		</div>
-		<div class="head-center">
-			<div class="shipping">
-				<img src="images/truck.png" alt="Free Shipping">
-				<span>FREE SHIPPING ON ALL ORDERS EXTENDED TO JULY 31</span>
+
+	<div class="main">
+	<!-- HEADER-TOP -->
+		<header id="header-top">
+			<div class="header-top-leftsection">
+				<span><i class="fa fa-phone"></i> +38 (0382) 74 85 85, +38 (0382) 74 85 92</span>
 			</div>
-			<div class="head-first-nav">
-				<ul>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Buyer's Guide</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Your Cart <span class="number">(4)</span></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="head-right">
-			<div class="head-second-nav">
-				<ul>
-					<li><a href="#">My Account</a></li>
-					<li><a href="#">Track Order</a></li>
-					<li><a href="#">Wishlist</a></li>
-					<li><a href="#">Sign Out</a></li>
-				</ul>
-			</div>
-			<div class="search-field">
-				<div class="input-group my-search">
-					<input type="text" class="form-control" placeholder="Search Costgro....">
+			<div class="header-top-rightsection">
+				<div class="search">
+					<span>
+						<form name="search">
+						  	<input type="text" name="search" size="10" id="search" maxlenght="30" placeholder="search">
+  						</form>
+  						<i class="fa fa-search"></i>
+					</span>
 				</div>
-					<span class="glyphicon glyphicon-search search-icon"></span>
-			</div>
-		</div>
-	</div>
-<!--END HEADER-->
-<!-- MAIN -->
-	<div class="main row">
-		<div class="wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<div class="post-info">
-				<p class="h1">LATEST BLOG POST</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas labore inventore voluptatem id. Expedita magnam, aut recusandae ut magni impedit voluptatem repudiandae veniam mollitia molestiae beatae assumenda, quaerat, laborum eum.</p>
-				<button class="btn btn-lg btn-warning">MAIN BUTTON</button>
-			</div>
-		</div>
-		<div class="sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12">
-			<div class="sidebar1 col-lg-12 col-md-12 col-sm-6 col-xs-6">
-				<p class="side1-head">CATEGORIES</p>
-				<ul>
-					<li><a href="#">Category1</a></li>
-					<li><a href="#">Category2</a></li>
-					<li><a href="#">Category3</a></li>
-				</ul>
-			</div>
-			<div class="sidebar1 col-lg-12 col-md-12 col-sm-6 col-xs-6">
-				<p class="side1-head">ARCHIVES</p>
-				<ul>
-					<li><a href="#">July 2013</a></li>
-					<li><a href="#">June 2013</a></li>
-					<li><a href="#">May 2013</a></li>
-				</ul>
-			</div>
-			<div class="sidebar1 col-lg-12 col-md-12 col-sm-6 col-xs-8 follow">
-				<p class="side1-head">FOLLOW US</p>
-				<ul>
-					<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
-					<li><a href="#"><i class="fa fa-pinterest"></i>Pinterest</a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
-					<li><a href="#"><i class="fa fa-rss"></i>RSS Feed</a></li>
-				</ul>
-			</div>
-			<div class="sidebar1 col-lg-12 col-md-12 col-sm-6 hidden-xs">
-				<p class="side1-head">JOIN NEWSLETTER</p>
-					<input type="text" class="form-control" placeholder="Enter Your Email">
-					<i class="fa fa-envelope"></i>
-			</div>
-		</div>
-		<div class="blog-post col-lg-9 col-md-9 col-sm-12 col-xs-12">
-			<p class="h5">LATEST POSTS</p>
-			<div class="post col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<img src="images/layersm.png" alt="layersm" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-				<div class="post-info col-lg-8 col-md-7 col-sm-7 col-xs-8">
-					<p class="h3">New Laws In Washington</p>
-					<p>
-						<i class="fa fa-clock-o"></i>
-						July 12, 2013 
-						<i class="fa fa-male"></i>
-						Joe Shmoe
-					</p>
-					<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolorem ut ipsum at tempora, alias laboriosam voluptates, ea cum dicta, nulla rerum nostrum voluptatum! Nemo velit nobis, quas earum eos?</p>
-					<br>
-					<br>
+				<div class="language"> 
+					<span><i class="fa fa-globe"></i>
+						 <form name="1">
+						  	<select name="language" id="language" size="1">
+						  	<option select value="Українська">Українська</option>
+						  	<option select value="Українська">Англійська</option>
+						  	</select>
+  						</form>
+					</span>
 				</div>
-				<hr>		
-			</div>
-			<div class="post col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<img src="images/layersm.png" alt="layersm" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-				<div class="post-info col-lg-8 col-md-7 col-sm-7 col-xs-8">
-					<p class="h3">New Laws In Washington</p>
-					<p>
-						<i class="fa fa-clock-o"></i>
-						July 12, 2013 
-						<i class="fa fa-male"></i>
-						Joe Shmoe
-					</p>
-					<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolorem ut ipsum at tempora, alias laboriosam voluptates, ea cum dicta, nulla rerum nostrum voluptatum! Nemo velit nobis, quas earum eos?</p>
-					<br>
-					<br>
-				</div>
-				<hr>		
-			</div>
-			<div class="post col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<img src="images/layersm.png" alt="layersm" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-				<div class="post-info col-lg-8 col-md-7 col-sm-7 col-xs-8">
-					<p class="h3">New Laws In Washington</p>
-					<p>
-						<i class="fa fa-clock-o"></i>
-						July 12, 2013 
-						<i class="fa fa-male"></i>
-						Joe Shmoe
-					</p>
-					<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolorem ut ipsum at tempora, alias laboriosam voluptates, ea cum dicta, nulla rerum nostrum voluptatum! Nemo velit nobis, quas earum eos?</p>
-				</div>		
-			</div>
-		</div>
-	</div>
-<!-- END MAIN -->
-<!-- FOOTER -->
-	<div id="footer">
-		<div class="footer-section row">
-			<div class="footer-nav-first col-lg-3">
-				<p class="footer-nav-header">CUSTOMER SERVICE</p>
-				<ul>
-					<li><a href="#">Track Order</a></li>
-					<li><a href="#">Shipping Policy</a></li>
-					<li><a href="#">No-Hassle Return Policy</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Company Info</a></li>
-					<li><a href="#">Customer Testimonials</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Sitemap</a></li>
-				</ul>
-			</div>
-			<div class="footer-nav-second col-lg-6">
-				<p class="footer-nav-header">SHOP COSTGRO</p>
-				<div class="col-lg-6">
-					<ul>
-						<li><a href="#">Controllers, Timers & Meters</a></li>
-						<li><a href="#">Grow Media</a></li>
-						<li><a href="#">Grow Systems</a></li>
-						<li><a href="#">Grow Tents</a></li>
-						<li><a href="#">Lighting</a></li>
-						<li><a href="#">Nutrients</a></li>
-						<li><a href="#">Pest & Disease Control</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-6">
-					<ul>
-						<li><a href="#">pH/ TDS Solutions & Meters</a></li>
-						<li><a href="#">Posts & Containers</a></li>
-						<li><a href="#">Propagation</a></li>
-						<li><a href="#">Tools & Accessories</a></li>
-						<li><a href="#">Grow Trays, Reservois & Stands</a></li>
-						<li><a href="#">Water</a></li>
-					</ul>
+				<div class="login">
+					<img src="images/header/login.png" alt="login">
+					<a href="#">Увійти</a>
+					чи 
+					<a href="#">зареєструватися</a>
 				</div>
 			</div>
-			<div class="footer-nav-third col-lg-3">
-				<div class="col-lg-12">
-					<p class="footer-nav-header">FOLLOW COSTGRO</p>
-					<ul>
-						<li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-						<li><a href="#"><i class="fa fa-pinterest"></i> Pinterest</a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
-					</ul>
+		</header>
+	<!-- HEADER-TOP END -->
+	<!-- HEADER-MENU -->
+		<header id="header-menu">
+			<div class="logo">
+				<img src="images/header/logo.png" alt="logo">
+			</div>
+			<div class="header-nav">
+				<ul>
+					<li><a href="#">ПРО КОМПАНІЮ</a></li>
+					<li><a href="#">КАТАЛОГ</a></li>
+					<li><a href="#">ПОДІЇ</a></li>
+					<li><a href="#">ВІДГУКИ</a></li>
+					<li><a href="#">ВАКАНСІЇ</a></li>
+					<li><a href="#">КОНТАКТИ</a></li>
+				</ul>
+			</div>
+		</header>
+	<!-- HEADER-MENU END -->
+	<!-- SLIDER -->
+		<div id="slider">
+			<img src="images/slider/layer.png" alt="layer">
+			<div class="slider-content">
+				<div>
+				<span>НОВА КОЛЛЕКЦІЯ ВЗУТТЯ</span>
+				<p>Товариство з обмеженою відповідальністю "Літма" засновано у м. Хмельницькому 2 вересня 1998 року</p>
 				</div>
-				<div class="col-lg-12">
-					<p class="footer-nav-header">SEARCH COSTGRO</p>
-					<div class="footer-nav-third-search">
-					<input type="text" class="form-control" placeholder="Start search...">
-					<i class="fa fa-search"></i>
+				<div>
+				<span>НОВА КОЛЛЕКЦІЯ ВЗУТТЯ</span>
+				<p>Товариство з обмеженою відповідальністю "Літма" засновано у м. Хмельницькому 2 вересня 1998 року</p>
+				</div>
+			</div>
+		</div>
+	<!-- SLIDER END -->	
+	<!-- CATEGORY -->
+		<div class="category row">
+			<div class="category-field man col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<div class="category-field-inside">
+					<div class="category-field-inside-wrapper">
+					<p>ЧОЛОВІЧЕ ВЗУТТЯ</p>
+					<img class="arrow" src="images/category/arrow.png" alt="arrow">
+					</div>
+				</div>
+			</div>
+			<div class="category-field woman col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<div class="category-field-inside">
+					<div class="category-field-inside-wrapper">
+					<p>ЖІНОЧЕ ВЗУТТЯ</p>
+					<img class="arrow" src="images/category/arrow.png" alt="arrow">
+					</div>
+				</div>
+			</div>
+			<div class="category-field kid col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<div class="category-field-inside">
+					<div class="category-field-inside-wrapper">
+					<p>ДИТЯЧЕ ВЗУТТЯ</p>
+					<img class="arrow" src="images/category/arrow.png" alt="arrow">
+					</div>
+				</div>
+			</div>
+			<div class="category-field sale col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<div class="category-field-inside">
+					<div class="category-field-inside-wrapper">
+					<p>АКЦІЙНІ ПРОПОЗИЦІЇ</p>
+					<img class="arrow" src="images/category/arrow2.png" alt="arrow2">
 					</div>
 				</div>
 			</div>
 		</div>
+	<!-- CATEGORY END -->
+	<!-- INFORMATION -->
+		<div id="information">
+			<p>ЛІТМА - ЦЕ</p>
+			<div class="box-information">
+				<div class="box-information-inside">
+					<div class="box-information-inside-wrapper">
+						<p class="box-header">Сучасне обладнання</p>
+						<p class="box-content">для підвищення якості продукції та збільшення обсягів виробництва</p>
+						<img class="arrow" src="images/category/arrow2.png" alt="arrow2">
+					</div>
+				</div>
+			</div>
+			<div class="box-information">
+				<div class="box-information-inside">
+					<div class="box-information-inside-wrapper">
+						<p class="box-header">Висока якість</p>
+						<p class="box-content">для підвищення якості продукції та збільшення обсягів виробництва</p>
+						<img class="arrow" src="images/category/arrow2.png" alt="arrow2">
+					</div>
+				</div>
+			</div>
+			<div class="box-information">
+				<div class="box-information-inside">
+					<div class="box-information-inside-wrapper">
+						<p class="box-header">Доступні ціни</p>
+						<p class="box-content">для підвищення якості продукції та збільшення обсягів виробництва</p>
+						<img class="arrow" src="images/category/arrow2.png" alt="arrow2">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="border"></div>
+	<!-- INFORMATION END -->
+	<!-- EVENTS -->
+		<div id="events">
+			<p class="event-header">ПОДІЇ</p>
+			<div class="event-slider">
+				<div class="event-field event1">
+					<div class="event-field-inside">
+						<div class="event-field-inside-wrapper">
+							<p class="event-box-header">Відкриття нового магазину</p>
+							<p class="event-box-content">Не важаючи на короткий термін участі на ринку, ТОВ "Літма" досягла значних успіхів, ставши провідним виробником взуття з текстильних матеріалів та ПВХ в Україні.</p>
+							<p class="event-box-footer">30.11.2015</p>
+							<img class="arrow" src="images/category/arrow.png" alt="arrow">
+						</div>
+					</div>
+				</div>
+				<div class="event-field event2">
+					<div class="event-field-inside">
+						<div class="event-field-inside-wrapper">
+							<p class="event-box-header">Нова коллекція чоловічого взуття від Літма</p>
+							<p class="event-box-content">Не важаючи на короткий термін участі на ринку, ТОВ "Літма" досягла значних успіхів, ставши провідним виробником взуття з текстильних матеріалів та ПВХ в Україні.</p>
+							<p class="event-box-footer">11.05.2014</p>
+							<img class="arrow" src="images/category/arrow.png" alt="arrow">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="border"></div>
+	<!-- EVENTS END -->	
+	<!-- COMMENTS -->
+		<div id="comments">
+			<p class="comments-header">Відгуки</p>
+			<div class="comments-slider">
+				<div class="comments-box">
+					<img src="images/comments/quotes.png" alt="quotes">
+					<div class="comments-box-inside">
+						<p class="comments-box-inside-content">Деякі чоботи виготоалені не тільки з гуми, але й мають текстильні вставки (наприклад, низ чобота - з гуми, верх - з тканини, або гумовий чобіт з текстильною обробкою всередині). У такому випадку подивіться, щоб місця склеювання гуми з текстилем були теж надійними.</p>
+						<div class="person">
+							<img src="images/comments/photo.png" alt="photo">
+							<p class="name">Іван Крузенштерн</p>
+							<p class="nick">людина-пароплав</p>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="mail-form">
+				<img src="images/comments/mail.png" alt="mail">
+				<a href="#">НАПИШІТЬ НАМ</a>
+			</div>
+		</div>
+		<div class="border"></div>
+		<!-- COMMENTS END -->
+		<!-- FOOTER-TOP -->
+		<footer id="footer-top">
+			<!-- first Section -->
+			<div class="footer-top-section">
+				<div class="footer-top-section-inside">
+					<img src="images/footer/map.png" alt="map">
+					<p>29006, Україна, м. Хмельницький вул. В.Чорновола, 174/6</p>
+				</div>
+				<div class="footer-top-section-inside">
+					<img src="images/footer/phone.png" alt="phone">
+					<p>+38 (0382) 74 85 85,</p>
+					<p>+38 (0382) 74 85 92</p>
+
+				</div>
+				<div class="footer-top-section-inside">
+					<img src="images/footer/email.png" alt="email">
+					<p>info@litma.com.ua</p>
+				</div>
+			</div>
+			<!-- second section -->
+			<div class="footer-top-section">
+				<div class="footer-top-section-top">
+					<ul>
+						<li><a href="#">Про нас</a></li>
+						<li><a href="#">Події</a></li>
+						<li><a href="#">Вакансії</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Відгуки</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-section-bottom">
+					<p>Ми в соцмережах:</p>
+					<a href="#"><img src="images/footer/vkontakte.png" alt="vkontakte"></a>
+					<a href="#"><img src="images/footer/facebook.png" alt="facebook"></a>
+				</div>
+			</div>
+			<!-- third section -->
+			<div class="footer-top-section">
+				<p>„Ми будемо раді з Вами співпрацювати, враховуючи Ваші побажання і комерційний інтерес“</p>
+				<p>Михальський В.І.</p>
+				<p>директор ТОВ “Літма”</p>
+			</div>
+		</footer>
+		<!-- FOOTER TOP END -->
 	</div>
+	<footer id="footer-bottom">
+		<div class="main row">
+			<div class="footer-bottom-leftsection col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<p><i class="fa fa-copyright"></i> TOB "Litma" 2015. Всі права захищено</p>
+			</div>
+			<div class="footer-bottom-rightsection col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<p>Дизайн та розробка сайту - <span>OTAKOYI</span> <img src="images/footer/otakoyi.png" alt="otakoyi"></p>
+			</div>
+		</div>
+	</footer>
+	
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="slick1/slick/slick.min.js"></script>
+	<script src="javascript/index.js"></script>
 </body>
 </html>

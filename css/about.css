@@ -1,0 +1,465 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: OpenSansLight;
+  src: url(../opensans/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: OpenSansRegular;
+  src: url(../opensans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../opensans/OpenSans-Bold.ttf);
+}
+/*Colors*/
+/*End Colors*/
+/* line 37, ../sass/screen.scss */
+a {
+  color: #fff;
+}
+/* line 39, ../sass/screen.scss */
+a:hover {
+  color: #fff;
+  opacity: .8;
+  text-decoration: none;
+  transition: .4s;
+  cursor: pointer;
+}
+
+/* line 48, ../sass/screen.scss */
+.wrapper {
+  max-width: 1010px;
+  margin: 0 auto;
+}
+
+/*BUTTON TO TOP*/
+.scrollup{
+width:40px;
+height:40px;
+opacity:0.3;
+position:fixed;
+bottom:50px;
+right:50px;
+display:none;
+text-indent:-9999px;
+background: url('../images/icontop.png') no-repeat;
+z-index: 1000;
+}
+/*END BUTTON TO TOP*/
+
+/*HEADER*/
+/* line 54, ../sass/screen.scss */
+.header {
+  width: 100%;
+  min-height: 245px;
+  background: #363636;
+  position: relative;
+}
+/* line 60, ../sass/screen.scss */
+.header .header-menu {
+  width: 100%;
+  min-height: 100px;
+  background: #e74c3c;
+}
+/* line 65, ../sass/screen.scss */
+.header .header-menu .logo {
+  width: 150px;
+  height: 100px;
+  padding: 20px 0 0 20px;
+  float: left;
+}
+/* line 72, ../sass/screen.scss */
+.header .header-menu .head-nav {
+  width: 410px;
+  min-height: 100px;
+  float: right;
+}
+/* line 77, ../sass/screen.scss */
+.header .header-menu .head-nav ul li {
+  min-height: 100px;
+  display: inline-block;
+  font-family: OpenSansRegular;
+  font-size: 16px;
+  padding: 40px 18px 20px 18px;
+}
+/* line 85, ../sass/screen.scss */
+.header .header-menu .head-nav ul li:first-child {
+  background: #f46758;
+}
+/* line 89, ../sass/screen.scss */
+.header .header-menu .head-nav ul li:last-child {
+  padding-right: 0;
+}
+/* line 93, ../sass/screen.scss */
+.header .header-menu .head-nav ul li a {
+  text-transform: uppercase;
+}
+/* line 98, ../sass/screen.scss */
+.header .links {
+  position: absolute;
+  bottom: 5px;
+  font-family: OpenSansRegular;
+  font-size: 14px;
+}
+/* line 104, ../sass/screen.scss */
+.header .links p, .header .links span {
+  color: #bebebe;
+}
+/* line 108, ../sass/screen.scss */
+.header .links a {
+  color: #bebebe;
+  text-decoration: underline;
+}
+
+/* line 115, ../sass/screen.scss */
+.header-menu::after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+/*END HEADER*/
+/*SECOND SECTION*/
+/* line 124, ../sass/screen.scss */
+.second-section {
+  width: 100%;
+  min-height: 445px;
+}
+/* line 128, ../sass/screen.scss */
+.second-section .second-section-inner {
+  min-height: 445px;
+  padding: 100px 25px 100px 0;
+}
+/* line 132, ../sass/screen.scss */
+.second-section .second-section-inner h4 {
+  font-family: OpenSansBold;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+/* line 137, ../sass/screen.scss */
+.second-section .second-section-inner p {
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 35px;
+  color: #000;
+}
+/* line 145, ../sass/screen.scss */
+.second-section .second-section-inner ul li {
+  list-style-type: square;
+  list-style-position: inside;
+  color: #e74c3c;
+}
+
+/*END SECOND SECTION*/
+/*THIRD SECTION*/
+/* line 155, ../sass/screen.scss */
+.third-section {
+  background: #db574a;
+  width: 100%;
+  min-height: 300px;
+  padding: 50px 0 50px 0;
+  color: #ffffff;
+}
+/* line 162, ../sass/screen.scss */
+.third-section h1 {
+  font-family: OpenSansLight;
+  font-size: 38px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 169, ../sass/screen.scss */
+.third-section .inner {
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+/* line 173, ../sass/screen.scss */
+.third-section .inner p {
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/*END THIRD SECTION*/
+/*FOURTH-SECTION*/
+/* line 183, ../sass/screen.scss */
+.fourth-section {
+  background: #ffffff;
+  width: 100%;
+  min-height: 440px;
+}
+/* line 188, ../sass/screen.scss */
+.fourth-section .carusel-section {
+  min-height: 440px;
+  padding: 80px 15px 80px 0;
+}
+/* line 192, ../sass/screen.scss */
+.fourth-section .carusel-section h4 {
+  font-family: OpenSansBold;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+/* line 200, ../sass/screen.scss */
+.fourth-section .carusel-section .carusel-content span {
+  color: #e74c3c;
+  font-family: OpenSansBold;
+}
+/* line 205, ../sass/screen.scss */
+.fourth-section .carusel-section .carusel-content p {
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 30px;
+}
+/* line 212, ../sass/screen.scss */
+.fourth-section .carusel-section .carusel-content i {
+  font-style: italic;
+}
+/* line 216, ../sass/screen.scss */
+.fourth-section .carusel-section .carusel-content .slick-prev {
+  right: 38px;
+  top: -12px;
+}
+/* line 220, ../sass/screen.scss */
+.fourth-section .carusel-section .carusel-content .slick-next {
+  right: 8px;
+  top: -12px;
+}
+
+/*END FOURTH-SECTION*/
+/*FOOTER*/
+/* line 230, ../sass/screen.scss */
+.footer {
+  width: 100%;
+  background: #000000;
+  min-height: 240px;
+  padding-top: 35px;
+}
+/* line 236, ../sass/screen.scss */
+.footer h4 {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: OpenSansBold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/* line 244, ../sass/screen.scss */
+.footer span {
+  color: #e74c3c;
+}
+/* line 248, ../sass/screen.scss */
+.footer .footer-section {
+  min-height: 165px;
+  padding: 0;
+}
+/* line 252, ../sass/screen.scss */
+.footer .footer-section .footer-section-item {
+  min-height: 120px;
+  color: #656565;
+}
+/* line 256, ../sass/screen.scss */
+.footer .footer-section .footer-section-item .location p:first-child {
+  padding-bottom: 15px;
+}
+/* line 260, ../sass/screen.scss */
+.footer .footer-section .footer-section-item .inner-big {
+  min-height: 120px;
+}
+/* line 263, ../sass/screen.scss */
+.footer .footer-section .footer-section-item .inner-big a {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+/* line 268, ../sass/screen.scss */
+.footer .footer-section .footer-section-item .inner-big .social {
+  padding-top: 20px;
+}
+/* line 271, ../sass/screen.scss */
+.footer .footer-section .footer-section-item .inner-big .social a {
+  color: #898989;
+  margin-right: 15px;
+}
+/* line 278, ../sass/screen.scss */
+.footer .footer-section .footer-section-item .inner-small {
+  height: 50px;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+  padding: 0;
+}
+/* line 285, ../sass/screen.scss */
+.footer .footer-section .footer-section-item .inner {
+  padding-right: 10px;
+}
+/* line 288, ../sass/screen.scss */
+.footer .footer-section .footer-section-item .inner img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+}
+/* line 295, ../sass/screen.scss */
+.footer .footer-section .footer-section-item .inner p {
+  font-family: OpenSansRegular;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/*END FOOTER*/
+/*@MEDIA*/
+@media only screen and (max-width: 1200px) {
+  .scrollup{
+    bottom:20px;
+    right:20px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 277, ../sass/screen.scss */
+  .header .links {
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  /* line 312, ../sass/screen.scss */
+  .footer .footer-section .footer-section-item .inner-small {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 322, ../sass/screen.scss */
+  .second-section .second-section-inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    min-height: 40px;
+  }
+  /* line 327, ../sass/screen.scss */
+  .second-section .second-section-inner h4 {
+    text-align: center;
+  }
+
+  /* line 332, ../sass/screen.scss */
+  .fourth-section {
+    min-height: 200px;
+  }
+  /* line 335, ../sass/screen.scss */
+  .fourth-section .carusel-section {
+    min-height: 200px;
+    padding: 30px 15px 30px 0;
+  }
+  /* line 339, ../sass/screen.scss */
+  .fourth-section .carusel-section h4 {
+    text-align: center;
+  }
+
+  /* line 346, ../sass/screen.scss */
+  .footer .footer-section h4 {
+    text-align: center;
+  }
+  /* line 352, ../sass/screen.scss */
+  .footer .footer-section .footer-section-item .location p, .footer .footer-section .footer-section-item .location div {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  /* line 366, ../sass/screen.scss */
+  .header .wrapper .header-menu .logo {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 370, ../sass/screen.scss */
+  .header .wrapper .header-menu .head-nav {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 374, ../sass/screen.scss */
+  .header .wrapper .header-menu .head-nav ul li {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 397px) {
+  /* line 387, ../sass/screen.scss */
+  .header .wrapper .header-menu .head-nav ul li {
+    display: block;
+  }
+  /* line 391, ../sass/screen.scss */
+  .header .wrapper .links {
+    padding-left: 10px;
+  }
+  /* line 394, ../sass/screen.scss */
+  .header .wrapper .links p, .header .wrapper .links a, .header .wrapper .links span {
+    color: #ffffff;
+  }
+  .fourth-section .carusel-section h4 {
+    font-size: 19px;
+  }
+}

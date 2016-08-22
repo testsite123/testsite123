@@ -1,0 +1,403 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@font-face {
+	font-family: OpenSansLight;
+	src: url(../fonts/opensans/OpenSans-Light.ttf);
+}
+
+@font-face {
+	font-family: OpenSansRegular;
+	src: url(../fonts/opensans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: OpenSansBold;
+	src: url(../fonts/opensans/OpenSans-Bold.ttf);
+}
+
+/*Colors*/
+$header: #363636;
+$header-search: #e74c3c;
+$red-section: #db574a;
+$span-text: #e74c3c;
+$active-li: #f46758;
+
+$testcolor-one: rgba(135, 230, 190, 0.35);
+$testcolor-two: rgba(205, 230, 135, 0.35);
+$testcolor-three: rgba(230, 201, 135, 0.35);
+$testcolor-four: rgba(135, 179, 230, 0.35);
+/*End Colors*/
+
+a {
+	color: #fff;
+	&:hover {
+		color: #fff;
+		opacity: .8;
+		text-decoration: none;
+		transition: .4s;
+		cursor: pointer;
+	}
+}
+
+.wrapper {
+	max-width: 1010px;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+.header {
+  width: 100%;
+  min-height: 245px;
+  background: $header;
+  position: relative;
+
+  .header-menu {
+  	width: 100%;
+	min-height: 100px;
+  	background: $header-search;
+  	
+  	.logo {
+  		width: 150px;
+  		height: 100px;
+  		padding: 20px 0 0 20px;
+  		float: left;
+  	}
+
+  	.head-nav {
+  		width: 410px;
+  		min-height: 100px;
+  		float: right;
+  		padding-right: 0;
+
+  		ul li {
+  			min-height: 100px;
+	  		display: inline-block;
+	  		font-family: OpenSansRegular;
+	  		font-size: 16px;
+	  		padding: 40px 18px 20px 18px;
+	  	}
+
+	  	ul li:nth-child(4) {
+	  		border-right: 2px solid $active-li;
+			background: $active-li;
+	  	}
+
+		ul li a {
+			text-transform: uppercase;
+		}
+  	}
+  }
+  	.links {
+		position: absolute;
+		bottom: 5px;
+		font-family: OpenSansRegular;
+		font-size: 14px;
+
+  		p, span {
+  			color: #bebebe;	
+  		}
+  		
+  		a {
+  			color: #bebebe;
+  			text-decoration: underline;
+  		}
+  	}
+ }
+
+  	.header-menu::after {
+		content: '.';
+		display: block;
+		clear: both;
+		height: 0;
+  	}
+/*END HEADER*/
+
+/*SECOND SECTION*/
+.second-section {
+	width: 100%;
+	min-height: 665px;
+	padding: 100px 0;
+
+	.second-section-content {
+		min-height: 465px;
+		padding: 0 20px 0 0;
+
+		&:nth-child(2) {
+			padding: 0;
+		} 
+
+		h4 {
+			font-family: OpenSansBold;
+			font-size: 22px;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-family: OpenSansRegular;
+			font-size: 14px;
+			line-height: 18px;
+			padding-bottom: 30px;
+		}
+
+		.submit-form {
+			min-height: 345px;
+
+			#full-name, #email {
+				background: #f7f7f7;
+				width: 100%;
+				height: 45px;
+				margin-bottom: 10px;
+				border: none;
+				padding: 20px;
+				font-family: OpenSansRegular;
+				font-size: 15px;
+			}
+
+			#message {
+				background: #f7f7f7;
+				min-width: 100%;
+				max-width: 100%;
+				min-height: 175px;
+				max-height: 175px;
+				margin-bottom: 10px;
+				border: none;
+				padding: 20px;
+				font-family: OpenSansRegular;
+				font-size: 15px;
+			}
+
+			#submit-btn {
+				background: $span-text;
+				width: 100%;
+				height: 45px;
+				margin: 0;
+				border: none;
+				font-family: OpenSansRegular;
+				font-size: 15px;
+				text-transform: uppercase;
+				color: #ffffff;
+
+				&:hover {
+					background: rgba(216, 68, 52, 0.95);
+					transition: .4s;
+				}
+			}
+		}
+
+		.map {
+			margin-bottom: 35px;
+			iframe {
+				width: 100%;
+			}
+		}
+
+		.adress-section {
+			min-height: 145px;
+			width: 100%;
+
+			.adress {
+				padding: 0;
+
+				p {
+					font-family: OpenSansRegular;
+					font-size: 14px;
+					line-height: 20px;
+					padding-bottom: 0;
+				}
+
+				a {
+					padding: 0;
+					color: $span-text;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+/*END SECOND SECTION*/
+
+/*FOOTER*/
+.footer {
+	width: 100%;
+	background: #000000;
+	min-height: 240px;
+	padding-top: 35px;
+
+	h4 {
+		margin-bottom: 30px;
+		color: #ffffff;
+		font-family: OpenSansBold;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	span {
+		color: $span-text;
+	}
+
+	.footer-section {
+		min-height: 165px;
+		padding: 0;
+
+		.footer-section-item {
+			min-height: 120px;
+			color: #656565;
+
+			.location p:first-child {
+				padding-bottom: 15px;
+			}
+
+			.inner-big {
+				min-height: 120px;
+
+				a {
+					color: $span-text;
+					text-decoration: underline;
+				}
+
+				.social {
+					padding-top: 20px;
+
+					a {
+						color: #898989;
+						margin-right: 15px;
+					}
+				}
+			}
+
+			.inner-small {
+				height: 50px;
+				overflow-y: hidden;
+				margin-bottom: 20px;
+				padding: 0;
+			}
+
+			.inner {
+				padding-right: 10px;
+
+				img {
+					width: 50px;
+					height: 50px;
+					float: left;
+					margin-right: 10px;
+				}
+
+				p {
+					font-family: OpenSansRegular;
+					font-size: 12px;
+					line-height: 15px;
+				}
+			}
+		}
+	}
+}
+/*END FOOTER*/
+
+
+/*@MEDIA*/
+
+@media only screen and (max-width: 1024px) {
+	.header {
+		.links {
+			padding-left: 20px;
+		}
+	}
+
+	.second-section {
+		.second-section-content, .second-section-content:nth-child(2) {
+			padding: 0 20px 0 20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.footer {
+		.footer-section {
+			.footer-section-item {
+				.inner-small {
+					height: auto;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.second-section {
+		padding: 50px 0;
+
+		.second-section-content {
+			margin-bottom: 30px;
+			h4 {
+				text-align: center;
+			}
+			.adress-section {
+				.adress p {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.footer {
+		.footer-section {
+			h4 {
+				text-align: center;
+			}
+
+			.footer-section-item {
+				.location {
+					p, div {
+						width: 100%;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 576px) {
+	.header {
+		.wrapper {
+			.header-menu {
+				.logo {
+					width: 100%;
+					text-align: center;
+				}
+				.head-nav {
+					width: 100%;
+					text-align: center;
+
+					ul li {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 397px) {
+	.header {
+		.wrapper {
+			.header-menu {
+				.head-nav ul li {
+					display: block;
+				}
+			}
+			.links {
+				padding-left: 10px;
+
+				p, a, span {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}

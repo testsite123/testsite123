@@ -2,266 +2,186 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Test Project Litma</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fast Search</title>
 
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="slick1/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="slick1/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link href="css/index.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<!--[if IE]-->
+	<link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-	<div class="main">
-	<!-- HEADER-TOP -->
-		<header id="header-top">
-			<div class="header-top-leftsection">
-				<span><i class="fa fa-phone"></i> +38 (0382) 74 85 85, +38 (0382) 74 85 92</span>
-			</div>
-			<div class="header-top-rightsection">
-				<div class="search">
-					<span>
-						<form name="search">
-						  	<input type="text" name="search" size="10" id="search" maxlenght="30" placeholder="search">
-  						</form>
-  						<i class="fa fa-search"></i>
-					</span>
+<!-- BUTTON TO TOP -->
+<a href="#" class="scrollup">Наверх</a>
+<!-- HEADER -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-menu">
+				<div class="logo">
+					<a href="index.html"><img src="images/header/logo.png" alt="logo"></a>
 				</div>
-				<div class="language"> 
-					<span><i class="fa fa-globe"></i>
-						 <form name="1">
-						  	<select name="language" id="language" size="1">
-						  	<option select value="Українська">Українська</option>
-						  	<option select value="Українська">Англійська</option>
-						  	</select>
-  						</form>
-					</span>
-				</div>
-				<div class="login">
-					<img src="images/header/login.png" alt="login">
-					<a href="#">Увійти</a>
-					чи 
-					<a href="#">зареєструватися</a>
-				</div>
-			</div>
-		</header>
-	<!-- HEADER-TOP END -->
-	<!-- HEADER-MENU -->
-		<header id="header-menu">
-			<div class="logo">
-				<img src="images/header/logo.png" alt="logo">
-			</div>
-			<div class="header-nav">
-				<ul>
-					<li><a href="#">ПРО КОМПАНІЮ</a></li>
-					<li><a href="#">КАТАЛОГ</a></li>
-					<li><a href="#">ПОДІЇ</a></li>
-					<li><a href="#">ВІДГУКИ</a></li>
-					<li><a href="#">ВАКАНСІЇ</a></li>
-					<li><a href="#">КОНТАКТИ</a></li>
-				</ul>
-			</div>
-		</header>
-	<!-- HEADER-MENU END -->
-	<!-- SLIDER -->
-		<div id="slider">
-			<img src="images/slider/layer.png" alt="layer">
-			<div class="slider-content">
-				<div>
-				<span>НОВА КОЛЛЕКЦІЯ ВЗУТТЯ</span>
-				<p>Товариство з обмеженою відповідальністю "Літма" засновано у м. Хмельницькому 2 вересня 1998 року</p>
-				</div>
-				<div>
-				<span>НОВА КОЛЛЕКЦІЯ ВЗУТТЯ</span>
-				<p>Товариство з обмеженою відповідальністю "Літма" засновано у м. Хмельницькому 2 вересня 1998 року</p>
-				</div>
-			</div>
-		</div>
-	<!-- SLIDER END -->	
-	<!-- CATEGORY -->
-		<div class="category row">
-			<div class="category-field man col-lg-3 col-md-6 col-sm-6 col-xs-12">
-				<div class="category-field-inside">
-					<div class="category-field-inside-wrapper">
-					<p>ЧОЛОВІЧЕ ВЗУТТЯ</p>
-					<img class="arrow" src="images/category/arrow.png" alt="arrow">
-					</div>
-				</div>
-			</div>
-			<div class="category-field woman col-lg-3 col-md-6 col-sm-6 col-xs-12">
-				<div class="category-field-inside">
-					<div class="category-field-inside-wrapper">
-					<p>ЖІНОЧЕ ВЗУТТЯ</p>
-					<img class="arrow" src="images/category/arrow.png" alt="arrow">
-					</div>
-				</div>
-			</div>
-			<div class="category-field kid col-lg-3 col-md-6 col-sm-6 col-xs-12">
-				<div class="category-field-inside">
-					<div class="category-field-inside-wrapper">
-					<p>ДИТЯЧЕ ВЗУТТЯ</p>
-					<img class="arrow" src="images/category/arrow.png" alt="arrow">
-					</div>
-				</div>
-			</div>
-			<div class="category-field sale col-lg-3 col-md-6 col-sm-6 col-xs-12">
-				<div class="category-field-inside">
-					<div class="category-field-inside-wrapper">
-					<p>АКЦІЙНІ ПРОПОЗИЦІЇ</p>
-					<img class="arrow" src="images/category/arrow2.png" alt="arrow2">
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- CATEGORY END -->
-	<!-- INFORMATION -->
-		<div id="information">
-			<p>ЛІТМА - ЦЕ</p>
-			<div class="box-information">
-				<div class="box-information-inside">
-					<div class="box-information-inside-wrapper">
-						<p class="box-header">Сучасне обладнання</p>
-						<p class="box-content">для підвищення якості продукції та збільшення обсягів виробництва</p>
-						<img class="arrow" src="images/category/arrow2.png" alt="arrow2">
-					</div>
-				</div>
-			</div>
-			<div class="box-information">
-				<div class="box-information-inside">
-					<div class="box-information-inside-wrapper">
-						<p class="box-header">Висока якість</p>
-						<p class="box-content">для підвищення якості продукції та збільшення обсягів виробництва</p>
-						<img class="arrow" src="images/category/arrow2.png" alt="arrow2">
-					</div>
-				</div>
-			</div>
-			<div class="box-information">
-				<div class="box-information-inside">
-					<div class="box-information-inside-wrapper">
-						<p class="box-header">Доступні ціни</p>
-						<p class="box-content">для підвищення якості продукції та збільшення обсягів виробництва</p>
-						<img class="arrow" src="images/category/arrow2.png" alt="arrow2">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="border"></div>
-	<!-- INFORMATION END -->
-	<!-- EVENTS -->
-		<div id="events">
-			<p class="event-header">ПОДІЇ</p>
-			<div class="event-slider">
-				<div class="event-field event1">
-					<div class="event-field-inside">
-						<div class="event-field-inside-wrapper">
-							<p class="event-box-header">Відкриття нового магазину</p>
-							<p class="event-box-content">Не важаючи на короткий термін участі на ринку, ТОВ "Літма" досягла значних успіхів, ставши провідним виробником взуття з текстильних матеріалів та ПВХ в Україні.</p>
-							<p class="event-box-footer">30.11.2015</p>
-							<img class="arrow" src="images/category/arrow.png" alt="arrow">
-						</div>
-					</div>
-				</div>
-				<div class="event-field event2">
-					<div class="event-field-inside">
-						<div class="event-field-inside-wrapper">
-							<p class="event-box-header">Нова коллекція чоловічого взуття від Літма</p>
-							<p class="event-box-content">Не важаючи на короткий термін участі на ринку, ТОВ "Літма" досягла значних успіхів, ставши провідним виробником взуття з текстильних матеріалів та ПВХ в Україні.</p>
-							<p class="event-box-footer">11.05.2014</p>
-							<img class="arrow" src="images/category/arrow.png" alt="arrow">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="border"></div>
-	<!-- EVENTS END -->	
-	<!-- COMMENTS -->
-		<div id="comments">
-			<p class="comments-header">Відгуки</p>
-			<div class="comments-slider">
-				<div class="comments-box">
-					<img src="images/comments/quotes.png" alt="quotes">
-					<div class="comments-box-inside">
-						<p class="comments-box-inside-content">Деякі чоботи виготоалені не тільки з гуми, але й мають текстильні вставки (наприклад, низ чобота - з гуми, верх - з тканини, або гумовий чобіт з текстильною обробкою всередині). У такому випадку подивіться, щоб місця склеювання гуми з текстилем були теж надійними.</p>
-						<div class="person">
-							<img src="images/comments/photo.png" alt="photo">
-							<p class="name">Іван Крузенштерн</p>
-							<p class="nick">людина-пароплав</p>
-						</div>
-					</div>
-				</div>				
-			</div>
-			<div class="mail-form">
-				<img src="images/comments/mail.png" alt="mail">
-				<a href="#">НАПИШІТЬ НАМ</a>
-			</div>
-		</div>
-		<div class="border"></div>
-		<!-- COMMENTS END -->
-		<!-- FOOTER-TOP -->
-		<footer id="footer-top">
-			<!-- first Section -->
-			<div class="footer-top-section">
-				<div class="footer-top-section-inside">
-					<img src="images/footer/map.png" alt="map">
-					<p>29006, Україна, м. Хмельницький вул. В.Чорновола, 174/6</p>
-				</div>
-				<div class="footer-top-section-inside">
-					<img src="images/footer/phone.png" alt="phone">
-					<p>+38 (0382) 74 85 85,</p>
-					<p>+38 (0382) 74 85 92</p>
-
-				</div>
-				<div class="footer-top-section-inside">
-					<img src="images/footer/email.png" alt="email">
-					<p>info@litma.com.ua</p>
-				</div>
-			</div>
-			<!-- second section -->
-			<div class="footer-top-section">
-				<div class="footer-top-section-top">
+				<nav class="head-nav">
 					<ul>
-						<li><a href="#">Про нас</a></li>
-						<li><a href="#">Події</a></li>
-						<li><a href="#">Вакансії</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Відгуки</a></li>
-						<li><a href="#">Контакти</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
+				</nav>
+			</div>
+			<div class="header-info">
+				<h1>Suspendisse Elementum</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ullam tenetur, fugit, minima dolores vel distinctio natus ist vel distinctio natus iste evel distinctio natus iste iste evel.</p>
+				<a href="#"><button>Learn More</button></a>
+			</div>
+		</div>
+	</header>
+<!-- END HEADER -->
+<!-- SECOND SECTION -->
+	<section class="second-section container">
+		<div class="wrapper row">
+			<div class="content col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<h4>We are your <span>best</span> option</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa numquam exercitationem soluta, eius ex accusantium itecto culpa numquam exercitationem soluta, eius ex accusantium natus, rsoluta, eius ex accusantium natus, reiciendis neque inventore dolores, magnam possimus quasi atque <a href="#">perferendis</a> adipisci facere dolorum sapiente.</p>
+			</div>
+			<div class="content col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<h4><span>Clients</span> choose us!</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestias nemo, repudiandae ullam, aliquid porro nostrum nobis eligendi iste, modi minus temporibus delectus. Aut ut, delectus ducimus similique harum sit!</p>
+				<p>Delectus ducimus similique harum sit! <a href="#">Learn more</a></p>
+			</div>
+		</div>
+	</section>
+<!-- END SECOND SECTION -->
+<!-- THIRD SECTION -->
+	<section class="third-section container">
+		<div class="wrapper row">
+			<h1>How can we help?</h1>
+			<div class="item col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<img src="images/thirdsection/download.png" alt="donwload">
+				<p>Crash in interdum nist, vitae blandit lectus. In imprediet dolor eu justo rhoncus, id auctor lacus.</p>
+			</div>
+			<div class="item col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<img src="images/thirdsection/signs.png" alt="donwload">
+				<p>Crash in interdum nist, vitae blandit lectus. In imprediet dolor eu justo rhoncus, id auctor lacus.</p>
+			</div>
+			<div class="item col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<img src="images/thirdsection/caddy.png" alt="donwload">
+				<p>Crash in interdum nist, vitae blandit lectus. In imprediet dolor eu justo rhoncus, id auctor lacus.</p>
+			</div>
+			<div class="item col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<img src="images/thirdsection/battery.png" alt="donwload">
+				<p>Crash in interdum nist, vitae blandit lectus. In imprediet dolor eu justo rhoncus, id auctor lacus.</p>
+			</div>
+		</div>
+	</section>
+<!-- END THIRD SECTION -->
+<!-- FOURTH SECTION -->
+	<section class="fourth-section">
+		<div class="wrapper">
+			<h4>Our <span>projects</span></h4>
+			<div class="slider">
+				<div class="wrapper-section">
+					<div class="photo-section">
+						<a href="#"><img src="images/img1.png" alt=""></a>
+					</div>
+					<a href="#">Duis suscipit venenatis</a>
+				</div>	
+				<div class="wrapper-section">
+					<div class="photo-section">
+						<a href="#"><img src="images/img2.png" alt=""></a>
+					</div>
+					<a href="#">Ligula Dignissim</a>
+				</div>	
+				<div class="wrapper-section">
+					<div class="photo-section">
+						<a href="#"><img src="images/img3.jpg" alt=""></a>
+					</div>
+					<a href="#">Dapibus sit amet</a>
+				</div>	
+				<div class="wrapper-section">
+					<div class="photo-section">
+						<a href="#"><img src="images/img4.png" alt=""></a>
+					</div>
+					<a href="#">Quisquet</a>
+				</div>	
+				<div class="wrapper-section">
+					<div class="photo-section">
+						<a href="#"><img src="images/img1.png" alt=""></a>
+					</div>
+					<a href="#">Ligula Dignissim</a>
+				</div>	
+				<div class="wrapper-section">
+					<div class="photo-section">
+						<a href="#"><img src="images/img2.png" alt=""></a>
+					</div>
+					<a href="#">Duis suscipit venenatis</a>
+				</div>	
+			</div>
+		</div>
+	</section>
+<!-- END FOURTH SECTION -->
+<!-- FOOTER -->
+	<footer class="footer container">
+		<div class="wrapper row">
+			<div class="footer-section col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<h4>About <span>us</span></h4>
+				<div class="footer-section-item">
+					<div class="inner inner-big">
+						<a href="#"><img src="images/img9.jpg" alt=""></a>
+						<p>Sed erat justo, dapibus sit amet dictum sit amet, condimentum vel erat. Maecenas mollis.
+						<br>
+						Duis suscipit venenatis sapien, et dictum ligula dignissim non. Nunc sapien justo, faucibus commodo ullamcorper nec, tempor vitae quam.</p>
+					</div>
 				</div>
-				<div class="footer-top-section-bottom">
-					<p>Ми в соцмережах:</p>
-					<a href="#"><img src="images/footer/vkontakte.png" alt="vkontakte"></a>
-					<a href="#"><img src="images/footer/facebook.png" alt="facebook"></a>
+			</div>
+			<div class="footer-section col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<h4>From our <span>blog</span></h4>
+				<div class="footer-section-item">
+					<div class="inner inner-small col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<a href="#"><img src="images/img5.png" alt=""></a>
+						<p>Vestibulum volutpat sollicitudin consequat. Nam nec elit rutrum, sollicitudin ante nec..</p>
+					</div>
+					<div class="inner inner-small col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<a href="#"><img src="images/img6.jpg" alt=""></a>
+						<p>Vestibulum volutpat sollicitudin consequat. Nam nec elit rutrum, sollicitudin ante nec..</p>
+					</div>
+					<div class="inner inner-small col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<a href="#"><img src="images/img7.jpg" alt=""></a>
+						<p>Vestibulum volutpat sollicitudin consequat. Nam nec elit rutrum, sollicitudin ante nec..</p>
+					</div>
+					<div class="inner inner-small col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<a href="#"><img src="images/img8.jpg" alt=""></a>
+						<p>Vestibulum volutpat sollicitudin consequat. Nam nec elit rutrum, sollicitudin ante nec..</p>
+					</div>
 				</div>
 			</div>
-			<!-- third section -->
-			<div class="footer-top-section">
-				<p>„Ми будемо раді з Вами співпрацювати, враховуючи Ваші побажання і комерційний інтерес“</p>
-				<p>Михальський В.І.</p>
-				<p>директор ТОВ “Літма”</p>
-			</div>
-		</footer>
-		<!-- FOOTER TOP END -->
-	</div>
-	<footer id="footer-bottom">
-		<div class="main row">
-			<div class="footer-bottom-leftsection col-lg-6 col-md-6 col-sm-6 col-xs-6">
-				<p><i class="fa fa-copyright"></i> TOB "Litma" 2015. Всі права захищено</p>
-			</div>
-			<div class="footer-bottom-rightsection col-lg-6 col-md-6 col-sm-6 col-xs-6">
-				<p>Дизайн та розробка сайту - <span>OTAKOYI</span> <img src="images/footer/otakoyi.png" alt="otakoyi"></p>
+			<div class="footer-section col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<h4>Our <span>location</span></h4>
+				<div class="footer-section-item">
+					<div class="inner inner-big location">
+						<p>Suspendisse ullamcorper diam ex.</p>
+						<p>154 Street Name 242<br>Cityname, Country</p>
+						<p><a href="#">info@domainname.com</a></p>
+						<div class="social">
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-pinterest-p"></i></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
-	
+<!-- END FOOTER -->
 
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="slick1/slick/slick.min.js"></script>
-	<script src="javascript/index.js"></script>
+	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
+	<script src="js/index.js" type="text/javascript"></script>
 </body>
 </html>

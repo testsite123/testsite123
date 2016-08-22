@@ -442,7 +442,7 @@ z-index: 1000;
     text-align: justify;
   }
   .second-section .second-section-content .adress-section .adress p {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media only screen and (max-width: 397px) {

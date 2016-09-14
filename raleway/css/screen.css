@@ -1,0 +1,692 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: RalewayRegular;
+  src: url(../fonts/raleway/Raleway-Light.ttf);
+}
+@font-face {
+  font-family: RalewayLight;
+  src: url(../fonts/raleway/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: RalewayExtraLight;
+  src: url(../fonts/raleway/Raleway-ExtraLight.ttf);
+}
+@font-face {
+  font-family: RalewayBold;
+  src: url(../fonts/raleway/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: RalewaySemiBold;
+  src: url(../fonts/raleway/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: RalewayMedium;
+  src: url(../fonts/raleway/Raleway-Medium.ttf);
+}
+/* line 38, ../sass/screen.scss */
+a {
+  color: #fff;
+}
+/* line 40, ../sass/screen.scss */
+a:hover {
+  color: #fff;
+  opacity: .6;
+  text-decoration: none;
+  transition: .4s;
+}
+
+/*HEADER*/
+/* line 56, ../sass/screen.scss */
+.header {
+  width: 100%;
+  min-height: 750px;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../image/header/bgr.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* line 63, ../sass/screen.scss */
+.header .header-wrapper {
+  margin: 0 auto;
+  width: 65%;
+  min-height: 750px;
+  padding: 50px 0;
+}
+/* line 69, ../sass/screen.scss */
+.header .header-wrapper .header-nav {
+  min-height: 20px;
+}
+/* line 71, ../sass/screen.scss */
+.header .header-wrapper .header-nav .logo {
+  padding: 0;
+}
+/* line 75, ../sass/screen.scss */
+.header .header-wrapper .header-nav .header-menu {
+  text-align: right;
+  padding: 0;
+}
+/* line 79, ../sass/screen.scss */
+.header .header-wrapper .header-nav .header-menu ul li {
+  display: inline-block;
+  font-family: RalewayRegular;
+  font-size: 14px;
+  padding: 0 18px;
+}
+/* line 86, ../sass/screen.scss */
+.header .header-wrapper .header-nav .header-menu .dash {
+  color: silver;
+}
+/* line 92, ../sass/screen.scss */
+.header .header-wrapper .header-inner {
+  margin-top: 200px;
+  text-align: center;
+}
+/* line 96, ../sass/screen.scss */
+.header .header-wrapper .header-inner h1 {
+  font-family: RalewaySemiBold;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* line 102, ../sass/screen.scss */
+.header .header-wrapper .header-inner h1 .extralight {
+  font-family: RalewayExtraLight;
+}
+/* line 106, ../sass/screen.scss */
+.header .header-wrapper .header-inner h1 .yellow {
+  color: #ebd305;
+}
+/* line 111, ../sass/screen.scss */
+.header .header-wrapper .header-inner p {
+  font-family: RalewayLight;
+  font-size: 16px;
+  line-height: 23px;
+  color: #e1e1e1;
+  margin-top: 80px;
+  letter-spacing: 3px;
+}
+/* line 121, ../sass/screen.scss */
+.header .header-wrapper .header-inner a:hover {
+  opacity: .7;
+}
+/* line 125, ../sass/screen.scss */
+.header .header-wrapper .header-inner a button {
+  width: 165px;
+  height: 40px;
+  margin-top: 80px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #ebd305;
+  text-transform: uppercase;
+  font-family: RalewayMedium;
+  font-size: 14px;
+}
+
+/*END HEADER*/
+/*SECOND SECTION*/
+/* line 142, ../sass/screen.scss */
+.second-section {
+  min-height: 260px;
+  background: #fff;
+  padding: 120px 0 50px 0;
+}
+/* line 147, ../sass/screen.scss */
+.second-section .second-section-inner {
+  width: 80%;
+  min-height: 260px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 153, ../sass/screen.scss */
+.second-section .second-section-inner h1 {
+  margin: 0 auto;
+  font-family: RalewayMedium;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+/* line 159, ../sass/screen.scss */
+.second-section .second-section-inner h1:after {
+  content: '';
+  display: block;
+  width: 75px;
+  height: 5px;
+  margin: 25px auto;
+  background: #ebd305;
+}
+/* line 168, ../sass/screen.scss */
+.second-section .second-section-inner h1 span {
+  font-family: RalewayBold;
+}
+/* line 173, ../sass/screen.scss */
+.second-section .second-section-inner p {
+  font-family: RalewayRegular;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 30px;
+  padding: 0;
+}
+
+/*END SECOND SECTION*/
+/*THIRD SECTION*/
+/* line 184, ../sass/screen.scss */
+.third-section {
+  width: 100%;
+  background: #ebd305;
+  min-height: 370px;
+}
+/* line 189, ../sass/screen.scss */
+.third-section .third-section-inner {
+  min-height: 370px;
+  text-align: center;
+}
+/* line 193, ../sass/screen.scss */
+.third-section .third-section-inner:hover {
+  transition: .3s;
+  background: #000000;
+}
+/* line 197, ../sass/screen.scss */
+.third-section .third-section-inner:hover h6 {
+  color: #ffffff;
+}
+/* line 202, ../sass/screen.scss */
+.third-section .third-section-inner .circle {
+  margin: 55px auto 50px auto;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  padding-top: 25px;
+}
+/* line 211, ../sass/screen.scss */
+.third-section .third-section-inner h6 {
+  font-family: RalewayRegular;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #000;
+}
+/* line 218, ../sass/screen.scss */
+.third-section .third-section-inner p {
+  width: 90%;
+  font-family: RalewayLight;
+  font-size: 13.5px;
+  margin: 30px auto 0 auto;
+  line-height: 22px;
+  color: #fff;
+}
+
+/*END THIRD SECTION*/
+/*FOURTH SECTION*/
+/* line 230, ../sass/screen.scss */
+.fourth-section {
+  background: #ffffff;
+  min-height: 835px;
+  text-align: center;
+  padding-top: 100px;
+}
+/* line 238, ../sass/screen.scss */
+.fourth-section .fourth-section-header img {
+  padding-bottom: 35px;
+}
+/* line 242, ../sass/screen.scss */
+.fourth-section .fourth-section-header h2 {
+  font-family: RalewayRegular;
+  font-size: 28px;
+}
+/* line 246, ../sass/screen.scss */
+.fourth-section .fourth-section-header h2 span {
+  font-family: RalewayBold;
+}
+/* line 250, ../sass/screen.scss */
+.fourth-section .fourth-section-header h2:after {
+  content: '';
+  display: block;
+  width: 75px;
+  height: 5px;
+  margin: 25px auto 40px auto;
+  background: #ebd305;
+}
+/* line 260, ../sass/screen.scss */
+.fourth-section .fourth-section-header p {
+  width: 95%;
+  margin: 0 auto;
+  line-height: 22px;
+  font-family: RalewayBold;
+  font-size: 18px;
+}
+/* line 268, ../sass/screen.scss */
+.fourth-section .fourth-section-slider {
+  width: 90%;
+  margin: 55px auto 0 auto;
+}
+/* line 275, ../sass/screen.scss */
+.fourth-section .fourth-section-slider .slider-inner .info img {
+  margin: 0 auto;
+  width: 100px;
+  padding-bottom: 40px;
+}
+/* line 281, ../sass/screen.scss */
+.fourth-section .fourth-section-slider .slider-inner .info h5 {
+  padding-bottom: 20px;
+  font-family: RalewayMedium;
+  font-size: 19px;
+}
+/* line 287, ../sass/screen.scss */
+.fourth-section .fourth-section-slider .slider-inner .info h6 {
+  font-family: RalewayLight;
+  font-size: 16px;
+}
+/* line 293, ../sass/screen.scss */
+.fourth-section .fourth-section-slider .slider-inner p {
+  width: 75%;
+  margin: 45px auto;
+  font-family: RalewayMedium;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 25px;
+  text-align: center;
+}
+
+/*END FOURTH SECTION*/
+/*FIFTH SECTION*/
+/* line 307, ../sass/screen.scss */
+.fifth-section {
+  width: 100%;
+  min-height: 640px;
+  background: linear-gradient(rgba(245, 223, 26, 0.8), rgba(245, 223, 26, 0.8)), url(../image/fivesection/bgr.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 55px 0 55px 0;
+}
+/* line 316, ../sass/screen.scss */
+.fifth-section h1 {
+  font-family: RalewayRegular;
+  font-size: 30px;
+  color: #fff;
+}
+/* line 321, ../sass/screen.scss */
+.fifth-section h1 span {
+  font-family: RalewayBold;
+}
+/* line 325, ../sass/screen.scss */
+.fifth-section h1:after {
+  content: '';
+  display: block;
+  width: 75px;
+  height: 3px;
+  margin: 25px auto 0 auto;
+  background: #ffffff;
+}
+/* line 335, ../sass/screen.scss */
+.fifth-section .fifth-section-content {
+  width: inherit;
+  margin-top: 75px;
+}
+/* line 340, ../sass/screen.scss */
+.fifth-section .fifth-section-content .inner p {
+  font-family: RalewayBold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 35px auto 40px auto;
+  width: 70%;
+}
+/* line 350, ../sass/screen.scss */
+.fifth-section .fifth-section-content .inner .social-icons ul li {
+  display: inline-block;
+  padding: 0 23px;
+}
+
+/*END FIFTH SECTION*/
+/*FOOTER*/
+/* line 360, ../sass/screen.scss */
+.footer {
+  width: 100%;
+  min-height: 450px;
+}
+/* line 364, ../sass/screen.scss */
+.footer .footer-header {
+  min-height: 110px;
+  background: #131313;
+}
+/* line 368, ../sass/screen.scss */
+.footer .footer-header .tagline {
+  font-family: RalewatBold;
+  font-size: 18px;
+  color: #fff;
+  text-align: right;
+  min-height: 110px;
+  padding: 45px 25px 45px 0;
+}
+/* line 377, ../sass/screen.scss */
+.footer .footer-header .form {
+  min-height: 110px;
+  padding: 30px 0 0 25px;
+}
+/* line 381, ../sass/screen.scss */
+.footer .footer-header .form input[type=email] {
+  width: 48%;
+  height: 45px;
+  padding-left: 25px;
+  border: 0;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.9);
+  border-radius: 3px 0 0 3px;
+  background: rgba(10, 10, 10, 0.85);
+  font-family: RalewaySemiBold;
+  font-size: 14px;
+  color: #ffffff;
+}
+/* line 394, ../sass/screen.scss */
+.footer .footer-header .form button {
+  width: 19.5%;
+  height: 45px;
+  background: #ebd305;
+  border: 0;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0 3px 3px 0;
+  font-family: RalewaySemiBold;
+  font-size: 14px;
+  color: #000000;
+  margin-left: -4px;
+}
+/* line 409, ../sass/screen.scss */
+.footer .footer-bottom {
+  background: #111111;
+  min-height: 340px;
+}
+/* line 413, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content {
+  min-height: inherit;
+  padding: 45px 0 0 8%;
+}
+/* line 417, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content:nth-child(2) {
+  background-image: url(../image/footer/twitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 423, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content h5 {
+  font-family: RalewaySemiBold;
+  font-size: 18px;
+  color: #ffffff;
+  padding-bottom: 35px;
+}
+/* line 429, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content h5 span {
+  color: #ebd305;
+}
+/* line 434, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .after-line {
+  padding-bottom: 22px;
+}
+/* line 437, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .after-line:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 14px 0 0 0;
+  background: #ebd305;
+}
+/* line 447, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content p {
+  font-size: 14px;
+  line-height: 22px;
+}
+/* line 452, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .regular {
+  width: 82%;
+  font-family: RalewayRegular;
+  color: #3b3b3b;
+}
+/* line 458, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .semibold-cursive {
+  width: 84%;
+  font-family: RalewaySemiBold;
+  font-style: italic;
+  color: #b6b6b6;
+}
+/* line 465, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .response {
+  margin-top: 35px;
+  font-family: RalewaySemiBold;
+  font-style: italic;
+  text-decoration: underline;
+  color: #b6b6b6;
+}
+/* line 473, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .social-icons {
+  padding-left: 10px;
+}
+/* line 476, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .social-icons ul li {
+  display: inline-block;
+  padding: 55px 10% 0 0;
+}
+/* line 480, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .social-icons ul li a:hover {
+  color: #ebd305;
+  opacity: 1;
+}
+/* line 487, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .other-links li {
+  width: 170px;
+  padding: 15px 0;
+  font-family: RalewayRegular;
+  font-size: 13.5px;
+  border-bottom: 1px solid #242424;
+  list-style-position: inside;
+}
+/* line 495, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .other-links li:first-child {
+  padding-top: 0;
+}
+/* line 499, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .other-links li:last-child {
+  border-bottom: none;
+}
+/* line 503, ../sass/screen.scss */
+.footer .footer-bottom .footer-bottom-content .other-links li:before {
+  content: '+';
+  font-size: 13.5px;
+  padding-right: 5px;
+  color: #fff;
+}
+
+/*END FOOTER*/
+/*MEDIA*/
+@media only screen and (max-width: 991px) {
+  /* line 521, ../sass/screen.scss */
+  .header .header-nav .logo {
+    text-align: center;
+  }
+  /* line 524, ../sass/screen.scss */
+  .header .header-nav .header-menu {
+    margin-top: 30px;
+  }
+  /* line 527, ../sass/screen.scss */
+  .header .header-nav .header-menu ul {
+    text-align: center;
+  }
+
+  /* line 536, ../sass/screen.scss */
+  .fifth-section .fifth-section-content .inner:nth-child(2), .fifth-section .fifth-section-content .inner:nth-child(3) {
+    margin-top: 80px;
+  }
+  /* line 540, ../sass/screen.scss */
+  .fifth-section .fifth-section-content .inner p {
+    width: 80%;
+  }
+
+  /* line 548, ../sass/screen.scss */
+  .footer .footer-header .tagline {
+    min-height: 70px;
+    text-align: center;
+    padding: 25px 0 25px 0;
+  }
+  /* line 553, ../sass/screen.scss */
+  .footer .footer-header .form {
+    min-height: 80px;
+    padding: 15px 0 0 0;
+    text-align: center;
+  }
+  /* line 560, ../sass/screen.scss */
+  .footer .footer-bottom .footer-bottom-content {
+    padding-left: 5%;
+  }
+}
+@media only screen and (max-width: 833px) {
+  /* line 572, ../sass/screen.scss */
+  .header .header-wrapper .header-nav .header-menu ul li {
+    padding: 15px;
+    display: block;
+  }
+  /* line 576, ../sass/screen.scss */
+  .header .header-wrapper .header-nav .header-menu .dash {
+    display: none;
+  }
+  /* line 581, ../sass/screen.scss */
+  .header .header-wrapper .header-inner {
+    margin-top: 130px;
+  }
+
+  /* line 589, ../sass/screen.scss */
+  .footer .footer-bottom .footer-bottom-content p {
+    font-size: 12px;
+  }
+  /* line 593, ../sass/screen.scss */
+  .footer .footer-bottom .footer-bottom-content ul li {
+    font-size: 13px;
+  }
+  /* line 597, ../sass/screen.scss */
+  .footer .footer-bottom .footer-bottom-content .other-links li {
+    font-size: 12px;
+  }
+  /* line 600, ../sass/screen.scss */
+  .footer .footer-bottom .footer-bottom-content .other-links li:before {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 612, ../sass/screen.scss */
+  .footer .footer-bottom .footer-bottom-content {
+    min-height: 200px;
+    padding: 25px 0 25px 8%;
+  }
+  /* line 617, ../sass/screen.scss */
+  .footer .footer-bottom .footer-bottom-content .social-icons ul li {
+    padding: 40px 4% 0 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* line 630, ../sass/screen.scss */
+  .header .header-wrapper .header-inner h1 {
+    font-size: 33px;
+  }
+  /* line 633, ../sass/screen.scss */
+  .header .header-wrapper .header-inner p {
+    font-size: 13px;
+  }
+
+  /* line 641, ../sass/screen.scss */
+  .second-section .second-section-inner h1 {
+    font-size: 27px;
+  }
+  /* line 644, ../sass/screen.scss */
+  .second-section .second-section-inner p {
+    font-size: 13px;
+  }
+
+  /* line 651, ../sass/screen.scss */
+  .fourth-section .fourth-section-header h2 {
+    font-size: 25px;
+  }
+  /* line 654, ../sass/screen.scss */
+  .fourth-section .fourth-section-header p {
+    font-size: 16px;
+  }
+
+  /* line 659, ../sass/screen.scss */
+  .fifth-section {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 669, ../sass/screen.scss */
+  .footer .footer-header .form input[type=email] {
+    width: 62%;
+  }
+  /* line 673, ../sass/screen.scss */
+  .footer .footer-header .form button {
+    width: 25%;
+  }
+}
+/*END MEDIA*/

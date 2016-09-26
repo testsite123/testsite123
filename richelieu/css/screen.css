@@ -1,0 +1,1276 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: OpenSansLight;
+  src: url(../fonts/opensans/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: OpenSansRegular;
+  src: url(../fonts/opensans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../fonts/opensans/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: OpenSansSemiBold;
+  src: url(../fonts/opensans/OpenSans-Semibold.ttf);
+}
+@font-face {
+  font-family: OpenSansExtraBold;
+  src: url(../fonts/opensans/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+  font-family: LatoBold;
+  src: url(../fonts/lato/Lato-Bold.ttf);
+}
+/* line 45, ../sass/screen.scss */
+a {
+  color: #ffffff;
+}
+/* line 48, ../sass/screen.scss */
+a:hover, a:focus {
+  color: #fff;
+  text-decoration: none;
+  transition: .4s;
+}
+
+/* line 55, ../sass/screen.scss */
+.main-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 60, ../sass/screen.scss */
+.section-header {
+  min-height: 179px;
+  padding-top: 68px;
+  text-align: center;
+}
+/* line 65, ../sass/screen.scss */
+.section-header h3 {
+  font-family: OpenSansBold;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+/* line 72, ../sass/screen.scss */
+.section-header p {
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  color: #626066;
+}
+/* line 77, ../sass/screen.scss */
+.section-header p::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #c4c2c4;
+  margin: 20px auto;
+}
+
+/*HEADER*/
+/* line 89, ../sass/screen.scss */
+.header {
+  width: 100%;
+  min-height: 115px;
+  background: #ffffff;
+  border-top: 4px solid #003f6d;
+  padding-top: 15px;
+}
+/* line 96, ../sass/screen.scss */
+.header::after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+}
+/* line 103, ../sass/screen.scss */
+.header .logo {
+  width: 360px;
+  float: left;
+}
+/* line 107, ../sass/screen.scss */
+.header .logo::after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+}
+/* line 115, ../sass/screen.scss */
+.header .header-info {
+  width: 476px;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+}
+/* line 121, ../sass/screen.scss */
+.header .header-info .cost-calculation {
+  width: 285px;
+  height: 65px;
+  margin-top: 10px;
+  border-right: 1px solid #818181;
+}
+/* line 127, ../sass/screen.scss */
+.header .header-info .cost-calculation button {
+  width: 255px;
+  height: 65px;
+  padding: 0 20px;
+  background: #db2929;
+  border: none;
+  border-radius: 5px;
+  font-family: OpenSansSemiBold;
+  font-size: 17.5px;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 139, ../sass/screen.scss */
+.header .header-info .cost-calculation button img {
+  padding-right: 15px;
+}
+/* line 143, ../sass/screen.scss */
+.header .header-info .cost-calculation button p {
+  text-align: justify;
+}
+/* line 149, ../sass/screen.scss */
+.header .header-info .phone-number {
+  margin-left: 20px;
+}
+/* line 152, ../sass/screen.scss */
+.header .header-info .phone-number p {
+  font-family: LatoBold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+/*END HEADER*/
+/*HEADER MENU*/
+/* line 162, ../sass/screen.scss */
+.header-menu {
+  width: 100%;
+  min-height: 70px;
+  background: #1d1e20;
+  border-bottom: 3px solid #003f6d;
+}
+/* line 168, ../sass/screen.scss */
+.header-menu .side {
+  min-height: 70px;
+  padding: 0;
+}
+/* line 172, ../sass/screen.scss */
+.header-menu .side ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 180, ../sass/screen.scss */
+.header-menu .side ul li {
+  width: auto;
+  height: 70px;
+  padding: 10px 32px 15px 32px;
+  margin: 0;
+  display: inline-block;
+  font-family: OpenSansRegular;
+  font-size: 18px;
+  position: relative;
+}
+/* line 190, ../sass/screen.scss */
+.header-menu .side ul li img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+/* line 196, ../sass/screen.scss */
+.header-menu .side ul li:hover {
+  background: #003f6d;
+  cursor: pointer;
+}
+/* line 200, ../sass/screen.scss */
+.header-menu .side ul li:hover .drop-menu {
+  top: 70px;
+  opacity: 1;
+  transition: .4s opacity;
+}
+/* line 207, ../sass/screen.scss */
+.header-menu .side ul li .drop-menu {
+  background: rgba(0, 0, 0, 0.5);
+  width: 470px;
+  height: 613px;
+  top: -9999em;
+  left: 0;
+  padding: 35px;
+  color: #ffffff;
+  border-top: 3px solid #003f6d;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+}
+/* line 220, ../sass/screen.scss */
+.header-menu .side ul li .drop-menu h1 {
+  font-family: OpenSansExtraBold;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 125px 0 0 0;
+}
+/* line 227, ../sass/screen.scss */
+.header-menu .side ul li .drop-menu h3 {
+  font-family: OpenSansBold;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+/* line 234, ../sass/screen.scss */
+.header-menu .side ul li .drop-menu p {
+  font-family: OpenSansRegular;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 35px 0 0 0;
+}
+/* line 241, ../sass/screen.scss */
+.header-menu .side ul li .drop-menu button {
+  background: transparent;
+  width: 125px;
+  height: 45px;
+  margin: 40px 0 0 0;
+  font-family: OpenSansSemiBold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #fff;
+}
+/* line 252, ../sass/screen.scss */
+.header-menu .side ul li .drop-menu button:hover {
+  background: #db2929;
+  transition: .4s;
+}
+/* line 262, ../sass/screen.scss */
+.header-menu .search-field {
+  min-height: 70px;
+  padding: 15px 0 0 0;
+}
+/* line 266, ../sass/screen.scss */
+.header-menu .search-field .search {
+  width: 340px;
+  height: 40px;
+  background: #2a2c2e;
+  color: #fff;
+  font-family: OpenSansRegular;
+  border: 1px solid #464748;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 60px;
+  float: right;
+  position: relative;
+}
+/* line 280, ../sass/screen.scss */
+.header-menu .search-field .fa-search {
+  color: #fff;
+  position: absolute;
+  right: 15px;
+  top: 19px;
+  padding: 9px 0 0 18px;
+  height: 47%;
+  border-left: 1px solid #111213;
+}
+
+/*END HEADER MENU*/
+/*SLIDER SECTION*/
+/* line 293, ../sass/screen.scss */
+.slider-section {
+  width: 100%;
+  height: 605px;
+  position: relative;
+}
+/* line 298, ../sass/screen.scss */
+.slider-section .slider-inner {
+  width: 100%;
+  height: 605px;
+}
+
+/*END SLIDER SECTION*/
+/*SERVICES*/
+/* line 305, ../sass/screen.scss */
+.services {
+  width: 100%;
+  min-height: 460px;
+  margin-top: 5px;
+}
+/* line 310, ../sass/screen.scss */
+.services .services-inner {
+  min-height: 230px;
+  padding: 0;
+}
+/* line 314, ../sass/screen.scss */
+.services .services-inner .content-img {
+  min-height: 230px;
+  padding: 70px 0 0 0;
+  text-align: center;
+}
+/* line 319, ../sass/screen.scss */
+.services .services-inner .content-img .circle {
+  width: 70px;
+  height: 70px;
+  padding: 20px 0 0 5px;
+  border-radius: 50%;
+  border: 1px solid #167cc7;
+}
+/* line 328, ../sass/screen.scss */
+.services .services-inner .content {
+  min-height: 230px;
+  padding: 70px 2px 15px 2px;
+}
+/* line 332, ../sass/screen.scss */
+.services .services-inner .content h5 {
+  font-family: OpenSansBold;
+  font-size: 17px;
+  color: #333333;
+}
+/* line 338, ../sass/screen.scss */
+.services .services-inner .content .price {
+  font-family: OpenSansSemiBold;
+  font-size: 14px;
+  margin: 10px 0 15px 0;
+  color: #333333;
+}
+/* line 345, ../sass/screen.scss */
+.services .services-inner .content .text {
+  width: 90%;
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  color: #818180;
+  line-height: 20px;
+}
+
+/*END SERVICES*/
+/*ACHIEVEMENT*/
+/* line 357, ../sass/screen.scss */
+.achievement {
+  background-image: url(../image/achievement/showcase.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px;
+}
+/* line 364, ../sass/screen.scss */
+.achievement .achievement-content {
+  min-height: 400px;
+}
+/* line 367, ../sass/screen.scss */
+.achievement .achievement-content .content-inner {
+  width: 75%;
+  height: 175px;
+  margin: 112.5px auto;
+  color: #fff;
+  text-align: center;
+  padding-top: 25px;
+  position: relative;
+}
+/* line 376, ../sass/screen.scss */
+.achievement .achievement-content .content-inner h2 {
+  font-family: OpenSansBold;
+  font-size: 51px;
+}
+/* line 381, ../sass/screen.scss */
+.achievement .achievement-content .content-inner p {
+  width: 85%;
+  margin: 20px auto 0 auto;
+  font-family: OpenSansRegular;
+  font-size: 25.5px;
+}
+/* line 388, ../sass/screen.scss */
+.achievement .achievement-content .content-inner:before {
+  content: '';
+  display: block;
+  width: 105px;
+  height: 105px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: 1;
+}
+/* line 401, ../sass/screen.scss */
+.achievement .achievement-content .content-inner:after {
+  content: '';
+  display: block;
+  width: 105px;
+  height: 105px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  z-index: 1;
+}
+
+/*END ACHIEVEMENT*/
+/*ADVANATGE*/
+/* line 418, ../sass/screen.scss */
+.advantage {
+  width: 100%;
+  min-height: 535px;
+}
+/* line 422, ../sass/screen.scss */
+.advantage .advantage-content {
+  min-height: 178px;
+  padding: 0;
+  text-align: center;
+}
+/* line 427, ../sass/screen.scss */
+.advantage .advantage-content img {
+  padding-top: 5px;
+  color: blue;
+}
+/* line 432, ../sass/screen.scss */
+.advantage .advantage-content p {
+  width: 65%;
+  margin: 0 auto;
+  font-family: OpenSansSemiBold;
+  font-size: 16px;
+  color: #413d4b;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+/*END ADVANTAGE*/
+/*CONTACT LINE*/
+/* line 446, ../sass/screen.scss */
+.contact-line {
+  width: 100%;
+  min-height: 100px;
+  background: #003f6d;
+  padding-top: 35px;
+  position: relative;
+}
+/* line 453, ../sass/screen.scss */
+.contact-line::after {
+  position: absolute;
+  bottom: -20px;
+  left: 48%;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 20px;
+  border-color: #00406d transparent transparent transparent;
+}
+/* line 466, ../sass/screen.scss */
+.contact-line .contact-text {
+  min-height: 42px;
+}
+/* line 469, ../sass/screen.scss */
+.contact-line .contact-text p {
+  min-height: 42px;
+  font-family: OpenSansSemiBold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 0 10px 40px;
+  color: #fff;
+}
+/* line 482, ../sass/screen.scss */
+.contact-line .contact-button div {
+  width: 165px;
+  min-height: 42px;
+  margin: 0 auto;
+}
+/* line 487, ../sass/screen.scss */
+.contact-line .contact-button div button {
+  background: #fff;
+  width: 165px;
+  height: 42px;
+  color: #555555;
+  font-family: OpenSansBold;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 3px solid #c0c8ce;
+  border-radius: 3px;
+}
+
+/*END CONTACT LINE*/
+/*PARTNERS*/
+/* line 504, ../sass/screen.scss */
+.partners {
+  width: 100%;
+  min-height: 435px;
+}
+/* line 508, ../sass/screen.scss */
+.partners .partners-slider {
+  width: 95%;
+  min-height: 256px;
+  margin: -20px auto 0 auto;
+}
+/* line 513, ../sass/screen.scss */
+.partners .partners-slider .partners-slider-content {
+  width: 290px;
+  height: 175px;
+  margin-top: 30px;
+  position: relative;
+}
+/* line 519, ../sass/screen.scss */
+.partners .partners-slider .partners-slider-content img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 527, ../sass/screen.scss */
+.partners .partners-slider .first-item, .partners .partners-slider .second-item, .partners .partners-slider .third-item {
+  border-right: 1px dashed #707070;
+}
+/* line 531, ../sass/screen.scss */
+.partners .partners-slider .slick-prev:before {
+  content: url(http://i11.pixs.ru/storage/6/4/6/leftpng_9555431_23390646.png);
+}
+/* line 534, ../sass/screen.scss */
+.partners .partners-slider .slick-next:before {
+  content: url(http://i11.pixs.ru/storage/6/4/9/rightpng_7866832_23390649.png);
+}
+/* line 538, ../sass/screen.scss */
+.partners .partners-slider .slick-prev {
+  top: 115px;
+  left: -23px;
+  z-index: 100;
+}
+/* line 544, ../sass/screen.scss */
+.partners .partners-slider .slick-next {
+  top: 115px;
+  right: -23px;
+  z-index: 100;
+}
+
+/*END PARTNERS*/
+/*TOP FOOTER */
+/* line 553, ../sass/screen.scss */
+.footer {
+  width: 100%;
+  min-height: 355px;
+  background: #222222;
+}
+/* line 558, ../sass/screen.scss */
+.footer .footer-section {
+  min-height: 355px;
+  padding: 64px 30px 35px 30px;
+}
+/* line 562, ../sass/screen.scss */
+.footer .footer-section:first-child {
+  padding-left: 0;
+}
+/* line 566, ../sass/screen.scss */
+.footer .footer-section:last-child {
+  padding-right: 0;
+}
+/* line 570, ../sass/screen.scss */
+.footer .footer-section h4 {
+  font-family: OpenSansBold;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+/* line 578, ../sass/screen.scss */
+.footer .footer-section .footer-section-content {
+  font-family: OpenSansSemibold;
+  min-height: 10px;
+  margin: 15px 0 0 0;
+}
+/* line 583, ../sass/screen.scss */
+.footer .footer-section .footer-section-content:first-child {
+  margin: 0;
+}
+/* line 587, ../sass/screen.scss */
+.footer .footer-section .footer-section-content .footer-icon {
+  min-height: 10px;
+  color: #fff;
+  padding: 0;
+}
+/* line 593, ../sass/screen.scss */
+.footer .footer-section .footer-section-content .footer-section-inner {
+  min-height: 10px;
+  padding: 0;
+}
+/* line 597, ../sass/screen.scss */
+.footer .footer-section .footer-section-content .footer-section-inner h1 {
+  font-size: 15px;
+  color: #fff;
+  padding-bottom: 4px;
+}
+/* line 602, ../sass/screen.scss */
+.footer .footer-section .footer-section-content .footer-section-inner p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #585858;
+}
+/* line 613, ../sass/screen.scss */
+.footer .footer-section .footer-menu .footer-menu-inner ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 617, ../sass/screen.scss */
+.footer .footer-section .footer-menu .footer-menu-inner ul li {
+  display: block;
+  padding: 17px 0;
+  border-bottom: 1px dashed #525252;
+}
+/* line 622, ../sass/screen.scss */
+.footer .footer-section .footer-menu .footer-menu-inner ul li a {
+  font-family: OpenSansSemiBold;
+  font-size: 13px;
+  color: #7d7d7d;
+}
+/* line 627, ../sass/screen.scss */
+.footer .footer-section .footer-menu .footer-menu-inner ul li a:before {
+  content: '>';
+  font-family: OpenSansSemiBold;
+  font-size: 13px;
+  color: #7d7d7d;
+  padding-right: 10px;
+}
+/* line 635, ../sass/screen.scss */
+.footer .footer-section .footer-menu .footer-menu-inner ul li a:hover {
+  color: #fff;
+}
+/* line 638, ../sass/screen.scss */
+.footer .footer-section .footer-menu .footer-menu-inner ul li a:hover:before {
+  color: #fff;
+  transition: .4s;
+}
+/* line 645, ../sass/screen.scss */
+.footer .footer-section .footer-menu .footer-menu-inner ul li i {
+  font-size: 18px;
+  padding: 5px;
+}
+/* line 650, ../sass/screen.scss */
+.footer .footer-section .footer-menu .footer-menu-inner ul .exception {
+  border-bottom: none;
+}
+/* line 653, ../sass/screen.scss */
+.footer .footer-section .footer-menu .footer-menu-inner ul .exception:before {
+  display: none;
+}
+/* line 658, ../sass/screen.scss */
+.footer .footer-section .footer-menu .footer-menu-inner ul .exception a:before {
+  display: none;
+}
+/* line 665, ../sass/screen.scss */
+.footer .footer-section .footer-menu .second-inner {
+  padding-left: 35px;
+}
+/* line 670, ../sass/screen.scss */
+.footer .footer-section .submit-form {
+  min-height: 200px;
+  width: 100%;
+}
+/* line 674, ../sass/screen.scss */
+.footer .footer-section .submit-form #full-name, .footer .footer-section .submit-form #message, .footer .footer-section .submit-form #email {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 3px;
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  color: #fff;
+}
+/* line 683, ../sass/screen.scss */
+.footer .footer-section .submit-form #full-name {
+  width: 100%;
+  height: 35px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+/* line 690, ../sass/screen.scss */
+.footer .footer-section .submit-form #message {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 85px;
+  max-height: 85px;
+  padding: 13px 20px;
+  margin-bottom: 15px;
+}
+/* line 699, ../sass/screen.scss */
+.footer .footer-section .submit-form .submit {
+  height: 35px;
+  position: relative;
+}
+/* line 703, ../sass/screen.scss */
+.footer .footer-section .submit-form .submit:after {
+  content: url(http://i11.pixs.ru/storage/1/7/1/arrowpng_1449187_23394171.png);
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  z-index: 0;
+}
+/* line 711, ../sass/screen.scss */
+.footer .footer-section .submit-form .submit #email {
+  width: 100%;
+  height: 35px;
+  padding: 0 20px;
+}
+/* line 717, ../sass/screen.scss */
+.footer .footer-section .submit-form .submit .submit-btn {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: rgba(0, 63, 109, 0.8);
+  border: none;
+  border-radius: 0 3px 3px 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/*END TOP FOOTER*/
+/*FOOTER BOTTOM*/
+/* line 734, ../sass/screen.scss */
+.footer-bottom {
+  width: 100%;
+  min-height: 50px;
+  background: #1b1b1b;
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  color: #979797;
+  line-height: 50px;
+}
+/* line 743, ../sass/screen.scss */
+.footer-bottom:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+/* line 750, ../sass/screen.scss */
+.footer-bottom .footer-side {
+  height: 50px;
+}
+/* line 753, ../sass/screen.scss */
+.footer-bottom .footer-side span {
+  text-transform: uppercase;
+  color: #fff;
+}
+/* line 758, ../sass/screen.scss */
+.footer-bottom .footer-side .right-side {
+  text-align: right;
+}
+
+/*END FOOTER BOTTOM*/
+/*MEDIA*/
+@media only screen and (max-width: 1199px) {
+  /* line 771, ../sass/screen.scss */
+  .main-wrapper {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* line 779, ../sass/screen.scss */
+  .header-menu .side ul {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  /* line 783, ../sass/screen.scss */
+  .header-menu .side ul li .notes-reverse {
+    left: -342px;
+  }
+  /* line 786, ../sass/screen.scss */
+  .header-menu .side ul li .faq-reverse {
+    left: -371px;
+  }
+  /* line 789, ../sass/screen.scss */
+  .header-menu .side ul li .contacts-reverse {
+    left: -324px;
+  }
+
+  /* line 799, ../sass/screen.scss */
+  .contact-line .contact-text p {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  /* line 810, ../sass/screen.scss */
+  .partners .partners-slider right-border {
+    border-right: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  /* line 818, ../sass/screen.scss */
+  .contact-line {
+    padding: 15px 0 15px 0;
+  }
+  /* line 820, ../sass/screen.scss */
+  .contact-line .contact-text {
+    text-align: center;
+  }
+  /* line 822, ../sass/screen.scss */
+  .contact-line .contact-text p {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  /* line 829, ../sass/screen.scss */
+  .contact-line .contact-button div {
+    padding: 10px 0;
+  }
+  /* line 831, ../sass/screen.scss */
+  .contact-line .contact-button div button {
+    margin: 0 auto;
+  }
+
+  /* line 839, ../sass/screen.scss */
+  .footer .footer-section {
+    min-height: 240px;
+    padding: 25px 30px;
+  }
+  /* line 843, ../sass/screen.scss */
+  .footer .footer-section:first-child, .footer .footer-section:last-child {
+    padding: 25px 30px;
+  }
+  /* line 847, ../sass/screen.scss */
+  .footer .footer-section h4 {
+    text-align: center;
+  }
+  /* line 851, ../sass/screen.scss */
+  .footer .footer-section .footer-section-content {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  /* line 856, ../sass/screen.scss */
+  .footer .footer-section .footer-menu {
+    width: 60%;
+    margin: 0 auto;
+  }
+  /* line 860, ../sass/screen.scss */
+  .footer .footer-section .footer-menu .second-inner {
+    padding-left: 15px;
+  }
+  /* line 864, ../sass/screen.scss */
+  .footer .footer-section .submit-form {
+    width: 55%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  /* line 874, ../sass/screen.scss */
+  .header .header-info {
+    width: 439px;
+  }
+  /* line 877, ../sass/screen.scss */
+  .header .header-info .cost-calculation {
+    width: 265px;
+  }
+  /* line 880, ../sass/screen.scss */
+  .header .header-info .cost-calculation button {
+    width: 235px;
+    font-size: 15.5px;
+  }
+  /* line 886, ../sass/screen.scss */
+  .header .header-info .phone-number {
+    padding-top: 5px;
+  }
+  /* line 889, ../sass/screen.scss */
+  .header .header-info .phone-number p {
+    font-size: 18px;
+  }
+
+  /* line 898, ../sass/screen.scss */
+  .achievement .achievement-content .content-inner {
+    width: 75%;
+    height: 150px;
+  }
+  /* line 902, ../sass/screen.scss */
+  .achievement .achievement-content .content-inner h2 {
+    font-size: 42px;
+  }
+  /* line 905, ../sass/screen.scss */
+  .achievement .achievement-content .content-inner p {
+    font-size: 19.5px;
+  }
+  /* line 909, ../sass/screen.scss */
+  .achievement .achievement-content .content-inner:before, .achievement .achievement-content .content-inner:after {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* line 919, ../sass/screen.scss */
+  .header {
+    padding-top: 10px;
+  }
+  /* line 922, ../sass/screen.scss */
+  .header .logo {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+  }
+  /* line 928, ../sass/screen.scss */
+  .header .header-info {
+    margin: 15px auto;
+    float: none;
+  }
+
+  /* line 936, ../sass/screen.scss */
+  .header-menu .side ul li {
+    font-size: 16px;
+    padding: 15px 28px 15px 28px;
+  }
+  /* line 940, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu {
+    width: 440px;
+  }
+  /* line 943, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu h1 {
+    font-size: 34px;
+  }
+  /* line 946, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu h3 {
+    font-size: 22px;
+  }
+  /* line 949, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu p {
+    font-size: 13px;
+  }
+  /* line 953, ../sass/screen.scss */
+  .header-menu .side ul li .notes-reverse {
+    left: -327px;
+  }
+  /* line 956, ../sass/screen.scss */
+  .header-menu .side ul li .faq-reverse {
+    left: -353px;
+  }
+  /* line 959, ../sass/screen.scss */
+  .header-menu .side ul li .contacts-reverse {
+    left: -312px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 970, ../sass/screen.scss */
+  .header-menu .side ul {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  /* line 973, ../sass/screen.scss */
+  .header-menu .side ul li {
+    width: 60px;
+    position: relative;
+  }
+  /* line 977, ../sass/screen.scss */
+  .header-menu .side ul li span {
+    display: none;
+  }
+  /* line 981, ../sass/screen.scss */
+  .header-menu .side ul li img {
+    top: 25px;
+    right: 20px;
+    position: absolute;
+  }
+  /* line 987, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu {
+    width: 350px;
+  }
+  /* line 990, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu h1 {
+    margin: 50px 0 0 0px;
+  }
+  /* line 995, ../sass/screen.scss */
+  .header-menu .side ul li .central-drop {
+    left: -100px;
+  }
+  /* line 999, ../sass/screen.scss */
+  .header-menu .side ul li .notes-reverse {
+    left: -190px;
+  }
+  /* line 1002, ../sass/screen.scss */
+  .header-menu .side ul li .faq-reverse {
+    left: -290px;
+  }
+  /* line 1005, ../sass/screen.scss */
+  .header-menu .side ul li .contacts-reverse {
+    left: -289px;
+  }
+
+  /* line 1015, ../sass/screen.scss */
+  .services .services-inner .content-img {
+    min-height: 100px;
+    padding: 15px 0 0 0;
+  }
+  /* line 1019, ../sass/screen.scss */
+  .services .services-inner .content-img .circle {
+    margin: 0 auto;
+  }
+  /* line 1023, ../sass/screen.scss */
+  .services .services-inner .content {
+    min-height: 150px;
+    padding: 15px 2px 15px 2px;
+    text-align: center;
+  }
+  /* line 1028, ../sass/screen.scss */
+  .services .services-inner .content .text {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* line 1037, ../sass/screen.scss */
+  .achievement .achievement-content {
+    min-height: 133px;
+  }
+  /* line 1039, ../sass/screen.scss */
+  .achievement .achievement-content .content-inner {
+    width: 270px;
+    height: 150px;
+    margin: 10px auto;
+  }
+
+  /* line 1049, ../sass/screen.scss */
+  .footer .footer-section .footer-section-content {
+    width: 70%;
+  }
+  /* line 1053, ../sass/screen.scss */
+  .footer .footer-section .footer-menu {
+    width: 70%;
+  }
+  /* line 1057, ../sass/screen.scss */
+  .footer .footer-section .submit-form {
+    width: 70%;
+  }
+
+  /* line 1063, ../sass/screen.scss */
+  .footer-bottom {
+    text-align: center;
+  }
+  /* line 1066, ../sass/screen.scss */
+  .footer-bottom p {
+    width: 100%;
+    font-size: 12px;
+  }
+  /* line 1072, ../sass/screen.scss */
+  .footer-bottom .footer-side .right-side {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 1081, ../sass/screen.scss */
+  .header .header-info {
+    width: 359px;
+  }
+  /* line 1084, ../sass/screen.scss */
+  .header .header-info .cost-calculation {
+    width: 210px;
+  }
+  /* line 1087, ../sass/screen.scss */
+  .header .header-info .cost-calculation button {
+    width: 180px;
+    font-size: 13.5px;
+  }
+  /* line 1093, ../sass/screen.scss */
+  .header .header-info .phone-number {
+    padding-top: 10px;
+  }
+  /* line 1096, ../sass/screen.scss */
+  .header .header-info .phone-number p {
+    font-size: 15px;
+  }
+
+  /* line 1103, ../sass/screen.scss */
+  .header-menu {
+    border-bottom: none;
+  }
+  /* line 1106, ../sass/screen.scss */
+  .header-menu .side ul {
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+  /* line 1110, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu {
+    width: 435%;
+    min-height: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: none;
+    left: 60px;
+    padding: 20px;
+  }
+  /* line 1118, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu h1 {
+    margin: 0;
+    font-size: 30px;
+  }
+  /* line 1122, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu h3 {
+    font-size: 18px;
+  }
+  /* line 1125, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu p {
+    font-size: 13px;
+  }
+  /* line 1131, ../sass/screen.scss */
+  .header-menu .side ul li:hover .drop-menu {
+    top: 0;
+  }
+
+  /* line 1141, ../sass/screen.scss */
+  .achievement .achievement-content {
+    min-height: 133px;
+  }
+  /* line 1143, ../sass/screen.scss */
+  .achievement .achievement-content .content-inner {
+    width: 70%;
+    height: 150px;
+    margin: 10px auto;
+  }
+  /* line 1148, ../sass/screen.scss */
+  .achievement .achievement-content .content-inner h2 {
+    font-size: 38px;
+  }
+  /* line 1151, ../sass/screen.scss */
+  .achievement .achievement-content .content-inner p {
+    font-size: 17.5px;
+  }
+  /* line 1155, ../sass/screen.scss */
+  .achievement .achievement-content .content-inner:before, .achievement .achievement-content .content-inner:after {
+    width: 75px;
+    height: 75px;
+  }
+
+  /* line 1165, ../sass/screen.scss */
+  .advantage .advantage-content p {
+    width: 80%;
+    font-size: 13px;
+  }
+
+  /* line 1174, ../sass/screen.scss */
+  .footer .footer-section .footer-section-content {
+    width: 100%;
+  }
+  /* line 1178, ../sass/screen.scss */
+  .footer .footer-section .footer-menu {
+    width: 100%;
+  }
+  /* line 1182, ../sass/screen.scss */
+  .footer .footer-section .submit-form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 1191, ../sass/screen.scss */
+  .header .logo {
+    width: 100%;
+  }
+  /* line 1194, ../sass/screen.scss */
+  .header .header-info {
+    width: 100%;
+    display: block;
+  }
+  /* line 1198, ../sass/screen.scss */
+  .header .header-info .cost-calculation {
+    width: 180px;
+    margin: 0 auto;
+    border-right: none;
+  }
+  /* line 1204, ../sass/screen.scss */
+  .header .header-info .phone-number {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  /* line 1216, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu {
+    width: 300%;
+    height: 420px;
+    margin: 0;
+    padding: 15px 1px 1px 1px;
+    text-align: center;
+  }
+  /* line 1223, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu h1 {
+    margin: 0;
+    font-size: 25px;
+  }
+  /* line 1228, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu h3 {
+    font-size: 18px;
+  }
+  /* line 1232, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu p {
+    display: none;
+  }
+  /* line 1236, ../sass/screen.scss */
+  .header-menu .side ul li .drop-menu button {
+    margin-top: 20px;
+  }
+}
+/*END MEDIA*/

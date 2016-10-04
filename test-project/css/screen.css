@@ -1,0 +1,468 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*for me*/
+/*for me*/
+/* line 20, ../sass/screen.scss */
+body {
+  overflow-x: hidden;
+}
+
+/*Font-Face*/
+@font-face {
+  font-family: HelveticaBold;
+  src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.otf);
+}
+@font-face {
+  font-family: HelveticaLight;
+  src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.otf);
+}
+@font-face {
+  font-family: HelveticaRoman;
+  src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.otf);
+}
+/*END Font-Face*/
+/*SELECT ARROW*/
+/* line 42, ../sass/screen.scss */
+select {
+  -webkit-appearance: none;
+  background-image: url("../image/header/arrowdown.png");
+  background-position: 152px center;
+  background-repeat: no-repeat;
+  line-height: 1em;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none !important;
+}
+
+/* line 57, ../sass/screen.scss */
+select::-ms-expand {
+  display: none;
+}
+
+/*END SELECT ARROW*/
+/* line 62, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 66, ../sass/screen.scss */
+a:hover {
+  opacity: .9;
+  transition: .4s;
+}
+
+/*HEADER*/
+/* line 74, ../sass/screen.scss */
+.header {
+  min-width: 1340px;
+  height: 70px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+/* line 79, ../sass/screen.scss */
+.header .logo {
+  background: #1d1d1d;
+  width: 10.2985%;
+  height: 70px;
+  float: left;
+  position: relative;
+}
+/* line 86, ../sass/screen.scss */
+.header .logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+/* line 96, ../sass/screen.scss */
+.header .categories {
+  background: #ff5b1a;
+  width: 79.403%;
+  height: 70px;
+  float: left;
+}
+/* line 102, ../sass/screen.scss */
+.header .categories .select-field {
+  width: 914px;
+  height: 42px;
+  margin: 14px 0 0 13px;
+  float: left;
+}
+/* line 108, ../sass/screen.scss */
+.header .categories .select-field .select-form {
+  width: 177px;
+  float: left;
+  margin-right: 1px;
+}
+/* line 113, ../sass/screen.scss */
+.header .categories .select-field .select-form select {
+  width: 177px;
+  height: 42px;
+  padding: 0 0 0 13px;
+  font-family: HelveticaLight;
+  font-size: 14px;
+  border: none;
+}
+/* line 123, ../sass/screen.scss */
+.header .categories .select-field .search-form {
+  width: 558px;
+  height: 42px;
+  float: left;
+}
+/* line 128, ../sass/screen.scss */
+.header .categories .select-field .search-form .search {
+  width: 511px;
+  height: 42px;
+  padding: 0 0 0 10px;
+  margin: 0 2px 0 0;
+  border: none;
+  font-family: HelveticaLight;
+  font-size: 14px;
+  color: #969696;
+  float: left;
+}
+/* line 140, ../sass/screen.scss */
+.header .categories .select-field .search-form .submit {
+  width: 45px;
+  height: 42px;
+  background: #ff3600;
+  background-image: url(../image/header/search.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+/* line 153, ../sass/screen.scss */
+.header .categories .get-in-touch {
+  /*background: $testcolor-three;*/
+  width: 108px;
+  height: 42px;
+  margin: 14px 13px 0 0;
+  float: right;
+}
+/* line 160, ../sass/screen.scss */
+.header .categories .get-in-touch .header-btn {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 7px 0 0;
+  cursor: pointer;
+  box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1);
+}
+/* line 171, ../sass/screen.scss */
+.header .categories .get-in-touch .header-btn img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 179, ../sass/screen.scss */
+.header .categories .get-in-touch a:active, .header .categories .get-in-touch a:focus, .header .categories .get-in-touch a:link {
+  border: none;
+}
+/* line 185, ../sass/screen.scss */
+.header .login {
+  background: #1d1d1d;
+  width: 10.2985%;
+  height: 70px;
+  float: left;
+  position: relative;
+}
+/* line 192, ../sass/screen.scss */
+.header .login .language {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 27px;
+  height: 27px;
+  border-radius: 3px;
+  background: linear-gradient(#0078bd 50%, #ffb321 50%);
+  background: -webkit-linear-gradient(#0078bd 50%, #ffb321 50%);
+  cursor: pointer;
+}
+/* line 203, ../sass/screen.scss */
+.header .login .language p {
+  font-family: HelveticaBold;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  margin-top: 9px;
+}
+/* line 212, ../sass/screen.scss */
+.header .login .language-select {
+  display: none;
+  background: #fff;
+  width: 122px;
+  height: 150px;
+  position: fixed;
+  right: 2px;
+  top: 50px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+/* line 222, ../sass/screen.scss */
+.header .login .language-select:before {
+  position: absolute;
+  top: -13px;
+  right: 13px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 13px 8px;
+  border-color: transparent transparent #fff transparent;
+  z-index: 10;
+}
+/* line 236, ../sass/screen.scss */
+.header .login .language-select ul li {
+  display: block;
+  padding: 8px 0 8px 15px;
+}
+/* line 240, ../sass/screen.scss */
+.header .login .language-select ul li:hover {
+  background: #f8f8f8;
+}
+/* line 244, ../sass/screen.scss */
+.header .login .language-select ul li a {
+  display: block;
+  color: #000;
+  font-family: HelveticaLight;
+  font-size: 14px;
+}
+/* line 253, ../sass/screen.scss */
+.header .login .login-field {
+  width: 100%;
+  margin: 13px 0 0 13px;
+  font-family: HelveticaLight;
+  font-size: 14px;
+}
+/* line 260, ../sass/screen.scss */
+.header .login .login-field p img {
+  width: 14px;
+}
+/* line 265, ../sass/screen.scss */
+.header .login .login-field p:first-child {
+  margin-bottom: 9px;
+}
+
+/*END HEADER*/
+/*MODAL WINDOW*/
+/* line 275, ../sass/screen.scss */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 450px;
+  top: 100px;
+  width: 430px;
+  height: 545px;
+  border: 2px solid #ff5b1a;
+  overflow: auto;
+  background: #1d1d1d;
+  /*close button*/
+  /*end close button*/
+  /*form*/
+  /*end form*/
+}
+/* line 288, ../sass/screen.scss */
+.modal .close {
+  float: right;
+  margin: 15px 17px 0 0;
+  cursor: pointer;
+}
+/* line 295, ../sass/screen.scss */
+.modal h1 {
+  height: 67px;
+  font-family: HelveticaLight;
+  font-size: 30px;
+  line-height: 67px;
+  color: #fff;
+  text-align: center;
+}
+/* line 305, ../sass/screen.scss */
+.modal .submit-form {
+  width: 388px;
+  height: 365px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+/* line 311, ../sass/screen.scss */
+.modal .submit-form input {
+  height: 40px;
+  width: 360px;
+  border: none;
+  margin-bottom: 6px;
+  font-family: HelveticaLight;
+  font-size: 14px;
+  color: #757575;
+  padding: 0 35px 0 15px;
+}
+/* line 321, ../sass/screen.scss */
+.modal .submit-form input:last-child {
+  margin-bottom: 0;
+}
+/* line 326, ../sass/screen.scss */
+.modal .submit-form .message {
+  min-width: 360px;
+  max-width: 360px;
+  min-height: 157px;
+  max-height: 157px;
+  margin-bottom: 3px;
+  font-family: HelveticaLight;
+  font-size: 14px;
+  color: #757575;
+  padding: 15px 35px 0 15px;
+}
+/* line 338, ../sass/screen.scss */
+.modal .submit-form .submit-btn {
+  background: #ff5b1a;
+  width: 100%;
+  height: 46px;
+  color: #fff;
+  font-family: HelveticaLight;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+/* line 348, ../sass/screen.scss */
+.modal .submit-form .submit-btn img {
+  margin-right: 5px;
+}
+/* line 354, ../sass/screen.scss */
+.modal .modal-footer {
+  width: 100%;
+  height: 113px;
+}
+/* line 358, ../sass/screen.scss */
+.modal .modal-footer .contacts {
+  width: 43%;
+  height: 53px;
+  padding-top: 17px;
+}
+/* line 363, ../sass/screen.scss */
+.modal .modal-footer .contacts .mobile-number {
+  font-family: HelveticaBold;
+  font-size: 18px;
+  color: #808080;
+  margin-bottom: 14px;
+}
+/* line 370, ../sass/screen.scss */
+.modal .modal-footer .contacts .social {
+  font-family: HelveticaRoman;
+  font-size: 15px;
+  color: #686868;
+}
+/* line 375, ../sass/screen.scss */
+.modal .modal-footer .contacts .social span {
+  color: #1ea8e8;
+}
+/* line 381, ../sass/screen.scss */
+.modal .modal-footer .contact1 {
+  float: left;
+  text-align: left;
+  padding-left: 22px;
+}
+/* line 387, ../sass/screen.scss */
+.modal .modal-footer .contact2 {
+  float: right;
+  text-align: right;
+  padding-right: 22px;
+}
+/* line 393, ../sass/screen.scss */
+.modal .modal-footer .fix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+}
+/* line 400, ../sass/screen.scss */
+.modal .modal-footer .advertisement {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+}
+/* line 406, ../sass/screen.scss */
+.modal .modal-footer .advertisement a {
+  font-family: HelveticaLight;
+  font-size: 14px;
+  color: #f0571a;
+  text-decoration: underline;
+}
+
+/*END MODAL WINDOW*/

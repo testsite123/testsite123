@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test-project</title>
+
+	<link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+<!-- HEADER -->
+	<header class="header">
+		<!-- logotype -->
+		<div class="logo">
+			<img src="image/header/logo.png" alt="logo">
+		</div>
+		<!-- end logotype -->
+		<!-- categories -->
+		<div class="categories">
+			<div class="select-field">
+				<form class="select-form">
+					<select>
+						<option value="1">Тендери</option>
+						<option value="2">Товари</option>
+						<option value="3">Продавці</option>
+						<option value="4">Нерухомість</option>
+						<option value="5">Послуги</option>
+						<option value="6">Бригади</option>
+						<option value="7">Оголошення</option>
+					</select>
+				</form>
+				<form class="select-form">
+					<select>
+						<option value="8">Інженерні системи</option>
+						<option value="9">Інструмент</option>
+						<option value="10">Бетон, ЗБВ</option>
+						<option value="11">Будівельна хімія</option>
+						<option value="12">Виробництво спецтехніки</option>
+						<option value="13">Все для дому</option>
+						<option value="14">Вікна та двері</option>
+						<option value="15">Гідроізоляція</option>
+					</select>
+				</form>
+				<form class="search-form">
+					<input type="search" name="" placeholder="В якому місті" class="search" />
+  					<input type="submit" name="" value="" class="submit" />
+				</form>
+			</div>
+			<div class="get-in-touch">
+				<a href="javascript:void(0)">
+					<button class="header-btn">
+						<img src="image/header/plus.png" alt="plus">
+					</button>
+				</a>
+				<a href="javascript:void(0)">
+					<button class="header-btn" id="myBtn">
+						<img src="image/header/message.png" alt="message">		
+					</button>
+				</a>
+			</div>
+		</div>
+		<!-- end catogories -->
+		<!-- registration -->
+		<div class="login">
+			<div class="language" id="langBtn">
+				<p>UA</p>
+			</div>
+			<div class="language-select" id="langModal">
+				<ul>
+					<li><a href="javascript:void(0)">Русский</a></li>
+					<li><a href="javascript:void(0)">Українська</a></li>
+					<li><a href="javascript:void(0)">Türk</a></li>
+					<li><a href="javascript:void(0)">Беларускі</a></li>
+					<li><a href="javascript:void(0)">Polski</a></li>
+				</ul>
+			</div>
+			<div class="login-field">
+				<p>
+					<a href="javascript:void(0)"><img src="image/header/enter.png" alt="enter">
+					Вхід</a>
+				</p>
+				<p>
+					<a href="javascript:void(0)"><img src="image/header/registration.png" alt="registration">
+					Реєстрація</a>
+				</p>
+			</div>
+		</div>
+		<!-- end registration -->
+
+	</header>
+<!-- END HEADER -->
+	
+
+	
+
+
+
+
+
+<!-- MODAL -->
+	<div id="myModal" class="modal">
+		<!-- modal content -->
+			<div class="modal-content">
+				<header>
+					<div class="close"><img src="image/header/close.png" alt="close"></div>
+					<h1>Зворотній зв'язок</h1>
+				</header>
+				<section>
+					<div class="submit-form">
+						<form id="contactform" method="post">
+							<input id="full-name" name="full-name" type="text" required placeholder="Як Вас звати?" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+							<br>
+							<input id="email" type="email" required placeholder="Ваш e-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+							<br>
+							<input id="subject" type="subject" placeholder="Тема повідомлення"
+							<br>
+							<textarea id="message" class="message" name="message" placeholder="Текст повідомлення" required></textarea>
+							<br>
+							<button id="submit-btn" class="submit-btn" type="submit"><img src="image/header/send-message.png" alt="send"> Відправити</button>
+						</form>
+					</div>
+				</section>
+				<footer>
+					<div class="modal-footer">
+						<div class="fix">
+							<div class="contacts contact1">
+								<p class="mobile-number">+38095-589-76-81</p>
+								<p class="social">info@budprom.com</p>
+							</div>
+							<div class="contacts contact2">
+								<p class="mobile-number">+38067-257-78-76</p>
+								<p class="social"><span>Skype:</span> budpromcom</p>
+							</div>
+						</div>
+						<div class="advertisement">
+							<a href="javascript:void(0)">Хочете розмістити рекламу?</a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		<!-- modal content -->
+	</div>
+<!-- END MODAL -->
+	
+	<script src="javascript/jquery-3.1.1.min.js"></script>
+	<script src="javascript/index.js"></script>
+</body>
+</html>

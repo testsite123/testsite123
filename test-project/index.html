@@ -48,12 +48,12 @@
 			</div>
 			<div class="get-in-touch">
 				<a href="javascript:void(0)">
-					<button class="header-btn">
+					<button class="round-btn">
 						<img src="image/header/plus.png" alt="plus">
 					</button>
 				</a>
 				<a href="javascript:void(0)">
-					<button class="header-btn" id="myBtn">
+					<button class="round-btn" id="myBtn">
 						<img src="image/header/message.png" alt="message">		
 					</button>
 				</a>
@@ -89,6 +89,732 @@
 
 	</header>
 <!-- END HEADER -->
+
+<!-- NAVIGATION -->
+	<nav class="navigation">
+		<div class="main-wrapper">
+			<ul>
+				<li class="active">
+					<a href="javascript:void(0)">
+						<img src="image/navigation/11.png" alt="1">
+						Тендери
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="image/navigation/2.png" alt="2">
+						Товари
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="image/navigation/3.png" alt="3">
+						Продавці
+					</a>
+				</li>
+				<li class="larg-li">
+					<a href="javascript:void(0)">
+						<img src="image/navigation/4.png" alt="4">
+						Нерухомість
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="image/navigation/5.png" alt="5">
+						Послуги
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="image/navigation/6.png" alt="6">
+						Бригади
+					</a>
+				</li>
+				<li class="larg-li">
+					<a href="javascript:void(0)">
+						<img src="image/navigation/7.png" alt="7">
+						Оголошення
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+<!-- END NAVIGATION -->
+
+<!-- MAIN CONTAINER -->
+	<section class="main">
+		<div class="main-wrapper">
+	<!-- LEFT container -->
+			<section class="main-container"> 
+				<!-- top block - name of the page -->
+				<header class="container-header">
+					<div class="page-name">
+						<h1>Тендери</h1>
+						<div class="button">
+							<a href="javascript:void(0)">Головна</a>
+							<a href="javascript:void(0)">Тендери</a>
+						</div>
+						<p>Знайдено 105 відкритих тендерів</p>
+					</div>
+					<div class="advertisement">
+						<!-- <img src="image/advertisement/ad1.png" alt="ad1"> -->
+					</div>
+				</header>
+				<!-- end top block - name of the page -->
+				<!-- block of filters -->
+				<nav class="filters">
+					<div>
+						<form action="country" class="lg-form">
+							<select name="country" id="country">
+								<option value="Ukraine">Україна</option>
+								<option value="Russia">Росія</option>
+								<option value="Belarus">Білорусія</option>
+							</select>
+						</form>
+						<form action="region" class="lg-form">
+							<select name="region" id="region">
+								<option value="Kiyvska">Київська</option>
+								<option value="Lvivska">Львівська</option>
+								<option value="Odesska">Одеська</option>
+								<option value="Rivnenska">Рівненська</option>
+								<option value="Kharkivska">Харківська</option>
+								<option value="Dnipropetrovska">Дніпропетровська</option>
+								<option value="Chernigivska">Чернігівська</option>
+								<option value="Cherkasska">Черкаська</option>
+								<option value="Chernivecka">Чернівецька</option>
+								<option value="Volynska">Волинська</option>
+							</select>
+						</form>
+						<form action="city" class="lg-form">
+							<select name="city" id="city">
+								<option value="cities">Всі міста</option>
+								<option value="Kyiv">Київ</option>
+								<option value="Lviv">Львів</option>
+								<option value="Odesa">Одеса</option>
+								<option value="Rivne">Рівне</option>
+								<option value="Kharkiv">Харків</option>
+								<option value="Dnipro">Дніпро</option>
+								<option value="Chernigiv">Чернігів</option>
+								<option value="Cherkasy">Черкаси</option>
+								<option value="Lytsk">Луцьк</option>
+							</select>
+						</form>
+					</div>
+					<div>
+						<form action="category" class="sm-form">
+							<select name="category" id="category">
+								<option value="1">Тендери</option>
+								<option value="2">Товари</option>
+								<option value="3">Продавці</option>
+								<option value="4">Нерухомість</option>
+								<option value="5">Послуги</option>
+								<option value="6">Бригади</option>
+								<option value="7">Оголошення</option>
+							</select>	
+						</form>
+						<form action="budget" class="sm-form">
+							<select name="budget" id="budget">
+								<option value="1">Бюджет</option>
+								<option value="2">Бюджет2</option>
+								<option value="3">Бюджет3</option>
+							</select>
+						</form>
+						<form action="date" class="sm-form">
+							<select name="date" id="date-sort">
+								<option value="1">Сортувати по даті</option>
+								<option value="2">Січень</option>
+								<option value="3">Лютий</option>
+								<option value="4">Березень</option>
+								<option value="5">Квітень</option>
+							</select>
+						</form>
+						<form action="" class="search-form-lg">
+							<input type="submit" name="" value="Пошук" class="submit-btn-lg">
+						</form>
+						<form action="">
+							<input type="submit" value="" class="refresh-btn">
+						</form>
+					</div>
+				</nav>
+				<!-- end block of filters -->
+				<!-- info blocks -->
+				<section class="info-block info-block-advertisement">
+					<div class="main-content">
+						<div class="table-logo">
+							<img src="image/infoblock/block1.png" alt="block1">
+						</div>
+						<div class="table-field">
+							<div>
+								<span><a href="javascript:void(0)">Реклама</a></span> <h2>FoxGate SFP-1SM-1310nm-xxSC</h2>
+							</div>
+							<table class="table">
+								<tr>
+									<th class="large-label">Назва</th>
+									<th class="large-label">Специфікація</th>
+									<th>Кількість</th>
+								</tr>
+								<tr>
+									<td class="large-label">FoxGate SFP-1SM-1310nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>100 шт.</td>
+								</tr>
+								<tr>
+									<td class="large-label">FoxGate SFP-1SM-2620nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>20 шт.</td>
+								</tr>
+								<tr>
+									<td class="large-label">FoxGate SEP-6SM-</td>
+									<td class="large-label">FoxGate</td>
+									<td>180 шт.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="footer-content">
+						<div>
+							<p><img src="image/infoblock/time.png" alt="time"> 09.06.2016 - 09.10.2016</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/view.png" alt="view"> 227</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/hammer.png" alt="hammer"> 3</p>
+						</div>
+						<span class="border-around">
+							<div>							
+								<p class="bold"><img src="image/infoblock/phone.png" alt="phone"> +380 68 925-68-11</p>
+							</div>
+							<div>
+								<p class="bold"><img src="image/infoblock/user.png" alt="user"> Шевченко Віктор Андрійович</p>
+							</div>
+						</span>
+						<div>
+							<a href="javascript:void(0)">
+								<button class="more-button">Детальніше</button>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="info-block">
+					<div class="main-content">
+						<div class="table-logo">
+							<img src="image/infoblock/block2.png" alt="block2">
+						</div>
+						<div class="table-field">
+							<div>
+								<h2>Листовий поліетилен</h2>
+							</div>
+							<table class="table">
+								<tr class="table-header">
+									<th class="large-label">Назва</th>
+									<th class="large-label">Специфікація</th>
+									<th>Кількість</th>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">Листовий поліетилен</td>
+									<td class="large-label">300*1500*5</td>
+									<td>40 шт.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="footer-content">
+						<div>
+							<p><img src="image/infoblock/time.png" alt="time"> 09.06.2016 - 09.10.2016</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/view.png" alt="view"> 227</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/hammer.png" alt="hammer"> 3</p>
+						</div>
+						<div>							
+							<p class="bold"><img src="image/infoblock/phone.png" alt="phone"> +380 68 925-68-11</p>
+						</div>
+						<div>
+							<p class="bold"><img src="image/infoblock/user.png" alt="user"> Шевченко Віктор Андрійович</p>
+						</div>
+						<div>
+							<a href="javascript:void(0)">
+								<button class="more-button">Детальніше</button>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="info-block">
+					<div class="main-content">
+						<div class="table-logo">
+							<img src="image/infoblock/block3.png" alt="block3">
+						</div>
+						<div class="table-field">
+							<div>
+								<h2>FoxGate SFP-1SM-1310nm-xxSC</h2>
+							</div>
+							<table class="table">
+								<tr class="table-header">
+									<th class="large-label">Назва</th>
+									<th class="large-label">Специфікація</th>
+									<th>Кількість</th>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SFP-1SM-1310nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>100 шт.</td>
+								</tr>
+								<tr class="silver-line">
+									<td class="large-label">FoxGate SFP-1SM-2620nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>20 шт.</td>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SEP-6SM-</td>
+									<td class="large-label">FoxGate</td>
+									<td>180 шт.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="footer-content">
+						<div>
+							<p><img src="image/infoblock/time.png" alt="time"> 09.06.2016 - 09.10.2016</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/view.png" alt="view"> 227</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/hammer.png" alt="hammer"> 3</p>
+						</div>
+						<div>							
+							<p class="bold"><img src="image/infoblock/phone.png" alt="phone"> +380 68 925-68-11</p>
+						</div>
+						<div>
+							<p class="bold"><img src="image/infoblock/user.png" alt="user"> Шевченко Віктор Андрійович</p>
+						</div>
+						<div>
+							<a href="javascript:void(0)">
+								<button class="more-button">Детальніше</button>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="info-block">
+					<div class="main-content">
+						<div class="table-logo">
+							<img src="image/infoblock/block4.png" alt="block4">
+						</div>
+						<div class="table-field">
+							<div>
+								<h2>FoxGate SFP-1SM-1310nm-xxSC</h2>
+							</div>
+							<table class="table">
+								<tr class="table-header">
+									<th class="large-label">Назва</th>
+									<th class="large-label">Специфікація</th>
+									<th>Кількість</th>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SFP-1SM-1310nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>100 шт.</td>
+								</tr>
+								<tr class="silver-line">
+									<td class="large-label">FoxGate SFP-1SM-2620nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>20 шт.</td>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SEP-6SM-</td>
+									<td class="large-label">FoxGate</td>
+									<td>180 шт.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="footer-content">
+						<div>
+							<p><img src="image/infoblock/time.png" alt="time"> 09.06.2016 - 09.10.2016</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/view.png" alt="view"> 227</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/hammer.png" alt="hammer"> 3</p>
+						</div>
+						<div>							
+							<p class="bold"><img src="image/infoblock/phone.png" alt="phone"> +380 68 925-68-11</p>
+						</div>
+						<div>
+							<p class="bold"><img src="image/infoblock/user.png" alt="user"> Шевченко Віктор Андрійович</p>
+						</div>
+						<div>
+							<a href="javascript:void(0)">
+								<button class="more-button">Детальніше</button>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="info-block">
+					<div class="main-content">
+						<div class="table-logo">
+							<img src="image/infoblock/block3.png" alt="block3">
+						</div>
+						<div class="table-field">
+							<div>
+								<h2>FoxGate SFP-1SM-1310nm-xxSC</h2>
+							</div>
+							<table class="table">
+								<tr class="table-header">
+									<th class="large-label">Назва</th>
+									<th class="large-label">Специфікація</th>
+									<th>Кількість</th>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SFP-1SM-1310nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>100 шт.</td>
+								</tr>
+								<tr class="silver-line">
+									<td class="large-label">FoxGate SFP-1SM-2620nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>20 шт.</td>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SEP-6SM-</td>
+									<td class="large-label">FoxGate</td>
+									<td>180 шт.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="footer-content">
+						<div>
+							<p><img src="image/infoblock/time.png" alt="time"> 09.06.2016 - 09.10.2016</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/view.png" alt="view"> 227</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/hammer.png" alt="hammer"> 3</p>
+						</div>
+						<div>							
+							<p class="bold"><img src="image/infoblock/phone.png" alt="phone"> +380 68 925-68-11</p>
+						</div>
+						<div>
+							<p class="bold"><img src="image/infoblock/user.png" alt="user"> Шевченко Віктор Андрійович</p>
+						</div>
+						<div>
+							<a href="javascript:void(0)">
+								<button class="more-button">Детальніше</button>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="info-block">
+					<div class="main-content">
+						<div class="table-logo">
+							<img src="image/infoblock/block2.png" alt="block2">
+						</div>
+						<div class="table-field">
+							<div>
+								<h2>FoxGate SFP-1SM-1310nm-xxSC</h2>
+							</div>
+							<table class="table">
+								<tr class="table-header">
+									<th class="large-label">Назва</th>
+									<th class="large-label">Специфікація</th>
+									<th>Кількість</th>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SFP-1SM-1310nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>100 шт.</td>
+								</tr>
+								<tr class="silver-line">
+									<td class="large-label">FoxGate SFP-1SM-2620nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>20 шт.</td>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SEP-6SM-</td>
+									<td class="large-label">FoxGate</td>
+									<td>180 шт.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="footer-content">
+						<div>
+							<p><img src="image/infoblock/time.png" alt="time"> 09.06.2016 - 09.10.2016</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/view.png" alt="view"> 227</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/hammer.png" alt="hammer"> 3</p>
+						</div>
+						<div>							
+							<p class="bold"><img src="image/infoblock/phone.png" alt="phone"> +380 68 925-68-11</p>
+						</div>
+						<div>
+							<p class="bold"><img src="image/infoblock/user.png" alt="user"> Шевченко Віктор Андрійович</p>
+						</div>
+						<div>
+							<a href="javascript:void(0)">
+								<button class="more-button">Детальніше</button>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="info-block">
+					<div class="main-content">
+						<div class="table-logo">
+							<img src="image/infoblock/block3.png" alt="block3">
+						</div>
+						<div class="table-field">
+							<div>
+								<h2>FoxGate SFP-1SM-1310nm-xxSC</h2>
+							</div>
+							<table class="table">
+								<tr class="table-header">
+									<th class="large-label">Назва</th>
+									<th class="large-label">Специфікація</th>
+									<th>Кількість</th>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SFP-1SM-1310nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>100 шт.</td>
+								</tr>
+								<tr class="silver-line">
+									<td class="large-label">FoxGate SFP-1SM-2620nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>20 шт.</td>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SEP-6SM-</td>
+									<td class="large-label">FoxGate</td>
+									<td>180 шт.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="footer-content">
+						<div>
+							<p><img src="image/infoblock/time.png" alt="time"> 09.06.2016 - 09.10.2016</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/view.png" alt="view"> 227</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/hammer.png" alt="hammer"> 3</p>
+						</div>
+						<div>							
+							<p class="bold"><img src="image/infoblock/phone.png" alt="phone"> +380 68 925-68-11</p>
+						</div>
+						<div>
+							<p class="bold"><img src="image/infoblock/user.png" alt="user"> Шевченко Віктор Андрійович</p>
+						</div>
+						<div>
+							<a href="javascript:void(0)">
+								<button class="more-button">Детальніше</button>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="info-block">
+					<div class="main-content">
+						<div class="table-logo">
+							<img src="image/infoblock/block4.png" alt="block4">
+						</div>
+						<div class="table-field">
+							<div>
+								<h2>FoxGate SFP-1SM-1310nm-xxSC</h2>
+							</div>
+							<table class="table">
+								<tr class="table-header">
+									<th class="large-label">Назва</th>
+									<th class="large-label">Специфікація</th>
+									<th>Кількість</th>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SFP-1SM-1310nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>100 шт.</td>
+								</tr>
+								<tr class="silver-line">
+									<td class="large-label">FoxGate SFP-1SM-2620nm-xxSC</td>
+									<td class="large-label">FoxGate</td>
+									<td>20 шт.</td>
+								</tr>
+								<tr class="white-line">
+									<td class="large-label">FoxGate SEP-6SM-</td>
+									<td class="large-label">FoxGate</td>
+									<td>180 шт.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="footer-content">
+						<div>
+							<p><img src="image/infoblock/time.png" alt="time"> 09.06.2016 - 09.10.2016</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/view.png" alt="view"> 227</p>
+						</div>
+						<div>
+							<p><img src="image/infoblock/hammer.png" alt="hammer"> 3</p>
+						</div>
+						<div>							
+							<p class="bold"><img src="image/infoblock/phone.png" alt="phone"> +380 68 925-68-11</p>
+						</div>
+						<div>
+							<p class="bold"><img src="image/infoblock/user.png" alt="user"> Шевченко Віктор Андрійович</p>
+						</div>
+						<div>
+							<a href="javascript:void(0)">
+								<button class="more-button">Детальніше</button>
+							</a>
+						</div>
+					</div>
+				</section>
+				<!-- end info blocks -->
+
+				<!-- PAGINATION -->
+				<div class="bottom-pagination">
+					<ul class="pagination">
+					 	<li>
+					 		<a href="javascript:void(0)">
+					 			<img src="image/infoblock/leftarrow.png" alt="leftarrow">	
+					 		</a>
+					 	</li>
+					 	<li><a class="active"  href="javascript:void(0)">1</a></li>
+						<li><a href="javascript:void(0)">2</a></li>
+					 	<li><a href="javascript:void(0)">3</a></li>
+					  	<li><a href="javascript:void(0)">4</a></li>
+					  	<li><a href="javascript:void(0)">5</a></li>
+					  	<li><a href="javascript:void(0)">6</a></li>
+					  	<li><a href="javascript:void(0)">7</a></li>
+					  	<li>
+					  		<a href="javascript:void(0)">
+					  			<img src="image/infoblock/rightarrow.png" alt="rightarrow">
+					  		</a>
+					  	</li>
+					</ul>
+				</div>
+				<!-- END PAGINATION -->
+
+			</section>
+	<!-- end LEFT container -->
+
+	<!-- RIGHT container -->
+			<section class="aside-container">
+				<div class="tender-create">
+					<p>Актуальні тендери, представлені в даному розділі, доволяють швидко відшукати замовників або виконавців без допомоги сторонніх осіб та посередників. Реєструйтеся на нашому сайті, виставляйте свою кандидатуру або беріть участь у пропозиції, яка Вас цікавить. Це допоможе Вам оперативно знайти клієнтів для своєї фірми та укласти найбільш вигідну угоду.</p>
+
+					<div class="tender-create-button">
+					<a href="javascript:void(0)">
+						<button>
+							<img src="image/infoblock/plus.png" alt="plus">
+						</button>
+					</a>
+					<p>Створити тендер</p>
+				</div>
+				</div>
+			</section>
+	<!-- end RIGHT container -->
+		</div>
+	</section>
+<!-- END MAIN CONTAINER -->
+
+<!-- FOOTER -->
+	<footer class="footer">
+		<div class="main-wrapper">
+			<div class="footer-block">
+				<ul class="footer-side">
+					<li class="orange-header">Розділи сайту</li>
+					<li><a href="javascript:void(0)">Тендери</a></li>
+					<li><a href="javascript:void(0)">Товари</a></li>
+					<li><a href="javascript:void(0)">Продукції</a></li>
+					<li><a href="javascript:void(0)">Нерухомість</a></li>
+					<li><a href="javascript:void(0)">Послуги</a></li>
+					<li><a href="javascript:void(0)">Бригади</a></li>
+					<li><a href="javascript:void(0)">Оголошення</a></li>
+				</ul>
+			</div>
+			<div class="footer-block">
+				<ul class="footer-side">
+					<li class="orange-header">Компанія</li>
+					<li><a href="javascript:void(0)">Про нас</a></li>
+					<li><a href="javascript:void(0)">Допомога</a></li>
+					<li><a href="javascript:void(0)">Зворотній зв'язок</a></li>
+					<li><a href="javascript:void(0)">Користувацька згода</a></li>
+					<li><a href="javascript:void(0)">Вакансії</a></li>
+				</ul>
+			</div>
+			<div class="footer-block">
+				<ul class="footer-side">
+					<li class="orange-header">Бізнес</li>
+					<li><a href="javascript:void(0)">Додати компанію</a></li>
+					<li><a href="javascript:void(0)">Розмістити оголошення</a></li>
+					<li><a href="javascript:void(0)">Реклама на сайті</a></li>
+				</ul>
+				</div>
+			<div class="footer-block">
+				<div class="footer-logo">
+					<img src="image/header/logo.png" alt="logo">
+					<p>Універсальний будівельно-промисловий майданчик</p>
+				</div>
+				<div class="social">
+					<p>Ми в соціальних мережах:</p>
+					<ul class="footer-social">
+						<li class="round-btn">
+							<a href="javascript:void(0)">
+								<img src="image/footer/icon1.png" alt="vk">
+							</a>
+						</li>
+						<li class="round-btn">
+							<a href="javascript:void(0)">
+								<img src="image/footer/icon2.png" alt="fb">
+							</a>
+						</li>
+						<li class="round-btn">
+							<a href="javascript:void(0)">
+								<img src="image/footer/icon3.png" alt="ok">
+							</a>
+						</li>
+						<li class="round-btn">
+							<a href="javascript:void(0)">
+								<img src="image/footer/icon4.png" alt="youtube">
+							</a>
+						</li>
+						<li class="round-btn">
+							<a href="javascript:void(0)">
+								<img src="image/footer/icon5.png" alt="twitter">
+							</a>
+						</li>
+						<li class="round-btn">
+							<a href="javascript:void(0)">
+								<img src="image/footer/icon6.png" alt="icon6">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-contact">
+					<p>+38095-589-76-81 <span class="small-font">info@budprom.com</span></p>
+					<p>+380 67 257-78-76 <span class="skype-small small-font">Skype:</span> <span class="small-font">budpromcom</span></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+<!-- END FOOTER -->
 	
 
 	
@@ -125,14 +851,14 @@
 						<div class="fix">
 							<div class="contacts contact1">
 								<p class="mobile-number">+38095-589-76-81</p>
-								<p class="social">info@budprom.com</p>
+								<p class="modal-social">info@budprom.com</p>
 							</div>
 							<div class="contacts contact2">
 								<p class="mobile-number">+38067-257-78-76</p>
-								<p class="social"><span>Skype:</span> budpromcom</p>
+								<p class="modal-social"><span class="skype">Skype:</span> budpromcom</p>
 							</div>
 						</div>
-						<div class="advertisement">
+						<div class="ad">
 							<a href="javascript:void(0)">Хочете розмістити рекламу?</a>
 						</div>
 					</div>

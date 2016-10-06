@@ -116,7 +116,8 @@ a {
 /*HEADER*/
 .header {
 	min-width: 1350px;
-	max-width: 1600px;
+	max-width: 1560px;
+	width: 100%;
 	height: 70px;
 	box-shadow: 0 4px 4px rgba(0,0,0,.4);
 	margin: 0 auto;
@@ -455,8 +456,9 @@ a {
 /*NAVIGATION*/
 .navigation {
 	background: #f0f0f2;
-	min-width: 1340px;
-	max-width: 1600px;
+	min-width: 1350px;
+	max-width: 1560px;
+	width: 100%;
 	height: 38px;
 	border-bottom: 1px solid #cbcbcb;
 	margin: 2px auto 0 auto;
@@ -1019,8 +1021,9 @@ a {
 /*FOOTER*/
 .footer {
 	min-height: 320px;
-	min-width: 1400px;
-	max-width: 1600px;
+	min-width: 1350px;
+	max-width: 1560px;
+	width: 100%;
 	margin: 0 auto; 
 	background: #1d1d1d;
 	border-bottom: 1px solid #cbcbcb;

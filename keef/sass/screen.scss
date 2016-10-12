@@ -23,14 +23,22 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 	font-family: Calama;
 	src: url(../font/Calama.ttf);
 }
+/*END FONT-FACE*/
 
 body {
-	box-sizing: border-box;
+	box-sizing: content-box;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
 }
 
 .container {
 	width: 1920px;
 	margin: 0 auto;
+	padding: 0;
+	position: relative;
 }
 
 /*-  - - - - - - - - - - - - HEADER - - - - - - - - - - - - */
@@ -39,12 +47,146 @@ body {
 	width: 100%;
 	height: 1029px;
 
+	/*-- - - - - - header menu - - - - - --*/
+	.header-menu {
+		width: 75%;
+		position: absolute;
+		top: 75px;
+		left: 75px;
+		z-index: 2;
+
+		ul {
+			display: -webkit-box;
+		    display: -ms-flexbox;
+	  		display: flex;
+		    -webkit-box-pack: justify;
+		       -ms-flex-pack: justify;
+		           justify-content: space-between;
+		    -webkit-box-align: center;
+		       -ms-flex-align: center;
+		           align-items: center;
+			margin: 0;
+			padding: 0;
+
+			li {
+				position: relative;
+
+				&:first-child {
+					&:before, &:after {
+						width: 0;
+						height: 0;
+					}
+				}
+
+				&:nth-child(3), &:nth-child(4) {
+					&:before {
+						top: 6px;
+						left: -25%;
+					}
+
+					&:after {
+						top: 6px;
+						right: -25%;
+					}
+				}
+
+				&:before, &:after {
+					width: 16px;
+					height: 1px;
+					background: #fff;
+					content: '';
+					position: absolute;
+				}
+
+				&:before {
+					top: 6px;
+					left: -55%;
+				}
+
+				&:after {
+					top: 6px;
+					right: -55%;
+				}
+			}
+
+			a {
+				display: block;
+				height: 100%;
+				width: 100%;
+				text-transform: uppercase;
+				font-family: Mohave;
+				font-size: 14px;
+				letter-spacing: 5px;
+			}
+		}
+	}
+	/*-- - - - - - end header menu - - - - - --*/
+
+	/*-- - - - - - language field - - - - - --*/
+	.lang-wrapper {
+		min-height: 855px;
+		width: 34px;
+		position: absolute;
+		top: 95px;
+		right: 70px;
+		z-index: 5;
+
+		.lang-menu {
+			width: 34px;
+			min-height: 10px;
+
+			&:hover {
+				width: 17px;
+				overflow: hidden;
+				margin: 0 auto;
+			}
+
+			.lang-select {
+				height: 90px;
+				margin-top: 13px;
+				display: none;
+
+				ul {
+					padding: 0;
+
+					li {
+						margin-top: 14px;
+
+						&:first-child {
+							margin-top: 0;
+						}
+					}
+
+					a {
+						text-align: center;
+						display: block;
+						width: 100%;
+						font-size: 12px;
+						font-family: Mohave;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+
+		.lang-border {
+			height: 825px;
+			margin-top: 25px;
+			border-top: 1px solid #fff;
+			border-right: 1px solid #fff;
+			border-bottom: 1px solid #fff; 
+		}
+	}
+	/*-- - - - - - language field - - - - - --*/
+
+	/*-- - - - - - header slider - - - - - --*/
 	.header-slider {
+		/*border: 1px solid red;*/
 		width: 100%;
 		height: 100%;
 		position: relative;
 
-	/*----------SLIDER TEXT----------*/
+	/*-----slider text-----*/
 		.slider-text {
 			width: 60%;
 			/*max-width: 920px;*/
@@ -123,13 +265,14 @@ body {
 				font-size: 10px;
 			}		
 		}
-		/*----------END SLIDER TEXT----------*/
+		/*-----end slider text-----*/
 
-		/*----------SLIDER IMG----------*/
+		/*-----slider img-----*/
 		.slider-img {
 		}
-		/*----------END SLIDER TEXT----------*/
+		/*-----end slider img-----*/
 	}
+	/*-- - - - - - End header slider - - - - - --*/
 }
 
 /*-  - - - - - - - - - - - - END HEADER- - - - - - - - - - - - */

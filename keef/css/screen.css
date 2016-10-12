@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -78,35 +78,175 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: Calama;
   src: url(../font/Calama.ttf);
 }
-/* line 27, ../sass/screen.scss */
+/*END FONT-FACE*/
+/* line 28, ../sass/screen.scss */
 body {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 37, ../sass/screen.scss */
 .container {
   width: 1920px;
   margin: 0 auto;
+  padding: 0;
+  position: relative;
 }
 
 /*-  - - - - - - - - - - - - HEADER - - - - - - - - - - - - */
-/* line 37, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .header {
   background: #000000;
   width: 100%;
   height: 1029px;
+  /*-- - - - - - header menu - - - - - --*/
+  /*-- - - - - - end header menu - - - - - --*/
+  /*-- - - - - - language field - - - - - --*/
+  /*-- - - - - - language field - - - - - --*/
+  /*-- - - - - - header slider - - - - - --*/
+  /*-- - - - - - End header slider - - - - - --*/
 }
-/* line 42, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
+.header .header-menu {
+  width: 75%;
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  z-index: 2;
+}
+/* line 58, ../sass/screen.scss */
+.header .header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+/* line 71, ../sass/screen.scss */
+.header .header-menu ul li {
+  position: relative;
+}
+/* line 75, ../sass/screen.scss */
+.header .header-menu ul li:first-child:before, .header .header-menu ul li:first-child:after {
+  width: 0;
+  height: 0;
+}
+/* line 82, ../sass/screen.scss */
+.header .header-menu ul li:nth-child(3):before, .header .header-menu ul li:nth-child(4):before {
+  top: 6px;
+  left: -25%;
+}
+/* line 87, ../sass/screen.scss */
+.header .header-menu ul li:nth-child(3):after, .header .header-menu ul li:nth-child(4):after {
+  top: 6px;
+  right: -25%;
+}
+/* line 93, ../sass/screen.scss */
+.header .header-menu ul li:before, .header .header-menu ul li:after {
+  width: 16px;
+  height: 1px;
+  background: #fff;
+  content: '';
+  position: absolute;
+}
+/* line 101, ../sass/screen.scss */
+.header .header-menu ul li:before {
+  top: 6px;
+  left: -55%;
+}
+/* line 106, ../sass/screen.scss */
+.header .header-menu ul li:after {
+  top: 6px;
+  right: -55%;
+}
+/* line 112, ../sass/screen.scss */
+.header .header-menu ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: Mohave;
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+/* line 126, ../sass/screen.scss */
+.header .lang-wrapper {
+  min-height: 855px;
+  width: 34px;
+  position: absolute;
+  top: 95px;
+  right: 70px;
+  z-index: 5;
+}
+/* line 134, ../sass/screen.scss */
+.header .lang-wrapper .lang-menu {
+  width: 34px;
+  min-height: 10px;
+}
+/* line 138, ../sass/screen.scss */
+.header .lang-wrapper .lang-menu:hover {
+  width: 17px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 144, ../sass/screen.scss */
+.header .lang-wrapper .lang-menu .lang-select {
+  height: 90px;
+  margin-top: 13px;
+  display: none;
+}
+/* line 149, ../sass/screen.scss */
+.header .lang-wrapper .lang-menu .lang-select ul {
+  padding: 0;
+}
+/* line 152, ../sass/screen.scss */
+.header .lang-wrapper .lang-menu .lang-select ul li {
+  margin-top: 14px;
+}
+/* line 155, ../sass/screen.scss */
+.header .lang-wrapper .lang-menu .lang-select ul li:first-child {
+  margin-top: 0;
+}
+/* line 160, ../sass/screen.scss */
+.header .lang-wrapper .lang-menu .lang-select ul a {
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  font-family: Mohave;
+  text-transform: uppercase;
+}
+/* line 172, ../sass/screen.scss */
+.header .lang-wrapper .lang-border {
+  height: 825px;
+  margin-top: 25px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+/* line 183, ../sass/screen.scss */
 .header .header-slider {
+  /*border: 1px solid red;*/
   width: 100%;
   height: 100%;
   position: relative;
-  /*----------SLIDER TEXT----------*/
-  /*----------END SLIDER TEXT----------*/
-  /*----------SLIDER IMG----------*/
-  /*----------END SLIDER TEXT----------*/
+  /*-----slider text-----*/
+  /*-----end slider text-----*/
+  /*-----slider img-----*/
+  /*-----end slider img-----*/
 }
-/* line 48, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .header .header-slider .slider-text {
   width: 60%;
   /*max-width: 920px;*/
@@ -116,71 +256,71 @@ body {
   position: absolute;
   color: #fff;
 }
-/* line 57, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .header .header-slider .slider-text .text-header {
   text-transform: uppercase;
   letter-spacing: 8px;
 }
-/* line 62, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .header .header-slider .slider-text .text-section {
   margin: 20px 0 20px 0;
   letter-spacing: 20px;
 }
-/* line 67, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .header .header-slider .slider-text .text-footer {
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-/* line 71, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .header .header-slider .slider-text .text-footer:after {
   content: '';
   display: block;
   height: 0;
   clear: both;
 }
-/* line 78, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .header .header-slider .slider-text .text-footer .text-block {
   width: 325px;
 }
-/* line 81, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .header .header-slider .slider-text .text-footer .text-block:first-child {
   float: left;
   margin-right: 50px;
 }
-/* line 86, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .header .header-slider .slider-text .text-footer .text-block:last-child {
   float: left;
 }
-/* line 90, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .header .header-slider .slider-text .text-footer .text-block .text-top-block {
   border-bottom: 1px solid #fff;
   padding-bottom: 9px;
 }
-/* line 95, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .header .header-slider .slider-text .text-footer .text-block .text-bottom-block {
   padding-top: 11px;
 }
-/* line 101, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .header .header-slider .slider-text .large-text {
   font-family: Calama;
   font-size: 158px;
 }
-/* line 106, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .header .header-slider .slider-text .middle-text {
   font-family: Mohave;
   font-size: 25px;
 }
-/* line 111, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .header .header-slider .slider-text .small-text {
   font-family: Mohave;
   font-size: 14px;
 }
-/* line 116, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .header .header-slider .slider-text .smaller-text {
   font-family: Mohave;
   font-size: 12px;
 }
-/* line 121, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .header .header-slider .slider-text .smallest-text {
   font-family: Mohave;
   font-size: 10px;

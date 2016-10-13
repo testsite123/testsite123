@@ -26,7 +26,7 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 /*END FONT-FACE*/
 
 body {
-	box-sizing: content-box;
+	/*box-sizing: border-box;*/
 }
 
 a {
@@ -38,14 +38,16 @@ a {
 	width: 1920px;
 	margin: 0 auto;
 	padding: 0;
+	/*border: 1px solid blue;*/
 	position: relative;
 }
+
 
 /*-  - - - - - - - - - - - - HEADER - - - - - - - - - - - - */
 .header {
 	background: #000000;
 	width: 100%;
-	height: 1029px;
+	min-height: 1029px;
 
 	/*-- - - - - - header menu - - - - - --*/
 	.header-menu {
@@ -169,6 +171,7 @@ a {
 			}
 		}
 
+
 		.lang-border {
 			height: 825px;
 			margin-top: 25px;
@@ -276,3 +279,194 @@ a {
 }
 
 /*-  - - - - - - - - - - - - END HEADER- - - - - - - - - - - - */
+
+/*  - - - - - - - - - - - -CATEGORIES- - - - - - - - - - - - */
+.categories {
+	background: #fff;
+	width: 100%;
+	min-height: 1006px;
+	position: relative;
+	/*-- - - - - - filters - - - - - --*/
+	.filters {
+		width: 880px;
+		height: 100px;
+		margin: 72px auto 0 auto;
+
+		.filter-menu {
+			padding: 0;
+			margin: 0;
+			display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-pack: justify;
+		        -ms-flex-pack: justify;
+		            justify-content: space-between;
+		    -webkit-box-align: center;
+		        -ms-flex-align: center;
+		            align-items: center;
+
+			li {
+				text-align: center;
+			}
+
+			p {
+				color: #000;
+				text-align: center;
+				text-transform: uppercase;
+				letter-spacing: 4px;
+				font-family: Mohave;
+				font-size: 10px;
+				margin: 23px 0 0 0;
+			}
+		}
+	}
+	/*-- - - - - - end filters - - - - - --*/
+
+	/*-- - - - - - portfolio - - - - - --*/
+	.portfolio {
+		border: 1px solid #d6d6d6;
+		width: 1455px;
+		height: 582px;
+		margin: 205px auto 0 auto;
+
+		&:after {
+			content: '';
+			clear: both;
+			display: block;
+			height: 0;
+		}
+
+		.portfolio-section {
+			/*background: $testcolor-one;*/
+			width: 291px;
+			height: 291px;
+			overflow: hidden; 
+			float: left;
+
+			img {
+				width: 102%;
+				height: 102%;
+			}
+		}
+	}
+	/*-- - - - - - end portfolio - - - - - --*/
+
+	/*-- - - - - - vertical menu - - - - - --*/
+	.vertical-menu {
+		width: 112px;
+		height: 915px;
+		position: absolute;
+		top: -25px;
+		left: 47px;
+
+		.logo {
+			width: 100%;
+			height: 112px;
+			background: url(../image/vertical-menu/bg.png);
+			position: relative;
+
+			img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+		}
+
+		.lang-vertical {
+			width: 34px;
+			height: 120px;
+			text-align: center;
+			margin: 15px auto 0 auto;
+
+			&:hover {
+				width: 17px;
+				overflow: hidden;
+				margin: 15px auto 0 auto;
+			}
+
+			.vertical-select a{
+				color: #000;
+			}
+
+				.lang-select {
+					height: 90px;
+					margin-top: 13px;
+					display: none;
+
+				ul {
+					padding: 0;
+
+					li {
+						margin-top: 14px;
+
+						&:first-child {
+							margin-top: 0;
+						}
+					}
+
+					a {
+						text-align: center;
+						display: block;
+						width: 100%;
+						font-size: 12px;
+						font-family: Mohave;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+		.vertical-nav {
+			margin: 80px 0 0 0;
+			width: 588px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			transform: rotate(-90deg);
+			margin: 365px 0 0 -240px;
+
+			div {
+
+				&:first-child {
+					margin-left: 25px;
+				}
+
+				&:last-child {
+					margin-right: 30px;
+				}
+			}
+
+			span {
+				font-family: Mohave;
+				font-size: 14px;
+				color: #000;
+				letter-spacing: 5px;
+				position: relative;
+
+				&:before, &:after {
+					width: 16px;
+					height: 1px;
+					background: #000;
+					position: absolute;
+					content: '';
+				}
+
+				&:before {
+					top: 6px;
+					left: -25px;
+				}
+
+				&:after {
+					top: 6px;
+					right: -25px;
+				}
+			}
+		}
+
+		
+	}
+	/*-- - - - - - end vertical menu - - - - - --*/
+
+}
+/*  - - - - - - - - - - - -CATEGORIES- - - - - - - - - - - - */

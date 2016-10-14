@@ -474,22 +474,28 @@ a {
 .categories .vertical-menu .vertical-nav {
   margin: 80px 0 0 0;
   width: 588px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   margin: 365px 0 0 -240px;
 }
-/* line 431, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 .categories .vertical-menu .vertical-nav div:first-child {
   margin-left: 25px;
 }
-/* line 435, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 .categories .vertical-menu .vertical-nav div:last-child {
   margin-right: 30px;
 }
-/* line 440, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 .categories .vertical-menu .vertical-nav span {
   font-family: Mohave;
   font-size: 14px;
@@ -497,7 +503,7 @@ a {
   letter-spacing: 5px;
   position: relative;
 }
-/* line 447, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 .categories .vertical-menu .vertical-nav span:before, .categories .vertical-menu .vertical-nav span:after {
   width: 16px;
   height: 1px;
@@ -505,15 +511,170 @@ a {
   position: absolute;
   content: '';
 }
-/* line 455, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 .categories .vertical-menu .vertical-nav span:before {
   top: 6px;
   left: -25px;
 }
-/* line 460, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 .categories .vertical-menu .vertical-nav span:after {
   top: 6px;
   right: -25px;
 }
 
 /*  - - - - - - - - - - - -CATEGORIES- - - - - - - - - - - - */
+/*  - - - - - - - - - - - -PARALAX- - - - - - - - - - - - */
+/* line 482, ../sass/screen.scss */
+.paralax {
+  width: 100%;
+  min-height: 1020px;
+  background: #fff;
+  /*-- - - - - - text layer - - - - - --*/
+  /*-- - - - - - text layer - - - - - --*/
+  /*-- - - - - - paralax layer - - - - - --*/
+  /*-- - - - - - end paralax layer - - - - - --*/
+}
+/* line 488, ../sass/screen.scss */
+.paralax .text-layer {
+  width: 880px;
+  margin: 85px auto 0 auto;
+}
+/* line 492, ../sass/screen.scss */
+.paralax .text-layer p {
+  font-size: 12px;
+  font-family: Mohave;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 4px;
+  line-height: 23px;
+  text-align: center;
+}
+/* line 505, ../sass/screen.scss */
+.paralax .paralax-layer {
+  width: 1455px;
+  height: 730px;
+  margin: 95px auto 0 auto;
+  background: url("../image/paralax/bgr.png");
+  position: relative;
+}
+/* line 512, ../sass/screen.scss */
+.paralax .paralax-layer .photo-layer {
+  position: absolute;
+  background: #bfbfbf;
+  opacity: 0;
+}
+/* line 517, ../sass/screen.scss */
+.paralax .paralax-layer .photo-layer:hover {
+  opacity: 1;
+  transition: opacity 1s;
+}
+/* line 523, ../sass/screen.scss */
+.paralax .paralax-layer .photo1 {
+  width: 348px;
+  height: 474px;
+  bottom: 0;
+  left: 0;
+}
+/* line 530, ../sass/screen.scss */
+.paralax .paralax-layer .photo2 {
+  width: 348px;
+  height: 465px;
+  top: 0;
+  right: 0;
+}
+/* line 537, ../sass/screen.scss */
+.paralax .paralax-layer .photo3 {
+  width: 263px;
+  height: 302px;
+  bottom: 84px;
+  right: 494px;
+}
+/* line 544, ../sass/screen.scss */
+.paralax .paralax-layer .photo4 {
+  width: 263px;
+  height: 302px;
+  top: 0;
+  left: 0;
+}
+/* line 551, ../sass/screen.scss */
+.paralax .paralax-layer .photo5 {
+  width: 278px;
+  height: 272px;
+  bottom: 214px;
+  left: 365px;
+}
+
+/*  - - - - - - - - - - - -END PARALAX- - - - - - - - - - - - */
+/*  - - - - - - - - - - - -FOOTER- - - - - - - - - - - - */
+/* line 563, ../sass/screen.scss */
+.footer {
+  width: 100%;
+  min-height: 260px;
+}
+/* line 567, ../sass/screen.scss */
+.footer .table-wrapper {
+  width: 1455px;
+  margin: 42px auto 0 auto;
+}
+/* line 572, ../sass/screen.scss */
+.footer .table-wrapper .footer-table td {
+  height: 43px;
+  border: 1px solid #757575;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Mohave;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+/* line 582, ../sass/screen.scss */
+.footer .table-wrapper .footer-table .bigger-td {
+  width: 508px;
+}
+/* line 586, ../sass/screen.scss */
+.footer .table-wrapper .footer-table .big-td {
+  width: 265px;
+}
+/* line 590, ../sass/screen.scss */
+.footer .table-wrapper .footer-table .middle-td {
+  width: 230px;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+/* line 596, ../sass/screen.scss */
+.footer .table-wrapper .footer-table .small-td {
+  width: 190px;
+}
+/* line 600, ../sass/screen.scss */
+.footer .table-wrapper .footer-table .smaller-td {
+  width: 174px;
+  font-size: 18px;
+}
+/* line 605, ../sass/screen.scss */
+.footer .table-wrapper .footer-table .smallest-td {
+  width: 91px;
+}
+/* line 609, ../sass/screen.scss */
+.footer .table-wrapper .footer-table .mini-td {
+  width: 44px;
+}
+/* line 613, ../sass/screen.scss */
+.footer .table-wrapper .footer-table .small-font {
+  font-size: 8px;
+  letter-spacing: 2.5px;
+}
+/* line 618, ../sass/screen.scss */
+.footer .table-wrapper .footer-table .regular-font {
+  font-size: 14px;
+}
+/* line 622, ../sass/screen.scss */
+.footer .table-wrapper .footer-table .sprite-td {
+  background: url("../image/footer/footer-sprite.png") 5px 7px;
+  background-repeat: no-repeat;
+}
+/* line 626, ../sass/screen.scss */
+.footer .table-wrapper .footer-table .sprite-td:hover {
+  background: url("../image/footer/footer-sprite.png") 5px -81px;
+  background-repeat: no-repeat;
+}
+
+/*  - - - - - - - - - - - -END FOOTER- - - - - - - - - - - - */

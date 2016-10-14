@@ -420,9 +420,16 @@ a {
 		.vertical-nav {
 			margin: 80px 0 0 0;
 			width: 588px;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
+			display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-pack: justify;
+		        -ms-flex-pack: justify;
+		            justify-content: space-between;
+		    -webkit-box-align: center;
+		        -ms-flex-align: center;
+		            align-items: center;
+			-webkit-transform: rotate(-90deg);
 			transform: rotate(-90deg);
 			margin: 365px 0 0 -240px;
 
@@ -470,3 +477,158 @@ a {
 
 }
 /*  - - - - - - - - - - - -CATEGORIES- - - - - - - - - - - - */
+
+/*  - - - - - - - - - - - -PARALAX- - - - - - - - - - - - */
+.paralax {
+	width: 100%;
+	min-height: 1020px;
+	background: #fff;
+	
+	/*-- - - - - - text layer - - - - - --*/
+	.text-layer {
+		width: 880px;
+		margin: 85px auto 0 auto;
+
+		p {
+			font-size: 12px;
+			font-family: Mohave;
+			text-transform: uppercase;
+			color: #000;
+			letter-spacing: 4px;
+			line-height: 23px;
+			text-align: center;
+		}
+	}
+	/*-- - - - - - text layer - - - - - --*/
+
+	/*-- - - - - - paralax layer - - - - - --*/
+	.paralax-layer {
+		width: 1455px;
+		height: 730px;
+		margin: 95px auto 0 auto;
+		background: url('../image/paralax/bgr.png');
+		position: relative;
+
+		.photo-layer {
+			position: absolute;
+			background: #bfbfbf;
+			opacity: 0;
+
+			&:hover {
+				opacity: 1;
+				transition: opacity 1s;
+			}
+		}
+
+		.photo1 {
+			width: 348px;
+			height: 474px;
+			bottom: 0;
+			left: 0;
+		}
+
+		.photo2 {
+			width: 348px;
+			height: 465px;
+			top: 0;
+			right: 0;
+		}
+
+		.photo3 {
+			width: 263px;
+			height: 302px;
+			bottom: 84px;
+			right: 494px;
+		}
+
+		.photo4 {
+			width: 263px;
+			height: 302px;
+			top: 0;
+			left: 0;
+		}
+
+		.photo5 {
+			width: 278px;
+			height: 272px;
+			bottom: 214px;
+			left: 365px;
+		}
+	}
+	/*-- - - - - - end paralax layer - - - - - --*/	
+}
+/*  - - - - - - - - - - - -END PARALAX- - - - - - - - - - - - */
+
+/*  - - - - - - - - - - - -FOOTER- - - - - - - - - - - - */
+.footer {
+	width: 100%;
+	min-height: 260px;
+
+	.table-wrapper {
+		width: 1455px;
+		margin: 42px auto 0 auto;
+
+		.footer-table {
+			td {
+				height: 43px;
+				border: 1px solid #757575;
+				text-align: center;
+				text-transform: uppercase;
+				font-family: Mohave;
+				font-size: 14px;
+				letter-spacing: 3px;
+			}
+
+			.bigger-td {
+				width: 508px;
+			}
+
+			.big-td {
+				width: 265px;
+			}
+
+			.middle-td {
+				width: 230px;
+				font-size: 18px;
+				letter-spacing: 5px;
+			}
+
+			.small-td {
+				width: 190px;
+			}
+
+			.smaller-td {
+				width: 174px;
+				font-size: 18px;
+			}
+
+			.smallest-td {
+				width: 91px;
+			}
+
+			.mini-td {
+				width: 44px;
+			}
+
+			.small-font {
+				font-size: 8px;
+				letter-spacing: 2.5px;
+			}
+
+			.regular-font {
+				font-size: 14px;
+			}
+
+			.sprite-td {
+				background: url('../image/footer/footer-sprite.png') 5px 7px;
+				background-repeat: no-repeat; 
+
+				&:hover {
+					background: url('../image/footer/footer-sprite.png') 5px -81px;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+}
+/*  - - - - - - - - - - - -END FOOTER- - - - - - - - - - - - */

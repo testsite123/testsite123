@@ -305,6 +305,60 @@ a {
 		        -ms-flex-align: center;
 		            align-items: center;
 
+		    .filter-block div {
+		    	width: 62px;
+		    	height: 62px;
+		    	margin: 0 auto;
+		    }
+
+		    .all {
+		    	background: url('../image/filters/all.png') -76px 0 no-repeat;
+
+		    	&:hover {
+		    		background: url('../image/filters/all.png') 0 0 no-repeat;
+		    	}
+		    }
+
+		    .brand {
+		    	background: url('../image/filters/brand.png') -77px 0 no-repeat;
+
+		    	&:hover {
+		    		background: url('../image/filters/brand.png') 0 0 no-repeat;
+		    	}
+		    }
+
+		    .dimention {
+				background: url('../image/filters/3d.png') -76px 0 no-repeat;
+
+		    	&:hover {
+		    		background: url('../image/filters/3d.png') 0 0 no-repeat;
+		    	}
+		    }
+
+		    .web {
+				background: url('../image/filters/web.png') -77px 0 no-repeat;
+
+		    	&:hover {
+		    		background: url('../image/filters/web.png') 0 0 no-repeat;
+		    	}
+		    }
+
+		    .graphic {
+				background: url('../image/filters/graphic.png') -77.5px 0 no-repeat;
+
+		    	&:hover {
+		    		background: url('../image/filters/graphic.png') 0 0 no-repeat;
+		    	}
+		    }
+
+		    .craft {
+				background: url('../image/filters/craft.png') -77px 0 no-repeat;
+
+		    	&:hover {
+		    		background: url('../image/filters/craft.png') 0 0 no-repeat;
+		    	}
+		    }
+
 			li {
 				text-align: center;
 			}

@@ -13,10 +13,177 @@ $testcolor-four: rgba(255, 0, 128, 0.4);
 $testcolor-five: rgba(157, 0, 255, 0.4);
 /*colors*/
 
+/*-- - - - - - vertical menu - - - - - --*/
+.vertical-menu {
+	width: 112px;
+	height: 915px;
+	position: absolute;
+	top: 46px;
+	left: 47px;
+
+		.logo {
+			width: 100%;
+			height: 112px;
+			background: url(../image/vertical-menu/bg.png);
+			position: relative;
+
+			img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+		}
+
+		.lang-vertical {
+			width: 34px;
+			height: 120px;
+			text-align: center;
+			margin: 15px auto 0 auto;
+
+			&:hover {
+				width: 17px;
+				overflow: hidden;
+				margin: 15px auto 0 auto;
+				transition: width .6s;
+			}
+
+				.vertical-select {
+					height: 90px;
+					margin-top: 13px;
+					display: none;
+
+					ul {
+						padding: 0;
+
+						li {
+							margin-top: 14px;
+	
+							&:first-child {
+								margin-top: 0;
+							}
+						}
+
+						a {
+							text-align: center;
+							display: block;
+							width: 100%;
+							font-size: 12px;
+							font-family: Mohave;
+							text-transform: uppercase;
+							color: #000;
+
+							&:hover {
+								color: #bdbdbd;
+							}
+						}
+					}
+				}
+		}
+		.vertical-nav {
+			margin: 80px 0 0 0;
+			width: 588px;
+			display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-pack: justify;
+		        -ms-flex-pack: justify;
+		            justify-content: space-between;
+		    -webkit-box-align: center;
+		        -ms-flex-align: center;
+		            align-items: center;
+			-webkit-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+			margin: 365px 0 0 -240px;
+
+			div {
+
+				&:first-child {
+					margin-left: 25px;
+				}
+
+				&:last-child {
+					margin-right: 30px;
+				}
+			}
+
+			span {
+				font-family: Mohave;
+				font-size: 14px;
+				color: #000;
+				letter-spacing: 5px;
+				position: relative;
+
+				&:before, &:after {
+					width: 16px;
+					height: 1px;
+					background: #000;
+					position: absolute;
+					content: '';
+					background: transparent;
+					bottom: 6px;
+					-webkit-transition: right .5s, left .5s, background .5s;
+					transition: right .5s, left .5s, background .5s;
+				}
+
+				&:before {
+					left: 18%;
+				}
+
+				&:after {
+					right: 18%;
+				}
+				
+				&:hover {
+					&:before, &:after {
+						bottom: 6px;
+						-webkit-transition: left .5s, right .5s, background 1s; 
+						transition: left .5s, right .5s, background 1s; 
+						background: #000;
+					}
+
+					&:before {
+						left: -22%;
+					}
+
+					&:after {
+						right: -22%;
+					}	
+				}
+			}
+
+			.v-first-li {
+				&:hover {
+					&:before, &:after {
+						bottom: 6px;
+						-webkit-transition: left .5s, right .5s, background 1s; 
+						transition: left .5s, right .5s, background 1s; 
+						background: #000;
+					}
+
+					&:before {
+						left: -50%;
+					}
+
+					&:after {
+						right: -50%;
+					}	
+				}
+			}
+		}	
+ 	}
+/*-- - - - - - end vertical menu - - - - - --*/
+
 /*FONT-FACE*/
 @font-face {
 	font-family: Mohave;
 	src: url(../font/Mohave/Mohave.otf);
+}
+
+@font-face {
+	font-family: MohaveBold;
+	src: url(../font/Mohave/Mohave-Bold.otf);
 }
 
 @font-face {
@@ -40,7 +207,7 @@ a {
 	position: relative;
 }
 
-.line:after {
+.line:after, .line-30:after {
 	content: '';
 	width: 1px;
 	height: 40px;
@@ -48,20 +215,15 @@ a {
 	display: block;
 	z-index: 100;
 	position: absolute;
-	bottom: -20px;
 	left: 50%;
 }
 
 .line-30:after {
-	content: '';
-	width: 1px;
-	height: 40px;
-	background: #000;
-	display: block;
-	z-index: 100;
-	position: absolute;
 	bottom: -70px;
-	left: 50%;
+}
+
+.line:after {
+	bottom: -20px;
 }
 
 /*-  - - - - - - - - - - - - HEADER - - - - - - - - - - - - */
@@ -105,10 +267,8 @@ a {
 				&:before, &:after {
 					width: 16px;
 					height: 1px;
-					background: #fff;
 					content: '';
 					position: absolute;
-					background: red;
 				}
 			}
 
@@ -117,6 +277,7 @@ a {
 					top: 6px;
 					left: 11%;
 					background: transparent;
+					-webkit-transition: left .5s, background .5s;
 					transition: left .5s, background .5s;
 				}
 
@@ -124,6 +285,7 @@ a {
 					top: 6px;
 					right: 11%;
 					background: transparent; 
+					-webkit-transition: right .5s, background .5s;
 					transition: right .5s, background .5s;
 				}
 
@@ -132,13 +294,15 @@ a {
 						top: 6px;
 						left: -55%;
 						background: #fff;
+						-webkit-transition: left .5s, background 1s;
 						transition: left .5s, background 1s;
-				}
+					}
 
 					&:after {
 						top: 6px;
 						right: -55%;
 						background: #fff;
+						-webkit-transition: right .5s, background 1s;
 						transition: right .5s, background 1s;
 					}
 				}
@@ -149,12 +313,14 @@ a {
 					top: 6px;
 					left: 25%;
 					background: transparent;
+					-webkit-transition: left .5s, background .5s;
 					transition: left .5s, background .5s;
 				}
 				&:after {
 					top: 6px;
 					right: 25%;
 					background: transparent;
+					-webkit-transition: right .5s, background .5s;
 					transition: right .5s, background .5s;
 				}
 
@@ -162,6 +328,7 @@ a {
 					&:before {
 						top: 6px;
 						left: -25%;
+						-webkit-transition: left .5s, background 1s; 
 						transition: left .5s, background 1s; 
 						background: #fff;
 					}
@@ -169,6 +336,7 @@ a {
 					&:after {
 						top: 6px;
 						right: -25%;
+						-webkit-transition: right .5s, background 1s;
 						transition: right .5s, background 1s;
 						background: #fff; 
 					}
@@ -619,132 +787,6 @@ a {
 	}
 	/*-- - - - - - end portfolio - - - - - --*/
 
-	/*-- - - - - - vertical menu - - - - - --*/
-	.vertical-menu {
-		width: 112px;
-		height: 915px;
-		position: absolute;
-		top: 46px;
-		left: 47px;
-
-		.logo {
-			width: 100%;
-			height: 112px;
-			background: url(../image/vertical-menu/bg.png);
-			position: relative;
-
-			img {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				-webkit-transform: translate(-50%, -50%);
-				transform: translate(-50%, -50%);
-			}
-		}
-
-		.lang-vertical {
-			width: 34px;
-			height: 120px;
-			text-align: center;
-			margin: 15px auto 0 auto;
-
-			&:hover {
-				width: 17px;
-				overflow: hidden;
-				margin: 15px auto 0 auto;
-				transition: width .6s;
-			}
-
-				.vertical-select {
-					height: 90px;
-					margin-top: 13px;
-					display: none;
-
-					ul {
-						padding: 0;
-
-						li {
-							margin-top: 14px;
-	
-							&:first-child {
-								margin-top: 0;
-							}
-						}
-
-						a {
-							text-align: center;
-							display: block;
-							width: 100%;
-							font-size: 12px;
-							font-family: Mohave;
-							text-transform: uppercase;
-							color: #000;
-
-							&:hover {
-								color: #bdbdbd;
-							}
-						}
-					}
-				}
-		}
-		.vertical-nav {
-			margin: 80px 0 0 0;
-			width: 588px;
-			display: -webkit-box;
-		    display: -ms-flexbox;
-		    display: flex;
-		    -webkit-box-pack: justify;
-		        -ms-flex-pack: justify;
-		            justify-content: space-between;
-		    -webkit-box-align: center;
-		        -ms-flex-align: center;
-		            align-items: center;
-			-webkit-transform: rotate(-90deg);
-			transform: rotate(-90deg);
-			margin: 365px 0 0 -240px;
-
-			div {
-
-				&:first-child {
-					margin-left: 25px;
-				}
-
-				&:last-child {
-					margin-right: 30px;
-				}
-			}
-
-			span {
-				font-family: Mohave;
-				font-size: 14px;
-				color: #000;
-				letter-spacing: 5px;
-				position: relative;
-
-				&:before, &:after {
-					width: 16px;
-					height: 1px;
-					background: #000;
-					position: absolute;
-					content: '';
-				}
-
-				&:before {
-					top: 6px;
-					left: -25px;
-				}
-
-				&:after {
-					top: 6px;
-					right: -25px;
-				}
-			}
-		}
-
-		
-	}
-	/*-- - - - - - end vertical menu - - - - - --*/
-
 }
 /*  - - - - - - - - - - - -CATEGORIES- - - - - - - - - - - - */
 
@@ -903,3 +945,7 @@ a {
 	}
 }
 /*  - - - - - - - - - - - -END FOOTER- - - - - - - - - - - - */
+
+/*SECOND PAGE*/
+@import "portfolio";
+/*END SECOND PAGE*/

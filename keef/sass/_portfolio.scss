@@ -1,0 +1,168 @@
+/*colors*/
+$testcolor-one: rgba(255, 216, 0, 0.47);
+$testcolor-two: rgba(0, 98, 255, 0.47);
+$testcolor-three: rgba(0, 255, 177, 0.47);
+$testcolor-four: rgba(255, 0, 128, 0.4);
+$testcolor-five: rgba(157, 0, 255, 0.4);
+/*colors*/
+
+.line-50:after {
+	content: '';
+	width: 1px;
+	height: 40px;
+	background: #000;
+	display: block;
+	z-index: 100;
+	position: absolute;
+	left: 50%;
+	top: -20px;
+}
+
+/*--  - - - - - - - - - - - -PORTFOLIO HEADER- - - - - - - - - - - - --*/
+.portfolio-header {
+	width: 100%;
+	margin-bottom: 120px;
+	/*-- - - - - - SLIDER WRAPPER - - - - - --*/
+	.slider-wrapper {
+		width: 1610px;
+		margin: 100px 0 0 230px;
+
+		/*-- - - - - - topic - - - - - --*/
+		.topic {
+			padding-bottom: 20px;
+			border-bottom: 1px solid #000;
+
+			p a{
+				font-family: Mohave;
+				font-size: 24px;
+				letter-spacing: 9px;
+				color: #000;
+			}
+		}
+		/*-- - - - - -end topic - - - - - --*/
+
+		/*-- - - - - - slider - - - - - --*/
+		.slider {
+			width: 1610px;
+			margin: 80px 0 0 0; 
+			display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: flex;
+
+			.main-img {
+				width: 1024px;
+			}
+
+			.main-image-info {
+				width: 586px;
+				min-height: 815px;
+
+				.border-container {
+					min-height: 815px;
+					border-right: 1px solid #000;
+					position: relative;
+
+					&:after, &:before {
+						content: '';
+						background: #000;
+						position: absolute;
+					}
+
+					&:before {
+						height: 80px;
+						width: 1px;
+						right: -1px;
+						top: -80px;
+					}
+
+					&:after {
+						width: 33px;
+						height: 1px;
+						right: 0;
+						bottom: 0;
+					}
+
+					h1 {
+						font-family: Calama;
+						font-size: 48px;
+						letter-spacing: 7px;
+						margin: 0 0 30px 0;
+					}
+
+					h3 {
+						font-family: Mohave;
+						font-size: 14px;
+						letter-spacing: 14px;
+						border-bottom: 1px solid #000;
+						padding: 0 0 8px 3px;
+						margin: 0 0 43px 0;
+					}
+
+					.text-topic {
+						font-family: MohaveBold;
+						font-size: 12px;
+						letter-spacing: 4px;
+						margin: 0 0 17px 0;
+					}
+
+					.main-text {
+						font-family: Mohave;
+						font-size: 10px;
+						margin: 21px 0 0 0;
+						padding-left: 3px;
+						letter-spacing: 1px;
+						line-height: 15px;
+						text-align: justify;
+
+						&:first-child {
+							margin-top: 0;
+						}
+					}
+
+					.date {
+						font-family: Mohave;
+						font-size: 10px;
+						letter-spacing: 3px;
+						width: 237px;
+						border-bottom: 1px solid #000;
+						padding: 0 0 8px 0;
+						margin: 80px 0 0 0;
+					}
+
+					.social {
+						width: 68%;
+						margin: 25px 0 0 0;
+
+						.icons {
+							width: 35px;
+							height: 35px;
+							line-height: 37px;
+							border: 2px solid #cacaca;
+							text-align: center;
+							display: inline-block;
+							margin: 0 7px 0 0;
+
+							i {
+								color: #cacaca;
+							}
+						}
+					}
+
+					.mini-wrapper {
+						width: 390px;
+						margin: 0 0 0 62px;
+					}
+				}
+			}	
+		}
+		/*-- - - - - - slider - - - - - --*/
+	}
+	/*-- - - - - - SLIDER WRAPPER - - - - - --*/
+}
+/*--  - - - - - - - - - - - -PORTFOLIO HEADER- - - - - - - - - - - - --*/
+
+.footer {
+	.table-margin {
+		margin-bottom: 100px;
+	}
+}

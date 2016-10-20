@@ -13,6 +13,7 @@ $testcolor-four: rgba(255, 0, 128, 0.4);
 $testcolor-five: rgba(157, 0, 255, 0.4);
 /*colors*/
 
+
 /*-- - - - - - vertical menu - - - - - --*/
 .vertical-menu {
 	width: 112px;
@@ -46,6 +47,7 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 				width: 17px;
 				overflow: hidden;
 				margin: 15px auto 0 auto;
+				-webkit-transition: width .6s;
 				transition: width .6s;
 			}
 
@@ -144,7 +146,7 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 					}
 
 					&:before {
-						left: -22%;
+						left: -25%;
 					}
 
 					&:after {
@@ -163,7 +165,7 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 					}
 
 					&:before {
-						left: -50%;
+						left: -55%;
 					}
 
 					&:after {
@@ -226,13 +228,14 @@ a {
 	bottom: -20px;
 }
 
+
 /*-  - - - - - - - - - - - - HEADER - - - - - - - - - - - - */
 .header {
 	width: 100%;
 	height: 1030px;
 	background: #000;
 	color: #fff;
-	margin-top: -1px; 
+	margin-top: -8px; 
 
 	/*-- - - - - - header menu - - - - - --*/
 	.header-menu {
@@ -292,7 +295,7 @@ a {
 				&:hover {
 					&:before {
 						top: 6px;
-						left: -55%;
+						left: -62%;
 						background: #fff;
 						-webkit-transition: left .5s, background 1s;
 						transition: left .5s, background 1s;
@@ -327,7 +330,7 @@ a {
 				&:hover {
 					&:before {
 						top: 6px;
-						left: -25%;
+						left: -28%;
 						-webkit-transition: left .5s, background 1s; 
 						transition: left .5s, background 1s; 
 						background: #fff;
@@ -373,6 +376,8 @@ a {
 				width: 17px;
 				overflow: hidden;
 				margin: 0 auto;
+				-webkit-transition: width .6s;
+				transition: width .6s;
 			}
 
 			.lang-select {
@@ -407,7 +412,6 @@ a {
 			}
 		}
 
-
 		.lang-border {
 			height: 825px;
 			margin-top: 25px;
@@ -419,12 +423,21 @@ a {
 	/*-- - - - - - end language field - - - - - --*/
 
 	/*-- - - - - - header slider - - - - - --*/
+
 	.header-slider {
 		width: 100%;
 		height: 100%;
 		position: relative;
 
 	/*-----slider text-----*/
+		#slider-text-black {
+			color: #000;
+		}
+
+		#text-top-block {
+			border-bottom: 1px solid #000;
+		}
+
 		.slider-text {
 			width: 60%;
 			height: 300px;
@@ -555,65 +568,72 @@ a {
 		            align-items: center;
 
 		    .filter-block {
+
+		    	&:hover {
+					.border-block {
+						border: 1px solid #868585;
+					}
+
+					p {
+						color: #868585;
+					}
+
+		    		.all {
+		    			background: url('../image/filters/filters.png') 3px 21px no-repeat;
+		    		}
+
+		    		.brand {
+		    			background: url('../image/filters/filters.png') 2.5px -42px no-repeat;
+		    		}
+
+		    		.dimention {
+		    			background: url('../image/filters/filters.png') 3px -115px no-repeat;
+		    		}
+
+		    		.web {
+		    			background: url('../image/filters/filters.png') 2.5px -183px no-repeat;
+		    		}
+
+		    		.graphic {
+		    			background: url('../image/filters/filters.png') 3px -250px no-repeat;
+		    		}
+
+		    		.craft {
+		    			background: url('../image/filters/filters.png') 3px -323px no-repeat;
+		    		}
+		    	}
+
 		    	.border-block {
 			    	width: 61px;
 			    	height: 61px;
 			    	margin: 0 auto;
 			    	border: 1px solid black;
-			    	box-shadow: 0 0 0 1px #d1d1d1 inset; 
-
-		    		&:hover {
-		    			border: 1px solid #868585;
-		    		}
+			    	box-shadow: 0 0 0 1px #d1d1d1 inset;
 		    	}
 			}
 
 		    .all {
 		    	background: url('../image/filters/filters.png') -83px 17px no-repeat;
-
-		    	&:hover {
-		    		background: url('../image/filters/filters.png') 3px 21px no-repeat;
-		    	}
 		    }
 
 		    .brand {
 		    	background: url('../image/filters/filters.png') -82px -47px no-repeat;
-
-		    	&:hover {
-		    		background: url('../image/filters/filters.png') 2.5px -42px no-repeat;
-		    	}
 		    }
 
 		    .dimention {
 				background: url('../image/filters/filters.png') -87px -119px no-repeat;
-
-		    	&:hover {
-		    		background: url('../image/filters/filters.png') 3px -115px no-repeat;
-		    	}
 		    }
 
 		    .web {
 				background: url('../image/filters/filters.png') -83px -188px no-repeat;
-
-		    	&:hover {
-		    		background: url('../image/filters/filters.png') 2.5px -183px no-repeat;
-		    	}
 		    }
 
 		    .graphic {
 				background: url('../image/filters/filters.png') -85px -255px no-repeat;
-
-		    	&:hover {
-		    		background: url('../image/filters/filters.png') 3px -250px no-repeat;
-		    	}
 		    }
 
 		    .craft {
 				background: url('../image/filters/filters.png') -85px -329px no-repeat;
-
-		    	&:hover {
-		    		background: url('../image/filters/filters.png') 3px -323px no-repeat;
-		    	}
 		    }
 
 			li {
@@ -637,6 +657,7 @@ a {
 	.portfolio {
 		width: 1455px;
 		height: 582px;
+		overflow: hidden;
 		margin: 205px auto 0 auto;
 
 		&:after {
@@ -660,6 +681,10 @@ a {
 			}
 		}
 		/*end first-block*/
+		
+		.see-all-clear, .portfolio-section:last-child {
+			border: 1px solid #d6d6d6;
+		}
 
 		.portfolio-section {
 			box-sizing: border-box;
@@ -672,11 +697,6 @@ a {
 			&:first-child {
 				border-top: 1px solid #d6d6d6;
 				border-left: 1px solid #d6d6d6;
-			}
-
-			&:last-child {
-				border-right: 1px solid #d6d6d6;
-				border-bottom: 1px solid #d6d6d6;
 			}
 
 			&:hover {
@@ -761,8 +781,14 @@ a {
 				text-align: center;
 				cursor: pointer;
 
-				&:hover .see-all {
-					background-position: -99px 20px;
+				&:hover  {
+					.see-all {
+						background-position: -99px 20px;
+					}
+
+					.up-btn {
+						background-position: -123px 0;
+					}
 				}
 
 				p {
@@ -774,12 +800,19 @@ a {
 					letter-spacing: 4px;
 				}
 
-				.see-all {
-					background: url('../image/portfolio/passive/seeall.png') 4px 20px no-repeat;
+				.see-all, .up-btn {
 					width: 60px;
 					height: 60px;
 					border: 1px solid #c7c7c7;
 					box-shadow: 0 0 0 1px #d1d1d1 inset;
+				}
+
+				.see-all {
+					background: url('../image/portfolio/passive/seeall.png') 4px 20px no-repeat;
+				}
+
+				.up-btn {
+					background: url('../image/portfolio/passive/up.png') 1px 0 no-repeat;
 				}
 			}
 			/*end last-block @SEE-ALL*/
@@ -884,8 +917,10 @@ a {
 
 		.footer-table {
 
-			&:hover .sprite-td{
-				background: url('../image/footer/footer-sprite.png') 5px -81px no-repeat;
+			&:hover .sprite-td div {
+				opacity: 1;
+				-webkit-transition: opacity .7s;
+				transition: opacity .7s;
 			}
 
 			td {
@@ -940,6 +975,15 @@ a {
 
 			.sprite-td {
 				background: url('../image/footer/footer-sprite.png') 5px 7px no-repeat;
+
+				div {
+					width: 100%;
+					height: 100%;
+					background: url('../image/footer/footer-sprite.png') 5px -81px no-repeat;
+					opacity: 0;
+					-webkit-transition: opacity .7s;
+					transition: opacity .7s;
+				}
 			}
 		}
 	}

@@ -30,12 +30,13 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	-moz-box-shadow: 0 0 5px #ccc;
-	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	border:  5px solid #fff;
-	left: -5px;
-	background: #fff;
+	/*-moz-box-shadow: 0 0 5px #ccc;*/
+	/*-webkit-box-shadow: 0 0 5px #ccc;*/
+	/*box-shadow: 0 0 5px #ccc;*/
+	/*border:  1px solid red;*/
+	left: 0;
+	bottom: -5px;
+	/*background: #fff;*/
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
@@ -104,26 +105,28 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
+	bottom: 0;
+	right: 210px;
+	background: url('../image/slider/arrow/whiteleft.png') no-repeat;
 }
 
 .bx-wrapper .bx-next {
-	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
+	right: 130px;
+	bottom: 65px;
+	background: url('../image/slider/arrow/whiteright.png') no-repeat;
 }
 
 .bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
+	/*background-position: 0 0;*/
 }
 
 .bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+	/*background-position: -43px 0;*/
 }
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
-	top: 50%;
+	top: 94.5%;
 	margin-top: -16px;
 	outline: 0;
 	width: 32px;

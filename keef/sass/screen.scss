@@ -590,12 +590,12 @@ a {
 		    	&:hover {
 					.border-block {
 						border: 1px solid #868585;
-						transition: border .4s;
+						transition: border .1s;
 					}
 
 					p {
 						color: #868585;
-						transition: color .4s;
+						transition: color .1s;
 					}
 					
 					.all-passive, .brand-passive, .dimention-passive, .web-passive, .graphic-passive, .craft-passive {

@@ -42,7 +42,10 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 		/*-- - - - - -end topic - - - - - --*/
 
 		/*-- - - - - - slider - - - - - --*/
-		.slider {
+		.ddd {
+			background: $testcolor-two;
+		}
+		.slider-page {
 			width: 1610px;
 			margin: 80px 0 0 0; 
 			display: -webkit-box;
@@ -164,5 +167,24 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 .footer {
 	.table-margin {
 		margin-bottom: 100px;
+	}
+}
+
+
+.slider-wrapper {
+	.bx-wrapper {
+		.bx-controls-direction a {
+			top: 905px;
+		}
+
+		.bx-prev {
+			right: 130px;
+			background: url('../image/slider/arrow/blackleft.png') no-repeat;
+		}
+
+		.bx-next {
+			right: 50px;
+			background: url('../image/slider/arrow/blackright.png') no-repeat;
+		} 
 	}
 }

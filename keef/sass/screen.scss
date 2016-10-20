@@ -567,40 +567,48 @@ a {
 		        -ms-flex-align: center;
 		            align-items: center;
 
+		    .filter-active {
+				a .border-block {
+					border: 1px solid #868585;
+
+					div:first-child {
+						opacity: 0;
+					}
+
+					div:last-child {
+						opacity: 1;
+					}
+				}
+				p {
+					color: #868585;
+				}
+		    }
+
 		    .filter-block {
+				position: relative;
 
 		    	&:hover {
 					.border-block {
 						border: 1px solid #868585;
+						transition: border .4s;
 					}
 
 					p {
 						color: #868585;
+						transition: color .4s;
+					}
+					
+					.all-passive, .brand-passive, .dimention-passive, .web-passive, .graphic-passive, .craft-passive {
+						opacity: 0;
+						-webkit-transition: opacity .1s;
+						transition: opacity .1s;
 					}
 
-		    		.all {
-		    			background: url('../image/filters/filters.png') 3px 21px no-repeat;
-		    		}
-
-		    		.brand {
-		    			background: url('../image/filters/filters.png') 2.5px -42px no-repeat;
-		    		}
-
-		    		.dimention {
-		    			background: url('../image/filters/filters.png') 3px -115px no-repeat;
-		    		}
-
-		    		.web {
-		    			background: url('../image/filters/filters.png') 2.5px -183px no-repeat;
-		    		}
-
-		    		.graphic {
-		    			background: url('../image/filters/filters.png') 3px -250px no-repeat;
-		    		}
-
-		    		.craft {
-		    			background: url('../image/filters/filters.png') 3px -323px no-repeat;
-		    		}
+					.all-active, .brand-active, .dimention-active, .web-active, .graphic-active, .craft-active {
+						opacity: 1;
+						-webkit-transition: opacity 1s;
+						transition: opacity 1s;
+					}
 		    	}
 
 		    	.border-block {
@@ -609,32 +617,70 @@ a {
 			    	margin: 0 auto;
 			    	border: 1px solid black;
 			    	box-shadow: 0 0 0 1px #d1d1d1 inset;
+			    	position: relative;
+		    	}
+
+		    	.all-passive, .brand-passive, .dimention-passive, .web-passive, .graphic-passive, .craft-passive {
+		    		width: 100%;
+		    		height: 100%;
+		    	}
+
+		    	.all-active, .brand-active, .dimention-active, .web-active, .graphic-active, .craft-active {
+		    		width: 100%;
+		    		height: 100%;
+		    		position: absolute;
+		    		top: 0;
+		    		opacity: 0;
+		    	}
+
+		    	.all-passive {
+		    		background: url('../image/filters/filters.png') -83px 17px no-repeat;
+		    	}
+
+		    	.all-active {
+		    		background: url('../image/filters/filters.png') 3px 21px no-repeat;
+		    	}
+
+		    	.brand-passive {
+		    		background: url('../image/filters/filters.png') -82px -47px no-repeat;
+		    	}
+
+		    	.brand-active {
+		    		background: url('../image/filters/filters.png') 2.5px -42px no-repeat;
+		    	}
+
+		    	.dimention-passive {
+		    		background: url('../image/filters/filters.png') -87px -119px no-repeat;
+		    	}
+
+		    	.dimention-active {
+		    		background: url('../image/filters/filters.png') 3px -115px no-repeat;
+		    	}
+
+		    	.web-passive {
+		    		background: url('../image/filters/filters.png') -83px -188px no-repeat;
+		    	}
+
+		    	.web-active {
+		    		background: url('../image/filters/filters.png') 2.5px -183px no-repeat;
+		    	}
+
+		    	.graphic-passive {
+		    		background: url('../image/filters/filters.png') -85px -255px no-repeat;
+		    	}
+
+		    	.graphic-active {
+		    		background: url('../image/filters/filters.png') 3px -250px no-repeat;
+		    	}
+
+		    	.craft-passive {
+		    		background: url('../image/filters/filters.png') -85px -329px no-repeat;
+		    	}
+
+		    	.craft-active {
+		    		background: url('../image/filters/filters.png') 3px -323px no-repeat;
 		    	}
 			}
-
-		    .all {
-		    	background: url('../image/filters/filters.png') -83px 17px no-repeat;
-		    }
-
-		    .brand {
-		    	background: url('../image/filters/filters.png') -82px -47px no-repeat;
-		    }
-
-		    .dimention {
-				background: url('../image/filters/filters.png') -87px -119px no-repeat;
-		    }
-
-		    .web {
-				background: url('../image/filters/filters.png') -83px -188px no-repeat;
-		    }
-
-		    .graphic {
-				background: url('../image/filters/filters.png') -85px -255px no-repeat;
-		    }
-
-		    .craft {
-				background: url('../image/filters/filters.png') -85px -329px no-repeat;
-		    }
 
 			li {
 				text-align: center;
@@ -652,23 +698,23 @@ a {
 		}
 	}
 	/*-- - - - - - end filters - - - - - --*/
-
-	/*-- - - - - - portfolio - - - - - --*/
+	
+	/*Portfolio*/
 	.portfolio {
 		width: 1455px;
-		height: 582px;
-		overflow: hidden;
+		height: 580px;
 		margin: 205px auto 0 auto;
+		overflow: hidden;
 
 		&:after {
 			content: '';
-			clear: both;
 			display: block;
+			clear: both;
 			height: 0;
 		}
-		
+
 		/*only first-block*/
-		.frame-name {
+		#frame-name {
 			background: url('../image/portfolio/frame/all.png');
 			p {
 				font-family: Mohave;
@@ -681,8 +727,8 @@ a {
 			}
 		}
 		/*end first-block*/
-		
-		.see-all-clear, .portfolio-section:last-child {
+
+		.see-all-visibility, .portfolio-section:last-child {
 			border: 1px solid #d6d6d6;
 		}
 
@@ -690,7 +736,6 @@ a {
 			box-sizing: border-box;
 			width: 291px;
 			height: 291px;
-			overflow: hidden; 
 			float: left;
 			position: relative;
 
@@ -700,78 +745,110 @@ a {
 			}
 
 			&:hover {
+				.active-window {
+					opacity: 1;
+					-webkit-transition: opacity .7s;
+					transition: opacity .7s;
+				}
+
 				.passive-window {
-					display: none;
+					opacity: 0;
+					-webkit-transition: opacity .7s;
+					transition: opacity .7s;
 				}
 			}
-			
-			/*passive-window*/
-			.passive-window {
+
+			.active-window, .passive-window {
 				width: 100%;
 				height: 100%;
-
-				a {
-				display: block;
-				height: 100%;
-				width: 100%;
-
-					img {
-						width: 103%;
-						height: 102%;
-						border: none;
-						margin: -4px -5px 0 -1px;
-					}
-				}
-			}
-			/* end passive-window*/
-
-			/*active-window*/
-			.active-window {
-				width: 100%;
-				height: 100%;
-				position: relative;
+				position: absolute;
+				top: 0;
 
 				a {
 					display: block;
 					width: 100%;
 					height: 100%;
+				}
 
-					.active-window-inner {
-						width: 100%;
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						-webkit-transform: translate(-50%, -50%);
-						transform: translate(-50%, -50%);
-						text-transform: uppercase;
-						color: #000;
-						font-family: Mohave;
-						text-align: center;
+				.active-window-inner {
+					width: 100%;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					-webkit-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+					text-transform: uppercase;
+					color: #000;
+					font-family: Mohave;
+					text-align: center;
 
-						.inner-heading {
-							font-size: 16.3px;
-							letter-spacing: 5px;
+					/*active window text*/
+					.inner-heading {
+						font-size: 16.3px;
+						letter-spacing: 5px;
 
-							&:after {
-								content: '';
-								display: block;
-								width: 155px;
-								height: 1px;
-								margin: 6px auto 8px auto;
-								background: #000;
-							}
-						}
-
-						.inner-footer {
-							font-size: 8px;
-							letter-spacing: 7px;
+						&:after {
+							content: '';
+							display: block;
+							width: 155px;
+							height: 1px;
+							margin: 6px auto 8px auto;
+							background: #000;
 						}
 					}
-				}
-			}
-			/*end active-window*/
 
-			/*last-block @SEE-ALL*/
+					.inner-footer {
+						font-size: 8px;
+						letter-spacing: 7px;
+					}
+					/*end active window text*/
+				}
+
+				.passive-window-inner {
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+				}
+				
+				/*change background photoes*/
+				.photo1 {
+					background: url('../image/portfolio/passive/solo.png') 0 0 no-repeat;
+					background-size: 107%;
+				}
+
+				.photo2 {
+					background: url('../image/portfolio/passive/mill.png') -2px 0 no-repeat;
+					background-size: 107%;
+				}
+
+				.photo3 {
+					background: url('../image/portfolio/passive/fff.png') 0 0 no-repeat;
+					background-size: 107%;
+				}
+
+				.photo4 {
+					background: url('../image/portfolio/passive/drift.png') 0 0 no-repeat;
+					background-size: 107%;
+				}
+
+				.photo5 {
+					background: url('../image/portfolio/passive/lash.png') 0 0 no-repeat;
+					background-size: 107%;
+				}
+
+				.photo6 {
+					background: url('../image/portfolio/passive/badaro.png') 0 0 no-repeat;
+					background-size: 107%;
+				}
+				/* end change background photoes*/
+			}
+
+			.active-window {
+				opacity: 0;
+				z-index: 100;
+			}
+
+			/*last-block @SEE-ALL and UP-BTN*/
 			.mini-wrapper {
 				position: absolute;
 				top: 50%;
@@ -782,12 +859,16 @@ a {
 				cursor: pointer;
 
 				&:hover  {
-					.see-all {
-						background-position: -99px 20px;
+					.see-all, .up-btn {
+						opacity: 0;
+						-webkit-transition: opacity .8s;
+						transition: opacity .8s; 
 					}
-
-					.up-btn {
-						background-position: -123px 0;
+					
+					.see-all-inner, .up-btn-inner {
+						opacity: 1;
+						-webkit-transition: opacity .7s;
+						transition: opacity .7s;
 					}
 				}
 
@@ -800,7 +881,7 @@ a {
 					letter-spacing: 4px;
 				}
 
-				.see-all, .up-btn {
+				.see-all, .up-btn, .see-all-inner, .up-btn-inner {
 					width: 60px;
 					height: 60px;
 					border: 1px solid #c7c7c7;
@@ -811,14 +892,28 @@ a {
 					background: url('../image/portfolio/passive/seeall.png') 4px 20px no-repeat;
 				}
 
+				.see-all-inner, .up-btn-inner {
+					position: absolute;
+					top: 0;
+					opacity: 0;
+				}
+
+				.see-all-inner {
+					background: url('../image/portfolio/passive/seeall.png') -99px 20px no-repeat;
+				}
+
+				.up-btn-inner {
+					background: url('../image/portfolio/passive/up.png') -123px 0 no-repeat;
+				}
+
 				.up-btn {
 					background: url('../image/portfolio/passive/up.png') 1px 0 no-repeat;
 				}
 			}
-			/*end last-block @SEE-ALL*/
+			/*end last-block @SEE-ALL and UP-BTN*/
 		}
 	}
-	/*-- - - - - - end portfolio - - - - - --*/
+	/*End Portfolio*/
 
 }
 /*  - - - - - - - - - - - -CATEGORIES- - - - - - - - - - - - */

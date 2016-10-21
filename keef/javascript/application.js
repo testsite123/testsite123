@@ -43,3 +43,10 @@ $(document).ready(function(){
 	// end adding class .filter-active to .filter-block
 
 });
+
+
+var bigParallax = document.getElementById('paralax-layer');
+var parallax = new Parallax(bigParallax);
+
+var smallParallax = document.getElementById('small-parallax');
+var parallax = new Parallax(smallParallax);

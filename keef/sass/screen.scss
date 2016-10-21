@@ -201,8 +201,8 @@ a {
 }
 
 .container {
-	width: 100%;
 	max-width: 1920px;
+	width: 100%;
 	height: 100%;
 	margin: 0 auto;
 	padding: 0;
@@ -947,7 +947,7 @@ a {
 		width: 1455px;
 		height: 730px;
 		margin: 95px auto 0 auto;
-		background: url('../image/paralax/bgr.png');
+		/*background: url('../image/paralax/bgr.png');*/
 		position: relative;
 
 		.photo-layer {

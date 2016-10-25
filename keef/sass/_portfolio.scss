@@ -32,20 +32,21 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 			padding-bottom: 20px;
 			border-bottom: 1px solid #000;
 
-			p a{
-				font-family: Mohave;
-				font-size: 24px;
-				letter-spacing: 9px;
-				color: #000;
+			.topic-slider {
+				p {
+					a {
+						font-family: Mohave;
+						font-size: 24px;
+						letter-spacing: 9px;
+						color: #000;
+					}
+				}
 			}
 		}
 		/*-- - - - - -end topic - - - - - --*/
 
 		/*-- - - - - - slider - - - - - --*/
-		.ddd {
-			background: $testcolor-two;
-		}
-		.slider-page {
+		.portfolio-page {
 			width: 1610px;
 			margin: 80px 0 0 0; 
 			display: -webkit-box;
@@ -60,7 +61,7 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 				width: 586px;
 				min-height: 815px;
 
-				.border-container {
+				.border-container { /*must moving with scrolling*/
 					min-height: 815px;
 					border-right: 1px solid #000;
 					position: relative;
@@ -151,6 +152,16 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 						}
 					}
 
+					.pager {
+						position: absolute;
+						bottom: -10px;
+						right: 68px;
+
+						a:first-child {
+							margin: 0 70px 0 0;
+						}
+					}
+
 					.mini-wrapper {
 						width: 390px;
 						margin: 0 0 0 62px;
@@ -174,7 +185,7 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 .slider-wrapper {
 	.bx-wrapper {
 		.bx-controls-direction a {
-			top: 905px;
+			top: 928px;
 		}
 
 		.bx-prev {

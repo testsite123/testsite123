@@ -28,21 +28,35 @@ $(document).ready(function(){
 	});
 	// end portfolio height
 
-
-
 	// bxslider main page
 	$(".header-slider").bxSlider();
 	// end bxslider main page
+
 	// adding class .filter-active to .filter-block
-	$(".filter-block").click(function(){
-		$(this).addClass("filter-active")
+	$(".filter-menu").on("click", ".filter-block", function(e){
+		$(this).siblings("li").removeClass("filter-active");
+		$(this).addClass("filter-active");
 	});
 	// end adding class .filter-active to .filter-block
 
+	// scrolling vertical-menu
+	var scrollVertical = $(".vertical-menu");
+	var scrollBottom = $(window).scrollTop() + $(window).height();
+
+	scrollVertical.on("scroll", function(e) {
+
+		if ($(this).scrollBottom > 1000) {
+			scrollVertical.addClass("visible-menu");
+		} else {
+			scrollVertical.removeClass("visible-menu");
+		}
+
+	});
+	// end scrolling vertical-menu
 });
 
 
-var bigParallax = document.getElementById('paralax-layer');
+var bigParallax = document.getElementById('parallax-layer');
 var parallax = new Parallax(bigParallax);
 
 var smallParallax = document.getElementById('small-parallax');

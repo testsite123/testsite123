@@ -15,9 +15,9 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 
 
 /*-- - - - - - vertical menu - - - - - --*/
-.visible-menu {
+div .visible-menu {
 	position: fixed;
-	top: 0;
+	top: 10px;
 	left: 47px;
 	opacity: 1;
 	-webkit-transition: opacity .3s;
@@ -30,7 +30,7 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 	position: absolute;
 	top: 46px;
 	left: 47px;
-	/*opacity: 0;*/
+	opacity: 0;
 
 		.vertical-menu-wrapper {
 			position: relative;
@@ -211,6 +211,9 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 }
 /*END FONT-FACE*/
 
+body {
+	overflow-x: hidden;
+}
 
 a {
 	color: #fff;

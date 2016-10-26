@@ -183,7 +183,7 @@
 		 */
 		var setup = function(){
 			// wrap el in a wrapper
-			el.wrap('<div class="' + slider.settings.wrapperClass + '"><div class="bx-viewport"></div></div>');
+			el.wrap('<div class="' + slider.settings.wrapperClass  + '"' + ' id="bx-slider-id"' + '><div class="bx-viewport"></div></div>');
 			// store a namspace reference to .bx-viewport
 			slider.viewport = el.parent();
 			// add a loading div to display while images are loading
@@ -240,7 +240,7 @@
 				slider.children.eq(slider.settings.startSlide).css({zIndex: slider.settings.slideZIndex, display: 'block'});
 			}
 			// create an element to contain all slider controls (pager, start / stop, etc)
-			slider.controls.el = $('<div class="bx-controls" />');
+			slider.controls.el = $('<div class="bx-controls"/>');
 			// if captions are requested, add them
 			if(slider.settings.captions) appendCaptions();
 			// check if startSlide is last slide

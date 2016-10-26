@@ -1,17 +1,17 @@
 $(document).ready(function(){
-	// header langmenu
+	// header langmenu---------------------------------------------------------
 	$(".lang-menu").click(function(){
 		$(".lang-select").toggle(400)
 	});
-	// end header langmenu
+	// end header langmenu-----------------------------------------------------
 	
-	// vertical-menu
+	// vertical-menu-----------------------------------------------------------
 	$(".lang-vertical").click(function(){
 		$(".vertical-select").toggle(400)
 	});
-	// end vertical-menu
+	// end vertical-menu-------------------------------------------------------
 
-	// portfolio height
+	// portfolio height--------------------------------------------------------
 	var portsecHeight = $(".portfolio-section").height();
 	var doubleHeight = portsecHeight*2;
 
@@ -24,40 +24,83 @@ $(document).ready(function(){
 	$(".up-btn-show").click(function(){
 		$(".portfolio").css("height", doubleHeight).css("overflow", "hidden");
 		$(".see-all-visibility").css("display", "block");
-		// $(".paralax").css("margin-top", "-200px");
 	});
-	// end portfolio height
+	// end portfolio height----------------------------------------------------
 
-	// bxslider main page
+	// bxslider main page------------------------------------------------------
 	$(".header-slider").bxSlider();
-	// end bxslider main page
+	// end bxslider main page--------------------------------------------------
 
-	// adding class .filter-active to .filter-block
+	// adding class .filter-active to .filter-block----------------------------
 	$(".filter-menu").on("click", ".filter-block", function(e){
 		$(this).siblings("li").removeClass("filter-active");
 		$(this).addClass("filter-active");
 	});
-	// end adding class .filter-active to .filter-block
+	// end adding class .filter-active to .filter-block------------------------
 
-	// scrolling vertical-menu
-	var scrollVertical = $(".vertical-menu");
-	var scrollBottom = $(window).scrollTop() + $(window).height();
+	// scrolling vertical-menu-------------------------------------------------
+	var scrollVertical = $("#vertical-menu");
+	var headerHeight = $(".header").height();
 
-	scrollVertical.on("scroll", function(e) {
+	if ($(this).scrollTop() < headerHeight) {
+		scrollVertical.removeClass("visible-menu");
+		//console.log("remove");
+	}
+	if ($(this).scrollTop() > headerHeight) {
+		scrollVertical.addClass("visible-menu");
+		//console.log("add");
+	} 
 
-		if ($(this).scrollBottom > 1000) {
-			scrollVertical.addClass("visible-menu");
-		} else {
+	$(window).on("scroll", function(e) {
+		 if ($(this).scrollTop() < headerHeight) {
 			scrollVertical.removeClass("visible-menu");
+			//console.log("remove");
 		}
+		if ($(this).scrollTop() > headerHeight) {
+			scrollVertical.addClass("visible-menu");
+			//console.log("add");
+		} 
 
 	});
-	// end scrolling vertical-menu
+	// end scrolling vertical-menu-------------------------------------------------
+
+
+	// slider changing
+
+	var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+	var target = document.getElementById('header-wrapper-id');
+	 
+	// var newTarget = $('#header-wrapper-id');
+	// создаём экземпляр MutationObserver
+
+	//console.log(MutationObserver);
+	var observer = new MutationObserver(function(mutations) {
+	  mutations.forEach(function(mutation) {
+	    //console.log(mutation.type);
+	    //console.log(mutation);
+
+	    if (mutation.target.className.indexOf("active") !==  -1 ) {
+	    		console.log(mutation);
+	    		console.log(mutation.target.className);
+	    }
+	  });    
+	});
+	
+
+	// конфигурация нашего observer:
+	var config = { attributes: true, childList: true, characterData: true, subtree: true };
+	 
+	// передаём в качестве аргументов целевой элемент и его конфигурацию
+	observer.observe(target, config);
+	// end slider changing
 });
 
+// parallax mode-------------------------------------------------------------------
 
 var bigParallax = document.getElementById('parallax-layer');
 var parallax = new Parallax(bigParallax);
 
 var smallParallax = document.getElementById('small-parallax');
 var parallax = new Parallax(smallParallax);
+
+// end parallax mode---------------------------------------------------------------

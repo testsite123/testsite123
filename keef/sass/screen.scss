@@ -1157,7 +1157,7 @@ a {
 	background: #fff;
 	width: 100%;
 	min-height: 260px;
-	margin-bottom: 70px;
+	margin: 0 0 55px 0;
 
 	.table-wrapper {
 		width: 1455px;
@@ -1403,6 +1403,7 @@ a {
 				margin-left: 13%;
 
 				.footer-table {
+					width: 687px;
 
 					.sprite-td {
 						background: url('../image/footer/footer-sprite.png') 5px 10px no-repeat;

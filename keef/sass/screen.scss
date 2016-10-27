@@ -19,9 +19,12 @@ div .visible-menu {
 	position: fixed;
 	top: 10px;
 	left: 47px;
-	opacity: 1;
-	-webkit-transition: opacity .3s;
-	transition: opacity .3s;
+}
+
+div .fixed-portfolio-menu {
+	position: fixed;
+	top: 46px;
+	left: 47px;
 }
 
 .vertical-menu {
@@ -30,7 +33,7 @@ div .visible-menu {
 	position: absolute;
 	top: 46px;
 	left: 47px;
-	opacity: 0;
+	z-index: 99999;
 
 		.vertical-menu-wrapper {
 			position: relative;
@@ -266,6 +269,21 @@ a {
 		top: 75px;
 		left: 75px;
 		z-index: 2;
+
+		&.new {
+			ul {
+				li {
+				 &:hover {
+				 	&:after, &:before {
+						background: #000;
+					}
+				 }
+					a {
+						color: #000;
+					}
+				}
+			}
+		}
 
 		ul {
 			display: -webkit-box;
@@ -1595,7 +1613,7 @@ a {
 				width: 420px;
 				margin: 245px 0 0 -153px;
 
-				span {
+				a span {
 					font-size: 12px;
 				}
 			}
@@ -1853,11 +1871,17 @@ a {
 
 		.vertical-menu {
 			left: 20px;
-			height: 680px;
+			height: 600px;
 
-			.vertical-nav {
-				width: 400px;
-				margin: 220px 0 0 -143px;
+			.vertical-nav-wrapper {
+				.vertical-nav {
+					width: 350px;
+					margin: 160px 0 0 -120px;
+
+					a span {
+						font-size: 10px;
+					}
+				}
 			}
 		}
 	
@@ -1875,7 +1899,6 @@ a {
 			}
 
 			.portfolio-section {
-				/*width: 20%;*/
 				width: 204px;
 				height: 204px;
 
@@ -1901,15 +1924,15 @@ a {
 
 	/*parallax*/
 	.parallax {
-		min-height: 710px;
+		min-height: 850px;
 
 		.text-layer {
 			margin-top: 100px;
 		}
 
 		.parallax-layer {
-			width: 885px;
-			height: 445px;
+			width: 1020px;
+			height: 550px;
 
 			.par-img1 {
 				margin: -12px -20px 0 -23px; 
@@ -1941,12 +1964,11 @@ a {
 
 	/*footer*/
 		.footer {
-			/*margin-top: -230px;*/
 
 			.table-wrapper {
 
 				.footer-table {
-					width: 885px;
+					width: 1020px;
 
 					td {
 						font-size: 11px;
@@ -1990,12 +2012,12 @@ a {
 					}
 
 					.sprite-td {
-						background: url('../image/footer/footer-sprite.png') 5px 10px no-repeat;
-						background-size: 92% 160%;
+						background: url('../image/footer/footer-sprite.png') 5px 7px no-repeat;
+						background-size: 93% 175%;
 
 						div {
-							background: url('../image/footer/footer-sprite.png') 5px -49px no-repeat;
-							background-size: 92% 160%;
+							background: url('../image/footer/footer-sprite.png') 5px -57.5px no-repeat;
+							background-size: 93% 175%;
 						}
 					}
 				}

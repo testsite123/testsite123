@@ -27,8 +27,7 @@ $(document).ready(function(){
 	// end portfolio height----------------------------------------------------
 
 	// bxslider main page------------------------------------------------------
-	var bxslider = $(".header-slider").bxSlider();
-	console.log(bxslider);
+	$(".header-slider").bxSlider();
 	// end bxslider main page--------------------------------------------------
 
 	// adding class .filter-active to .filter-block----------------------------
@@ -66,7 +65,6 @@ $(document).ready(function(){
 
 
 	// slider changing
-	/*
 	var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
 	var target = document.getElementById('header-wrapper-id');
 	 
@@ -103,7 +101,6 @@ $(document).ready(function(){
 	// передаём в качестве аргументов целевой элемент и его конфигурацию
 	observer.observe(target, config);
 	// end slider changing
-	*/
 });
 
 // parallax mode-------------------------------------------------------------------

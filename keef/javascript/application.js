@@ -111,6 +111,55 @@ $(document).ready(function(){
 
 	});
 	// end scrolling vertical-menu-------------------------------------------------
+
+	// зміна background при виборі фільтру
+	var backgroundTransition = {
+		"-webkit-transition": "background 1.3s",
+		"transition": "background 1.3s",
+	}
+
+	$(".brand").click(function(){
+		$("#frame-name").css("background", "url('image/portfolio/frame/brand.png')").css("background-size", "cover").css(backgroundTransition);
+		$("#frame-text").fadeOut(function(){
+			$(this).text("Brand creation").fadeIn();
+		});
+	});
+
+	$(".dimention").click(function(){
+		$("#frame-name").css("background", "url('image/portfolio/frame/3d.png')").css("background-size", "cover").css(backgroundTransition);
+		$("#frame-text").fadeOut(function(){
+			$(this).text("3d design").fadeIn();
+		});
+	});
+
+	$(".web").click(function(){
+		$("#frame-name").css("background", "url('image/portfolio/frame/web.png')").css("background-size", "cover").css(backgroundTransition);
+		$("#frame-text").fadeOut(function(){
+			$(this).text("web design").fadeIn();
+		});
+	});
+
+	$(".graphic").click(function(){
+		$("#frame-name").css("background", "url('image/portfolio/frame/graphic.png')").css("background-size", "cover").css(backgroundTransition);
+		$("#frame-text").fadeOut(function(){
+			$(this).text("Graphic design").fadeIn();
+		});
+	});
+
+	$(".craft").click(function(){
+		$("#frame-name").css("background", "url('image/portfolio/frame/craft.png')").css("background-size", "cover").css(backgroundTransition);
+		$("#frame-text").fadeOut(function(){
+			$(this).text("craft").fadeIn();
+		});
+	});
+
+	$(".all").click(function(){
+		$("#frame-name").css("background", "url('image/portfolio/frame/all.png')").css("background-size", "cover").css(backgroundTransition);
+		$("#frame-text").fadeOut(function(){
+			$(this).text("All our works").fadeIn();
+		});
+	});
+	// зміна background при виборі фільтру
 });
 
 // parallax mode-------------------------------------------------------------------

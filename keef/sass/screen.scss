@@ -216,7 +216,7 @@ div .fixed-portfolio-menu {
 /*END FONT-FACE*/
 
 body {
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 
 a {
@@ -1185,7 +1185,7 @@ a {
 			}
 
 			.bigger-td {
-				width: 495px;
+				width: 485px;
 
 				a {
 					color: #000;
@@ -1215,6 +1215,8 @@ a {
 
 			.smallest-td {
 				width: 91px;
+				line-height: 20px;
+				letter-spacing: 4px;
 			}
 
 			.mini-td {
@@ -1259,7 +1261,7 @@ a {
 
 			.small-font {
 				font-size: 8px;
-				letter-spacing: 2.5px;
+				letter-spacing: 3px;
 			}
 
 			.regular-font {
@@ -1586,13 +1588,30 @@ a {
 				margin-left: 13%;
 
 				.footer-table {
+					width: 624px;
+
+					.smaller-td {
+						font-size: 16px;
+					}
+
+					.smaller-td {
+						font-size: 14px;
+					}
+
+					.regular-font {
+						font-size: 12px;
+					}
+
+					.small-font {
+						font-size: 8px;
+					}
 
 					.sprite-td {
 						background: url('../image/footer/footer-sprite.png') 5px 10px no-repeat;
 						background-size: 94% 166%;
 
 						div {
-							background: url('../image/footer/footer-sprite.png') 5px -69px no-repeat;
+							background: url('../image/footer/footer-sprite.png') 5px -68px no-repeat;
 							background-size: 94% 166%;
 						}
 					}
@@ -1702,15 +1721,18 @@ a {
 		min-height: 836px;
 
 		.vertical-menu {
-			height: 710px;
-			left: 35px;
+			left: 20px;
+			height: 600px;
 
-			.vertical-nav {
-				width: 420px;
-				margin: 245px 0 0 -153px;
+			.vertical-nav-wrapper {
+				.vertical-nav {
+					width: 350px;
+					margin: 160px 0 0 -120px;
 
-				a span {
-					font-size: 12px;
+					a span {
+						font-size: 11px;
+						letter-spacing: 4px;
+					}
 				}
 			}
 		}
@@ -1806,9 +1828,10 @@ a {
 		.footer {
 
 			.table-wrapper {
+				width: 1080px;
 
 				.footer-table {
-					width: 1080px;
+					width: 539px;
 
 					td {
 						font-size: 11px;
@@ -1839,6 +1862,8 @@ a {
 					.smallest-td {
 						width: 70px;
 						font-size: 10px;
+						line-height: 14px;
+						letter-spacing: 3px;
 					}
 
 					.regular-font {
@@ -1856,7 +1881,7 @@ a {
 						background-size: 94% 190%;
 
 						div {
-							background: url('../image/footer/footer-sprite.png') 5px -64.5px no-repeat;
+							background: url('../image/footer/footer-sprite.png') 5px -65px no-repeat;
 							background-size: 94% 190%;
 						}
 					}
@@ -1976,6 +2001,7 @@ a {
 
 					a span {
 						font-size: 10px;
+						letter-spacing: 4px;
 					}
 				}
 			}
@@ -2062,9 +2088,10 @@ a {
 		.footer {
 
 			.table-wrapper {
+				width: 1020px;
 
 				.footer-table {
-					width: 1020px;
+					width: 509px;
 
 					td {
 						font-size: 11px;
@@ -2120,4 +2147,26 @@ a {
 			}
 		}
 	/*end footer*/
+}
+
+
+@media only screen and (min-height: 639px) {
+.categories {
+		.vertical-menu {
+			left: 20px;
+			height: 600px;
+
+			.vertical-nav-wrapper {
+				.vertical-nav {
+					width: 350px;
+					margin: 160px 0 0 -120px;
+
+					a span {
+						font-size: 10px;
+						letter-spacing: 4px;
+					}
+				}
+			}
+		}
+	}
 }

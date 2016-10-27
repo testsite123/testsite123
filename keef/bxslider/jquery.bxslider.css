@@ -108,13 +108,11 @@
 .bx-wrapper .bx-prev {
 	bottom: 0;
 	right: 210px;
-	background: url('../image/slider/arrow/whiteleft.png') no-repeat;
 }
 
 .bx-wrapper .bx-next {
 	right: 130px;
 	bottom: 65px;
-	background: url('../image/slider/arrow/whiteright.png') no-repeat;
 }
 
 .bx-wrapper .bx-prev:hover {

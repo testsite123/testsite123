@@ -1,19 +1,47 @@
 $(document).ready(function(){
 	// header langmenu---------------------------------------------------------
 	$(".lang-menu").click(function(){
-		$(".lang-select").toggle(400)
+		$(".lang-select").toggle(500);
 	});
+
+	$(".lang-menu, .lang-vertical").mouseover(function(){
+		var langMenuHover = {
+			"width": "17px",
+			"overflow": "hidden",
+			"margin": "0 auto",
+			"-webkit-transition": "width 0.4s",
+			"transition": "width 0.4s"
+		}
+		$(this).css(langMenuHover);
+	});
+
+	$(".lang-menu, .lang-vertical").mouseleave(function(){
+		if ( $(".lang-select, .vertical-select").is(":visible") )
+			return false;
+		var langMenuUnHover = {
+			"width": "34px",
+			"min-height": "10px",
+			"-webkit-transition": "width 0.4s",
+			"transition": "width 0.4s"
+		}
+		$(this).css(langMenuUnHover);
+	});
+
 	// end header langmenu-----------------------------------------------------
 	
 	// vertical-menu-----------------------------------------------------------
 	$(".lang-vertical").click(function(){
-		$(".vertical-select").toggle(400)
+		$(".vertical-select").toggle(500)
 	});
 	// end vertical-menu-------------------------------------------------------
 
 	// portfolio height--------------------------------------------------------
 	var portsecHeight = $(".portfolio-section").height();
 	var doubleHeight = portsecHeight*2;
+	var overflowTrans = {
+		"transition": "height 0.6s",
+		"-webkit-transition": "height 0.6s"
+	}
 
 	$(".see-all-show").click(function(){
 		$(".see-all-visibility").css("display", "none");
@@ -27,7 +55,28 @@ $(document).ready(function(){
 	// end portfolio height----------------------------------------------------
 
 	// bxslider main page------------------------------------------------------
-	$(".header-slider").bxSlider();
+	var bxslider = $(".header-slider").bxSlider({
+  		onSlideNext: function($slideElement, oldIndex, newIndex){
+  			if ( $slideElement[0].className.indexOf("white-pic") !== -1) {
+  				$(".header-menu").addClass("new");
+  				$(".header-logo").attr("src", "image/header-nav/logoblack.png");
+  				$(".lang-menuicon").attr("src", "image/header-nav/icon-passiveblack.png");
+  				$(".lang-select a").addClass("lang-black");
+  				$(".lang-wrapper").addClass("lang-wrapper-black");
+  				$(".slider-text").addClass("slider-text-black");
+  				$(".bx-wrapper").addClass("bx-wrapper-black");
+
+  			} else {
+  				$(".header-menu").removeClass("new");
+  				$(".header-logo").attr("src", "image/header-nav/logowhite.png");
+  				$(".lang-menuicon").attr("src", "image/header-nav/icon-passivewhite.png");
+  				$(".lang-select a").removeClass("lang-black");
+  				$(".lang-wrapper").removeClass("lang-wrapper-black");
+  				$(".slider-text").removeClass("slider-text-black");
+  				$(".bx-wrapper").removeClass("bx-wrapper-black");
+  			}
+	    }
+	});
 	// end bxslider main page--------------------------------------------------
 
 	// adding class .filter-active to .filter-block----------------------------
@@ -62,45 +111,6 @@ $(document).ready(function(){
 
 	});
 	// end scrolling vertical-menu-------------------------------------------------
-
-
-	// slider changing
-	var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
-	var target = document.getElementById('header-wrapper-id');
-	 
-	// var newTarget = $('#header-wrapper-id');
-	// создаём экземпляр MutationObserver
-
-	//console.log(MutationObserver);
-	var observer = new MutationObserver(function(mutations) {
-	  mutations.forEach(function(mutation) {
-	    //console.log(mutation.type);
-	    //console.log(mutation);
-
-	    if (mutation.target.className.indexOf("active") !==  -1 ) {
-	    		console.log(mutation);
-	    		console.log(mutation.target.className);
-
-    		       var item = mutation.target.innerHTML;
-
-			       if(item == 3) {
-			        $(".header-menu").addClass("new");
-
-			       }
-			       else {
-			        $(".header-menu").removeClass("new");
-			       }
-	   	 }
-	  });    
-	});
-	
-
-	// конфигурация нашего observer:
-	var config = { attributes: true, childList: true, characterData: true, subtree: true };
-	 
-	// передаём в качестве аргументов целевой элемент и его конфигурацию
-	observer.observe(target, config);
-	// end slider changing
 });
 
 // parallax mode-------------------------------------------------------------------

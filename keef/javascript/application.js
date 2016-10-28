@@ -39,10 +39,6 @@ $(document).ready(function(){
 	// portfolio height--------------------------------------------------------
 	var portsecHeight = $(".portfolio-section").height();
 	var doubleHeight = portsecHeight*2;
-	var overflowTrans = {
-		"transition": "height 0.6s",
-		"-webkit-transition": "height 0.6s"
-	}
 
 	$(".see-all-show").click(function(){
 		$(".see-all-visibility").css("display", "none");
@@ -58,8 +54,8 @@ $(document).ready(function(){
 	// bxslider main page------------------------------------------------------
 	var bxslider = $(".header-slider").bxSlider({
 		auto: true,
-		pause: 3000,
-		
+		pause: 6000,
+
 		switch: function ($slideElement) {
 				var arrayString = $slideElement[0].className.split(" ");
 				for ( var i = 0; i < arrayString.length; i++) {
@@ -75,7 +71,6 @@ $(document).ready(function(){
 						
 					}
 				}
-				// console.log(arrayString);
 
 								
 			if ( $slideElement[0].className.indexOf("white-pic") !== -1) {

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	// header langmenu---------------------------------------------------------
 	$(".lang-menu").click(function(){
 		$(".lang-select").toggle(500);
@@ -56,8 +57,51 @@ $(document).ready(function(){
 
 	// bxslider main page------------------------------------------------------
 	var bxslider = $(".header-slider").bxSlider({
+		switch: function ($slideElement) {
+				var arrayString = $slideElement[0].className.split(" ");
+				for ( var i = 0; i < arrayString.length; i++) {
+					arrayString[i].indexOf("slide");
+					
+					if (arrayString[i].indexOf("slide") !== -1 && arrayString[i].indexOf("slide") !== 0 ) 
+					{
+						$("." + arrayString[i] + " .image-wrapper img").lazyload({
+						    
+						    data_attribute: "orig" 
+		        			
+						});
+						
+					}
+				}
+				// console.log(arrayString);
+
+								
+			if ( $slideElement[0].className.indexOf("white-pic") !== -1) {
+  				$(".header-menu").addClass("new");
+  				$(".header-logo").attr("src", "image/header-nav/logoblack.png");
+  				$(".lang-menuicon").attr("src", "image/header-nav/icon-passiveblack.png");
+  				$(".lang-select a").addClass("lang-black");
+  				$(".lang-wrapper").addClass("lang-wrapper-black");
+  				$(".slider-text").addClass("slider-text-black");
+  				$(".bx-wrapper").addClass("bx-wrapper-black");
+
+  			} else {
+  				$(".header-menu").removeClass("new");
+  				$(".header-logo").attr("src", "image/header-nav/logowhite.png");
+  				$(".lang-menuicon").attr("src", "image/header-nav/icon-passivewhite.png");
+  				$(".lang-select a").removeClass("lang-black");
+  				$(".lang-wrapper").removeClass("lang-wrapper-black");
+  				$(".slider-text").removeClass("slider-text-black");
+  				$(".bx-wrapper").removeClass("bx-wrapper-black");
+  			}
+		},
   		onSlideNext: function($slideElement, oldIndex, newIndex){
-  			if ( $slideElement[0].className.indexOf("white-pic") !== -1) {
+  			this.switch($slideElement);
+	    }, 
+	    onSlidePrev: function($slideElement, oldIndex, newIndex){
+  			this.switch($slideElement);
+	    },
+	    onSliderLoad: function(currentIndex){
+  			if ( $("#new-bx-slider-id").children().get(1).className.indexOf("white-pic") !== -1) {
   				$(".header-menu").addClass("new");
   				$(".header-logo").attr("src", "image/header-nav/logoblack.png");
   				$(".lang-menuicon").attr("src", "image/header-nav/icon-passiveblack.png");

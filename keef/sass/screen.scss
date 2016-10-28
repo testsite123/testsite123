@@ -289,6 +289,7 @@ a {
 
 	/*-- - - - - - header menu - - - - - --*/
 	.header-menu {
+		/*background: $testcolor-one;*/
 		width: 75%;
 		position: absolute;
 		top: 75px;
@@ -323,14 +324,10 @@ a {
 			margin: 0;
 			padding: 0;
 
+
+
 			li {
 				position: relative;
-
-				&:first-child {
-					&:before, &:after {
-						display: none;
-					}
-				}
 
 				&:before, &:after {
 					width: 16px;
@@ -342,6 +339,13 @@ a {
 
 			.headerlogo-black {
 				display: none;
+			}
+
+			.first-li {
+
+				&:before, &:after {
+					display: none;
+				}
 			}
 
 			.second-li {
@@ -1173,6 +1177,7 @@ a {
 		}
 
 		.footer-table {
+			width: 727px;
 
 			td {
 				height: 43px;
@@ -2151,7 +2156,7 @@ a {
 }
 
 
-@media only screen and (min-height: 639px) {
+/*@media only screen and (max-height: 639px) {
 .categories {
 		.vertical-menu {
 			left: 20px;
@@ -2170,4 +2175,4 @@ a {
 			}
 		}
 	}
-}
+}*/

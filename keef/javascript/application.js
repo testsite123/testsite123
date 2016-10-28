@@ -57,6 +57,9 @@ $(document).ready(function(){
 
 	// bxslider main page------------------------------------------------------
 	var bxslider = $(".header-slider").bxSlider({
+		auto: true,
+		pause: 3000,
+		
 		switch: function ($slideElement) {
 				var arrayString = $slideElement[0].className.split(" ");
 				for ( var i = 0; i < arrayString.length; i++) {

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$(".border-container").stick_in_parent();
 
 	// header langmenu---------------------------------------------------------
 	$(".lang-menu").click(function(){
@@ -206,7 +207,42 @@ $(document).ready(function(){
 	// зміна background при виборі фільтру
 
 	// Second-page scrolling
+	var borderContainer = $(".border-container");
+	var borderContainerWidth = $(".main-image-info").width();
+	var imgHoverBlock = $(".image-hover-href");
+	var mainImgWidth = $(".portfolio-main-image").width();
+	var imgHref = $(".main-topic-href");
+	var imgHoverStyle = {
+		"position": "fixed",
+		"top": "0",
+		"width": mainImgWidth,
+		"opacity": "1",
+		"transition": "opacity .6s"
+	}
+	
 
+
+	if ($(this).scrollTop() < 220) {
+		// borderContainer.css("position", "relative");
+		imgHoverBlock.css("position", "absolute").css("opacity", "0").css("transition", "opacity .3s");
+		//console.log("remove");
+	}
+	if ($(this).scrollTop() > 220) {
+		// borderContainer.css("position", "fixed").css("top", "0").css("width", borderContainerWidth);
+		imgHoverBlock.css(imgHoverStyle);
+	} 
+
+	$(window).on("scroll", function(e) {
+		 if ($(this).scrollTop() < 220) {
+			// borderContainer.css("position", "relative");
+			imgHoverBlock.css("position", "absolute").css("opacity", "0").css("transition", "opacity .3s");
+		}
+		if ($(this).scrollTop() > 220) {
+			// borderContainer.css("position", "fixed").css("top", "0").css("width", borderContainerWidth);
+			imgHoverBlock.css(imgHoverStyle);
+		} 
+
+	});
 	// END second-page scrolling
 
 	// parallax mode-------------------------------------------------------------------
@@ -218,9 +254,11 @@ $(document).ready(function(){
 		zIndex: -10
 	});
 
-	$(".logo").parallax({
-		imageSrc: 'image/parallax/parallaxlarge.png',
-	});
+	// $(".logo").parallax({
+	// 	imageSrc: 'image/parallax/parallaxlarge.png',
+	// });
+
+	// $( ".parallax-mirror" ).first().css( "top", "50px !important" );
 
 	// end parallax mode---------------------------------------------------------------
 

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	$(".border-container").stick_in_parent();
 
 	// header langmenu---------------------------------------------------------
 	$(".lang-menu").click(function(){
@@ -253,6 +252,8 @@ $(document).ready(function(){
 		naturalHeight: 730,
 		zIndex: -10
 	});
+
+	$(".border-container").stick_in_parent();
 
 	// $(".logo").parallax({
 	// 	imageSrc: 'image/parallax/parallaxlarge.png',

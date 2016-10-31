@@ -15,9 +15,10 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 
 
 /*-- - - - - - vertical menu - - - - - --*/
+
 div .visible-menu {
 	position: fixed;
-	top: 10px;
+	top: 46px;
 	left: 47px;
 }
 
@@ -84,6 +85,10 @@ div .fixed-portfolio-menu {
 								&:first-child {
 									margin-top: 0;
 								}
+							}
+
+							li.active-lang a {
+								color: #bdbdbd;
 							}
 
 							a {
@@ -201,18 +206,36 @@ div .fixed-portfolio-menu {
 
 /*FONT-FACE*/
 @font-face {
-	font-family: Mohave;
-	src: url(../font/Mohave/Mohave.otf);
+	font-family: 'Mohave';
+    src: url('../font/mohave/mohave.eot');
+    src: url('../font/mohave/mohave.eot?#iefix') format('embedded-opentype'),
+         url('../font/mohave/mohave.woff2') format('woff2'),
+         url('../font/mohave/mohave.woff') format('woff'),
+         url('../font/mohave/mohave.svg#mohaveregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: MohaveBold;
-	src: url(../font/Mohave/Mohave-Bold.otf);
+	font-family: 'MohaveBold';
+    src: url('../font/mohavebold/mohave-bold.eot');
+    src: url('../font/mohavebold/mohave-bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/mohavebold/mohave-bold.woff2') format('woff2'),
+         url('../font/mohavebold/mohave-bold.woff') format('woff'),
+         url('../font/mohavebold/mohave-bold.svg#mohavebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: Calama;
-	src: url(../font/Calama.ttf);
+	font-family: 'Calama';
+    src: url('../font/calama/calama.eot');
+    src: url('../font/calama/calama.eot?#iefix') format('embedded-opentype'),
+         url('../font/calama/calama.woff2') format('woff2'),
+         url('../font/calama/calama.woff') format('woff'),
+         url('../font/calama/calama.svg#calamacondensed_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 /*END FONT-FACE*/
 
@@ -462,6 +485,10 @@ a {
 						&:first-child {
 							margin-top: 0;
 						}
+					}
+
+					li.active-lang a {
+						color: #bdbdbd;
 					}
 
 					a {

@@ -123,12 +123,17 @@ $(document).ready(function(){
 	});
 	// end bxslider main page--------------------------------------------------
 
-	// adding class .filter-active to .filter-block----------------------------
+	// добавляння active class до меню і фільтрів----------------------------
 	$(".filter-menu").on("click", ".filter-block", function(e){
 		$(this).siblings("li").removeClass("filter-active");
 		$(this).addClass("filter-active");
 	});
-	// end adding class .filter-active to .filter-block------------------------
+
+	$(".vert-ul").on("click", ".vert-li", function(e){
+		$(this).siblings("li").removeClass("active-lang");
+		$(this).addClass("active-lang");
+	});
+	// end добавляння active class до меню і фільтрів------------------------
 
 	// scrolling vertical-menu-------------------------------------------------
 	var scrollVertical = $("#vertical-menu");
@@ -222,22 +227,17 @@ $(document).ready(function(){
 
 
 	if ($(this).scrollTop() < 220) {
-		// borderContainer.css("position", "relative");
 		imgHoverBlock.css("position", "absolute").css("opacity", "0").css("transition", "opacity .3s");
-		//console.log("remove");
 	}
 	if ($(this).scrollTop() > 220) {
-		// borderContainer.css("position", "fixed").css("top", "0").css("width", borderContainerWidth);
 		imgHoverBlock.css(imgHoverStyle);
 	} 
 
 	$(window).on("scroll", function(e) {
 		 if ($(this).scrollTop() < 220) {
-			// borderContainer.css("position", "relative");
 			imgHoverBlock.css("position", "absolute").css("opacity", "0").css("transition", "opacity .3s");
 		}
 		if ($(this).scrollTop() > 220) {
-			// borderContainer.css("position", "fixed").css("top", "0").css("width", borderContainerWidth);
 			imgHoverBlock.css(imgHoverStyle);
 		} 
 

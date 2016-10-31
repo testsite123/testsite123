@@ -43,18 +43,20 @@ $(document).ready(function(){
 	$(".see-all-show").click(function(){
 		$(".see-all-visibility").css("display", "none");
 		$(".portfolio").css("height", "100%").css("overflow", "visible");
+		$(window).trigger('resize').trigger('scroll');
 	});
 
 	$(".up-btn-show").click(function(){
 		$(".portfolio").css("height", doubleHeight).css("overflow", "hidden");
 		$(".see-all-visibility").css("display", "block");
+		$(window).trigger('resize').trigger('scroll');
 	});
 	// end portfolio height----------------------------------------------------
 
 	// bxslider main page------------------------------------------------------
 	var bxslider = $(".header-slider").bxSlider({
-		auto: true,
-		pause: 6000,
+		// auto: true,
+		// pause: 6000,
 
 		switch: function ($slideElement) {
 				var arrayString = $slideElement[0].className.split(" ");
@@ -202,14 +204,28 @@ $(document).ready(function(){
 		});
 	});
 	// зміна background при виборі фільтру
+
+	// Second-page scrolling
+
+	// END second-page scrolling
+
+	// parallax mode-------------------------------------------------------------------
+
+	$(".inside-layer").parallax({
+		imageSrc: 'image/parallax/parallaximg.png',
+		naturalWidth: 1455,
+		naturalHeight: 730,
+		zIndex: -10
+	});
+
+	$(".logo").parallax({
+		imageSrc: 'image/parallax/parallaxlarge.png',
+	});
+
+	// end parallax mode---------------------------------------------------------------
+
+	// portfolio page scrolling
+
+	// end portfolio page scrolling
 });
 
-// parallax mode-------------------------------------------------------------------
-
-var bigParallax = document.getElementById('parallax-layer');
-var parallax = new Parallax(bigParallax);
-
-var smallParallax = document.getElementById('small-parallax');
-var parallax = new Parallax(smallParallax);
-
-// end parallax mode---------------------------------------------------------------

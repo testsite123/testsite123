@@ -42,9 +42,11 @@ div .fixed-portfolio-menu {
 			.logo {
 				width: 100%;
 				height: 112px;
-				background: url(../image/vertical-menu/bg.png);
+				/*background: url(../image/vertical-menu/bg.png);*/
+				background: transparent; 
 				position: relative;
 				margin: 0 0 15px 0;
+				border: 1px solid red;
 
 				img {
 					position: absolute;
@@ -214,50 +216,6 @@ div .fixed-portfolio-menu {
 	src: url(../font/Calama.ttf);
 }
 /*END FONT-FACE*/
-
-/*KEYFRAMES*/
-@keyframes topappear {
-	0% {top: -1500px}
-	10% {top: -1400px;}
-	20% {top: -1250px;}
-	30% {top: -1100px;}
-	40% {top: -950px;}
-	50% {top: -800px;}
-	60% {top: -650px;}
-	70% {top: -400px;}
-	80% {top: -250px;}
-	90% {top: -100px;}
-	100% {top: 0px}
-} 
-
-@keyframes margintopappear {
-	0% {margin-top: -1500px}
-	10% {margin-top: -1400px;}
-	20% {margin-top: -1250px;}
-	30% {margin-top: -1100px;}
-	40% {margin-top: -950px;}
-	50% {margin-top: -800px;}
-	60% {margin-top: -650px;}
-	70% {margin-top: -400px;}
-	80% {margin-top: -250px;}
-	90% {margin-top: -100px;}
-	100% {margin-top: 0px}
-} 
-
-@keyframes marginleftappear {
-	0% {margin-left: -3000px}
-	10% {margin-left: -2500px;}
-	20% {margin-left: -2000px;}
-	30% {margin-left: -1600px;}
-	40% {margin-left: -1300px;}
-	50% {margin-left: -1000px;}
-	60% {margin-left: -700px;}
-	70% {margin-left: -400px;}
-	80% {margin-left: -200px;}
-	90% {margin-left: -100px;}
-	100% {margin-left: 0px}
-} 
-/*END KEYFRAMES*/
 
 body {
 	/*overflow-x: hidden;*/
@@ -682,7 +640,7 @@ a {
 
 /*  - - - - - - - - - - - -CATEGORIES- - - - - - - - - - - - */
 .categories {
-	background: #fff;
+	background: transparent; 
 	width: 100%;
 	min-height: 1006px;
 	position: relative;
@@ -1109,9 +1067,11 @@ a {
 
 /*  - - - - - - - - - - - -PARALAX- - - - - - - - - - - - */
 .parallax {
-	background: #fff;
+	/*background: transparent;*/
+	/*background: #fff;*/
 	width: 100%;
 	min-height: 1020px;
+	z-index: -11;
 	
 	/*-- - - - - - text layer - - - - - --*/
 	.text-layer {
@@ -1136,14 +1096,22 @@ a {
 		height: 730px;
 		margin: 95px auto 0 auto;
 		position: relative;
+		background: transparent;
 		overflow: hidden;
+		background: url('../image/parallax/parallaxnet.png') -230px -75px no-repeat;
+		background-size: 130% 111%;
+
 		
-		.layer {
-			.par-img1 {
-				width: 105%;
-				height: 105%;
-				margin: -12px auto 0 -23px; 
-			}
+		.inside-layer { 
+			position: absolute;
+			top: 0;
+			width: 1455px;
+			height: 730px;
+			
+			/*img {
+				width: 1455px;
+				height: 730px;
+			}*/
 		}
 
 		.photo-layer {
@@ -1387,15 +1355,6 @@ a {
 	.categories {
 		min-height: 956px;
 
-		/*.vertical-menu {
-			height: 820px;
-
-			.vertical-nav {
-				width: 500px;
-				margin: 305px 0 0 -192px;
-			}
-		}*/
-
 		.portfolio {
 			width: 1375px;
 			height: 550px;
@@ -1421,6 +1380,11 @@ a {
 			width: 1375px;
 			height: 650px;
 			margin: 95px auto 0 13%;
+
+			.inside-layer {
+				width: 1385px;
+				height: 650px;
+			}
 
 			.par-img1 {
 				margin: 0 0 0 0; 
@@ -1563,14 +1527,9 @@ a {
 	.categories {
 		min-height: 906px;
 
-		/*.vertical-menu {
-			height: 765px;
-
-			.vertical-nav {
-				width: 465px;
-				margin: 275px 0 0 -175px;
-			}
-		}*/
+		.line-30:after {
+			left: 55%;
+		}
 
 		.portfolio {
 			width: 1250px;
@@ -1605,11 +1564,9 @@ a {
 			height: 620px;
 			margin: 80px auto 0 13%;
 
-			.layer {
-				.par-img1 {
-					width: 108%;
-					margin: -12px auto 0 -20px; 
-				}
+			.inside-layer {
+				width: 1250px;
+				height: 620px;
 			}
 
 			.worker1 {
@@ -1731,14 +1688,14 @@ a {
 
 					.text-section {
 						margin: 20px 0 20px 0;
-						letter-spacing: 15px; 
+						letter-spacing: 14px; 
 					}
 
 					.text-footer {
 						letter-spacing: 4px;
 						
 						.text-block {
-							width: 325px;
+							width: 300px;
 
 							&:first-child {
 								margin-right: 50px;
@@ -1747,7 +1704,7 @@ a {
 					}
 
 					.large-text {
-						font-size: 135px;
+						font-size: 126px;
 					}
 
 					.middle-text {
@@ -1775,32 +1732,19 @@ a {
 	.categories {
 		min-height: 836px;
 
-		/*.vertical-menu {
+		.vertical-menu {
 			left: 20px;
-			height: 600px;
-
-			.vertical-nav-wrapper {
-				.vertical-nav {
-					width: 350px;
-					margin: 160px 0 0 -120px;
-
-					a span {
-						font-size: 11px;
-						letter-spacing: 4px;
-					}
-				}
-			}
-		}*/
+		}
 
 		.filters {
 			width: 800px;
-			margin: 72px auto 0 23%;
+			margin: 72px auto 0 26%;
 		}
 
 		.portfolio {
 			width: 1080px;
 			height: 432px;
-			margin: 140px auto 20px 13%;
+			margin: 140px auto 20px 16%;
 
 			#frame-name {
 				p {
@@ -1839,20 +1783,17 @@ a {
 		min-height: 840px;
 
 		.text-layer {
-			margin-top: 95px; 
+			margin: 95px auto 0 25%; 
 		}
 
 		.parallax-layer {
 			width: 1080px;
 			height: 560px;
-			margin: 80px auto 0 13%;
+			margin: 80px auto 0 16%;
 
-			.layer {
-				.par-img1 {
-					height: 112%;
-					width: 117%;
-					margin: -15px 0 0 -17px; 
-				}
+			.inside-layer {
+				width: 1080px;
+				height: 560px;
 			}
 
 			.worker1 {
@@ -1883,6 +1824,7 @@ a {
 		.footer {
 
 			.table-wrapper {
+				margin-left: 16%;
 				width: 1080px;
 
 				.footer-table {
@@ -2044,23 +1986,6 @@ a {
 	/*categories*/
 	.categories {
 		min-height: 816px;
-
-		/*.vertical-menu {
-			left: 20px;
-			height: 600px;
-
-			.vertical-nav-wrapper {
-				.vertical-nav {
-					width: 350px;
-					margin: 160px 0 0 -120px;
-
-					a span {
-						font-size: 10px;
-						letter-spacing: 4px;
-					}
-				}
-			}
-		}*/
 	
 		.filters {
 			width: 750px;
@@ -2111,8 +2036,9 @@ a {
 			width: 1020px;
 			height: 550px;
 
-			.par-img1 {
-				margin: -12px -20px 0 -23px; 
+			.inside-layer {
+				width: 1020px;
+				height: 550px;
 			}
 
 			.worker1 {
@@ -2204,24 +2130,3 @@ a {
 	/*end footer*/
 }
 
-
-/*@media only screen and (max-height: 639px) {
-.categories {
-		.vertical-menu {
-			left: 20px;
-			height: 600px;
-
-			.vertical-nav-wrapper {
-				.vertical-nav {
-					width: 350px;
-					margin: 160px 0 0 -120px;
-
-					a span {
-						font-size: 10px;
-						letter-spacing: 4px;
-					}
-				}
-			}
-		}
-	}
-}*/

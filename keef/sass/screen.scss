@@ -206,34 +206,43 @@ div .fixed-portfolio-menu {
 
 /*FONT-FACE*/
 @font-face {
-	font-family: 'Mohave';
-    src: url('../font/mohave/mohave.eot');
-    src: url('../font/mohave/mohave.eot?#iefix') format('embedded-opentype'),
-         url('../font/mohave/mohave.woff2') format('woff2'),
-         url('../font/mohave/mohave.woff') format('woff'),
-         url('../font/mohave/mohave.svg#mohaveregular') format('svg');
+	/*font-family: Mohave;*/
+	/*src: url(../font/Mohave/Mohave.otf);*/
+	font-family: Mohave;
+    src: url('../font/Mohave/mohave.eot');
+    src: url('../font/Mohave/mohave.eot?#iefix') format('embedded-opentype'),
+         url('../font/Mohave/mohave.woff2') format('woff2'),
+         url('../font/Mohave/mohave.woff') format('woff'),
+         url('../font/Mohave/mohave.ttf') format('truetype'),
+         url('../font/Mohave/mohave.svg#cera_stencil_pro_trialthin') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-	font-family: 'MohaveBold';
-    src: url('../font/mohavebold/mohave-bold.eot');
-    src: url('../font/mohavebold/mohave-bold.eot?#iefix') format('embedded-opentype'),
-         url('../font/mohavebold/mohave-bold.woff2') format('woff2'),
-         url('../font/mohavebold/mohave-bold.woff') format('woff'),
-         url('../font/mohavebold/mohave-bold.svg#mohavebold') format('svg');
+	/*font-family: MohaveBold;*/
+	/*src: url(../font/Mohave/Mohave-Bold.otf);*/
+	font-family: MohaveBold;
+    src: url('../font/Mohavebold/mohave-bold.eot');
+    src: url('../font/Mohavebold/mohave-bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/Mohavebold/mohave-bold.woff2') format('woff2'),
+         url('../font/Mohavebold/mohave-bold.woff') format('woff'),
+         url('../font/Mohavebold/mohave-bold.ttf') format('truetype'),
+         url('../font/Mohavebold/mohave-bold.svg#cera_stencil_pro_trialthin') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-	font-family: 'Calama';
-    src: url('../font/calama/calama.eot');
-    src: url('../font/calama/calama.eot?#iefix') format('embedded-opentype'),
-         url('../font/calama/calama.woff2') format('woff2'),
-         url('../font/calama/calama.woff') format('woff'),
-         url('../font/calama/calama.svg#calamacondensed_regular') format('svg');
+	/*font-family: Calama;*/
+	/*src: url(../font/Calama.ttf);*/
+	font-family: Calama;
+    src: url('../font/Calama/calama-webfont.eot');
+    src: url('../font/Calama/calama-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Calama/calama-webfont.woff2') format('woff2'),
+         url('../font/Calama/calama-webfont.woff') format('woff'),
+         url('../font/Calama/calama-webfont.ttf') format('truetype'),
+         url('../font/Calama/calama-webfont.svg#cera_stencil_pro_trialthin') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -313,7 +322,6 @@ a {
 
 	/*-- - - - - - header menu - - - - - --*/
 	.header-menu {
-		/*background: $testcolor-one;*/
 		width: 75%;
 		position: absolute;
 		top: 75px;
@@ -321,8 +329,8 @@ a {
 		z-index: 2;
 
 		&.new {
-			ul {
-				li {
+			div {
+				div {
 				 &:hover {
 				 	&:after, &:before {
 						background: #000;
@@ -335,7 +343,7 @@ a {
 			}
 		}
 
-		ul {
+		div {
 			display: -webkit-box;
 		    display: -ms-flexbox;
 	  		display: flex;
@@ -350,7 +358,7 @@ a {
 
 
 
-			li {
+			div {
 				position: relative;
 
 				&:before, &:after {
@@ -369,6 +377,11 @@ a {
 				&:before, &:after {
 					display: none;
 				}
+			}
+
+			.fs-header-logo {
+				margin-top: -300px;
+				opacity: 0;
 			}
 
 			.second-li {
@@ -441,6 +454,11 @@ a {
 						transition: right .5s, background 1s; 
 					}
 				}
+			}
+
+			.fs-header-li {
+				left: -1550px;
+				opacity: 0;
 			}
 
 			a {
@@ -517,12 +535,22 @@ a {
 			}
 		}
 
+		.fs-lang-menu {
+			margin-bottom: -900px;
+			opacity: 0;
+		}
+
 		.lang-border {
 			height: 900px;
 			margin-top: 13px;
 			border-top: 1px solid #fff;
 			border-right: 1px solid #fff;
 		}
+	}
+
+	.fs-lang-wrapper {
+		right: -100px;
+		opacity: 0;
 	}
 
 	.lang-wrapper-black {
@@ -538,6 +566,11 @@ a {
 	/*-- - - - - - SLIDER - - - - - --*/
 	.bx-wrapper {
 		margin: -6px auto 60px auto;
+
+		.bx-controls-direction a {
+			top: 105%;
+			opacity: 0;
+		}
 	}
 
 	.header-slider {
@@ -569,9 +602,21 @@ a {
 					letter-spacing: 8px;
 				}
 
+				.fs-text-header {
+					position: absolute;
+					top: -500px;
+					opacity: 0;
+				}
+
 				.text-section {
 					margin: 20px 0 20px 0;
 					letter-spacing: 20px;
+				}
+
+				.fs-text-section {
+					position: absolute;
+					left: -1000px;
+					opacity: 0;
 				}
 
 				.text-footer {
@@ -606,6 +651,12 @@ a {
 							padding-top: 11px;
 						}
 					}
+				}
+
+				.fs-text-footer {
+					position: absolute;
+					bottom: -450px;
+					opacity: 0;
 				}
 
 				.large-text {

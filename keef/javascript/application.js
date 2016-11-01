@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	var flag = 0;
+
 
 	// header langmenu---------------------------------------------------------
 	$(".lang-menu").click(function(){
@@ -101,6 +103,155 @@ $(document).ready(function(){
   			this.switch($slideElement);
 	    },
 	    onSliderLoad: function(currentIndex){
+
+			$(".fs-text-header").stop().animate({
+			    opacity: 1,
+			    top: "0"
+			  }, 500).promise().done(
+			  function (){
+				console.log(flag);
+
+			  	console.log(".fs-text-header");
+			  	if(flag === 1) {
+				  	flag = 0;
+			  		console.log("complete .fs-text-header");
+				    $(".fs-text-section").animate({
+					    opacity: 1,
+					    left: "0",
+				  	}, 500);
+				  	$(".fs-header-li").animate({
+				  		opacity: 1,
+				  		left: "0",
+				  	}, 500);
+				  	$(".fs-lang-menu").animate({
+				  		opacity: 1,
+				  		"margin-bottom": "0",
+				  	}, 500);
+			  	} else {
+				    flag += 1;
+				}
+				}
+			);
+
+			$(".fs-text-footer").stop().animate({
+			    opacity: 1,
+			    bottom: "0"
+			  }, 500).promise().done(function (){
+				console.log(flag);
+
+			  	console.log(".fs-text-header");
+			  	if(flag === 1) {
+				  	flag = 0;
+			  		console.log("complete .fs-text-header");
+				    $(".fs-text-section").animate({
+					    opacity: 1,
+					    left: "0",
+				  	}, 500);
+				  	$(".fs-header-li").animate({
+				  		opacity: 1,
+				  		left: "0",
+				  	}, 500);
+				  	$(".fs-lang-menu").animate({
+				  		opacity: 1,
+				  		"margin-bottom": "0",
+				  	}, 500);
+			  	} else {
+				    flag += 1;
+				}
+			}
+			);
+
+			$(".fs-header-logo").stop().animate({
+				"margin-top": "0",
+				opacity: 1
+			  }, 500).promise().done(
+			  function (){
+				console.log(flag);
+
+			  	console.log(".fs-text-header");
+			  	if(flag === 1) {
+				  	flag = 0;
+			  		console.log("complete .fs-text-header");
+				    $(".fs-text-section").animate({
+					    opacity: 1,
+					    left: "0",
+				  	}, 500);
+				  	$(".fs-header-li").animate({
+				  		opacity: 1,
+				  		left: "0",
+				  	}, 500);
+				  	$(".fs-lang-menu").animate({
+				  		opacity: 1,
+				  		"margin-bottom": "0",
+				  	}, 500);
+			  	} else {
+				    flag += 1;
+				}
+				}
+			);
+
+			$(".bx-controls-direction a").stop().animate({
+				opacity: 1,
+			    top: "94.5%"
+			  }, 500).promise().done(
+			  function (){
+				console.log(flag);
+
+			  	console.log(".fs-text-header");
+			  	if(flag === 1) {
+				  	flag = 0;
+			  		console.log("complete .fs-text-header");
+				    $(".fs-text-section").animate({
+					    opacity: 1,
+					    left: "0",
+				  	}, 500);
+				  	$(".fs-header-li").animate({
+				  		opacity: 1,
+				  		left: "0",
+				  	}, 500);
+				  	$(".fs-lang-menu").animate({
+				  		opacity: 1,
+				  		"margin-bottom": "0",
+				  	}, 500);
+			  	} else {
+				    flag += 1;
+				}
+				}
+			);
+
+			$(".fs-lang-wrapper").stop().animate({
+				opacity: 1,
+			    right: "70px"
+			  }, 500).promise().done(
+			  function (){
+				console.log(flag);
+
+			  	console.log(".fs-text-header");
+			  	if(flag === 1) {
+				  	flag = 0;
+			  		console.log("complete .fs-text-header");
+				    $(".fs-text-section").animate({
+					    opacity: 1,
+					    left: "0",
+				  	}, 500);
+				  	$(".fs-header-li").animate({
+				  		opacity: 1,
+				  		left: "0",
+				  	}, 500);
+				  	$(".fs-lang-menu").animate({
+				  		opacity: 1,
+				  		"margin-bottom": "0",
+				  	}, 500);
+			  	} else {
+				    flag += 1;
+				}
+				}
+			);
+
+
+
+
+
   			if ( $("#new-bx-slider-id").children().get(1).className.indexOf("white-pic") !== -1) {
   				$(".header-menu").addClass("new");
   				$(".header-logo").attr("src", "image/header-nav/logoblack.png");
@@ -259,12 +410,13 @@ $(document).ready(function(){
 	// 	imageSrc: 'image/parallax/parallaxlarge.png',
 	// });
 
-	// $( ".parallax-mirror" ).first().css( "top", "50px !important" );
-
 	// end parallax mode---------------------------------------------------------------
 
-	// portfolio page scrolling
+	// анімація головна сторінка
+	// $(window).load(function(){
+	// });
+	// анімація головна сторінка
 
-	// end portfolio page scrolling
 });
+
 

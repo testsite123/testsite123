@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	var flag = 0;
+ 	var animateTime = 1000;
 
 
 	// header langmenu---------------------------------------------------------
@@ -107,7 +108,7 @@ $(document).ready(function(){
 			$(".fs-text-header").stop().animate({
 			    opacity: 1,
 			    top: "0"
-			  }, 500).promise().done(
+			  }, animateTime).promise().done(
 			  function (){
 				console.log(flag);
 
@@ -118,15 +119,15 @@ $(document).ready(function(){
 				    $(".fs-text-section").animate({
 					    opacity: 1,
 					    left: "0",
-				  	}, 500);
+				  	}, animateTime);
 				  	$(".fs-header-li").animate({
 				  		opacity: 1,
 				  		left: "0",
-				  	}, 500);
+				  	}, animateTime);
 				  	$(".fs-lang-menu").animate({
 				  		opacity: 1,
 				  		"margin-bottom": "0",
-				  	}, 500);
+				  	}, animateTime);
 			  	} else {
 				    flag += 1;
 				}
@@ -136,7 +137,7 @@ $(document).ready(function(){
 			$(".fs-text-footer").stop().animate({
 			    opacity: 1,
 			    bottom: "0"
-			  }, 500).promise().done(function (){
+			  }, animateTime).promise().done(function (){
 				console.log(flag);
 
 			  	console.log(".fs-text-header");
@@ -146,15 +147,15 @@ $(document).ready(function(){
 				    $(".fs-text-section").animate({
 					    opacity: 1,
 					    left: "0",
-				  	}, 500);
+				  	}, animateTime);
 				  	$(".fs-header-li").animate({
 				  		opacity: 1,
 				  		left: "0",
-				  	}, 500);
+				  	}, animateTime);
 				  	$(".fs-lang-menu").animate({
 				  		opacity: 1,
 				  		"margin-bottom": "0",
-				  	}, 500);
+				  	}, animateTime);
 			  	} else {
 				    flag += 1;
 				}
@@ -164,7 +165,7 @@ $(document).ready(function(){
 			$(".fs-header-logo").stop().animate({
 				"margin-top": "0",
 				opacity: 1
-			  }, 500).promise().done(
+			  }, animateTime).promise().done(
 			  function (){
 				console.log(flag);
 
@@ -175,15 +176,15 @@ $(document).ready(function(){
 				    $(".fs-text-section").animate({
 					    opacity: 1,
 					    left: "0",
-				  	}, 500);
+				  	}, animateTime);
 				  	$(".fs-header-li").animate({
 				  		opacity: 1,
 				  		left: "0",
-				  	}, 500);
+				  	}, animateTime);
 				  	$(".fs-lang-menu").animate({
 				  		opacity: 1,
 				  		"margin-bottom": "0",
-				  	}, 500);
+				  	}, animateTime);
 			  	} else {
 				    flag += 1;
 				}
@@ -193,7 +194,7 @@ $(document).ready(function(){
 			$(".bx-controls-direction a").stop().animate({
 				opacity: 1,
 			    top: "94.5%"
-			  }, 500).promise().done(
+			  }, animateTime).promise().done(
 			  function (){
 				console.log(flag);
 
@@ -204,15 +205,15 @@ $(document).ready(function(){
 				    $(".fs-text-section").animate({
 					    opacity: 1,
 					    left: "0",
-				  	}, 500);
+				  	}, animateTime);
 				  	$(".fs-header-li").animate({
 				  		opacity: 1,
 				  		left: "0",
-				  	}, 500);
+				  	}, animateTime);
 				  	$(".fs-lang-menu").animate({
 				  		opacity: 1,
 				  		"margin-bottom": "0",
-				  	}, 500);
+				  	}, animateTime);
 			  	} else {
 				    flag += 1;
 				}
@@ -222,7 +223,7 @@ $(document).ready(function(){
 			$(".fs-lang-wrapper").stop().animate({
 				opacity: 1,
 			    right: "70px"
-			  }, 500).promise().done(
+			  }, animateTime).promise().done(
 			  function (){
 				console.log(flag);
 
@@ -233,15 +234,15 @@ $(document).ready(function(){
 				    $(".fs-text-section").animate({
 					    opacity: 1,
 					    left: "0",
-				  	}, 500);
+				  	}, animateTime);
 				  	$(".fs-header-li").animate({
 				  		opacity: 1,
 				  		left: "0",
-				  	}, 500);
+				  	}, animateTime);
 				  	$(".fs-lang-menu").animate({
 				  		opacity: 1,
 				  		"margin-bottom": "0",
-				  	}, 500);
+				  	}, animateTime);
 			  	} else {
 				    flag += 1;
 				}

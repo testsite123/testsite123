@@ -479,8 +479,8 @@ a {
 		height: 865px;
 		width: 34px;
 		position: absolute;
-		top: 95px;
-		right: 70px;
+		bottom: 7%;
+		right: 3.65%;
 		overflow: hidden;
 		z-index: 5;
 		border-bottom: 1px solid #fff;
@@ -541,7 +541,7 @@ a {
 		}
 
 		.lang-border {
-			height: 900px;
+			min-height: 900px;
 			margin-top: 13px;
 			border-top: 1px solid #fff;
 			border-right: 1px solid #fff;
@@ -1401,7 +1401,7 @@ a {
 			height: 940px;
 
 			.lang-wrapper {
-				height: 778px;
+				/*height: 778px;*/
 
 				.lang-border {
 					height: 900px;
@@ -1524,7 +1524,7 @@ a {
 			height: 860px;
 
 			.lang-wrapper {
-				height: 705px;
+				/*height: 705px;*/
 				right: 40px;
 
 				.lang-border {
@@ -1728,7 +1728,7 @@ a {
 			}
 
 			.lang-wrapper {
-				height: 618px;
+				/*height: 618px;*/
 				right: 35px;
 				top: 85px;
 
@@ -1985,7 +1985,7 @@ a {
 			}
 			
 			.lang-wrapper {
-				height: 578px;
+				/*height: 578px;*/
 				top: 60px;
 				right: 30px;
 

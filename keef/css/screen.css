@@ -498,8 +498,8 @@ a {
   height: 865px;
   width: 34px;
   position: absolute;
-  top: 95px;
-  right: 70px;
+  bottom: 7%;
+  right: 3.65%;
   overflow: hidden;
   z-index: 5;
   border-bottom: 1px solid #fff;
@@ -561,7 +561,7 @@ a {
 }
 /* line 543, ../sass/screen.scss */
 .header .lang-wrapper .lang-border {
-  height: 900px;
+  min-height: 900px;
   margin-top: 13px;
   border-top: 1px solid #fff;
   border-right: 1px solid #fff;
@@ -1714,7 +1714,7 @@ a {
   }
   /* line 1403, ../sass/screen.scss */
   .header .header-wrapper .lang-wrapper {
-    height: 778px;
+    /*height: 778px;*/
   }
   /* line 1406, ../sass/screen.scss */
   .header .header-wrapper .lang-wrapper .lang-border {
@@ -1837,7 +1837,7 @@ a {
   }
   /* line 1526, ../sass/screen.scss */
   .header .header-wrapper .lang-wrapper {
-    height: 705px;
+    /*height: 705px;*/
     right: 40px;
   }
   /* line 1530, ../sass/screen.scss */
@@ -2036,7 +2036,7 @@ a {
   }
   /* line 1730, ../sass/screen.scss */
   .header .header-wrapper .lang-wrapper {
-    height: 618px;
+    /*height: 618px;*/
     right: 35px;
     top: 85px;
   }
@@ -2284,7 +2284,7 @@ a {
   }
   /* line 1987, ../sass/screen.scss */
   .header .header-wrapper .lang-wrapper {
-    height: 578px;
+    /*height: 578px;*/
     top: 60px;
     right: 30px;
   }

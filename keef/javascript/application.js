@@ -1,6 +1,18 @@
 $(document).ready(function(){
 	var flag = 0;
  	var animateTime = 1000;
+ 	var windowHeight = $(window).height();
+ 	var windowWidth = $(window).width();
+
+
+ 	// висота header
+ 	$(".header").css("height", windowHeight);
+ 	$(".header-wrapper").css("height", windowHeight);
+ 	$(".header-slider").css("height", windowHeight);
+ 	$(".slide").css("height", windowHeight);
+
+ 	$(".lang-wrapper").css("height", windowHeight * 83 / 100);
+ 	// висота header
 
 
 	// header langmenu---------------------------------------------------------
@@ -222,7 +234,7 @@ $(document).ready(function(){
 
 			$(".fs-lang-wrapper").stop().animate({
 				opacity: 1,
-			    right: "70px"
+			    right: "3.65%"
 			  }, animateTime).promise().done(
 			  function (){
 				console.log(flag);
@@ -419,5 +431,6 @@ $(document).ready(function(){
 	// анімація головна сторінка
 
 });
+
 
 

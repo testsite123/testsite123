@@ -10,7 +10,8 @@ $(document).ready(function(){
 
 		var idMenu = $(this).attr("href")
 		
-		var top = $(idMenu).offset().top
+		var top = $(idMenu).offset().top;
+
 
 		$("body, html").animate({scrollTop: top}, 1500);
 	});
@@ -20,7 +21,7 @@ $(document).ready(function(){
 
 		var idMenu = $(this).attr("href")
 		
-		var top = $(idMenu).offset().top
+		var top = $(idMenu).offset().top;
 
 		$("body, html").animate({scrollTop: top}, 1500);
 	});
@@ -28,12 +29,14 @@ $(document).ready(function(){
 
 
  	// висота header
- 	$(".header").css("height", windowHeight);
- 	$(".header-wrapper").css("height", windowHeight);
- 	$(".header-slider").css("height", windowHeight);
- 	$(".slide").css("height", windowHeight);
+ 		if (windowWidth >= 1650) {
+ 			$(".header").css("height", windowHeight);
+		 	$(".header-wrapper").css("height", windowHeight);
+		 	$(".header-slider").css("height", windowHeight);
+		 	$(".slide").css("height", windowHeight);
 
- 	$(".lang-wrapper").css("height", windowHeight * 83 / 100);
+		 	$(".lang-wrapper").css("height", windowHeight * 83 / 100);
+ 		}
  	// висота header
 
 
@@ -133,12 +136,45 @@ $(document).ready(function(){
 		},
   		onSlideNext: function($slideElement, oldIndex, newIndex){
   			this.switch($slideElement);
+
+  			$(".text-header").css("top", -4556);
+
+			$(".text-header").stop().animate({
+			    opacity: 1,
+			    top: "0"
+			  }, animateTime).promise().done(
+			  function (){
+				console.log(flag);
+
+			  	console.log("new");
+			  	if(flag === 1) {
+				  	flag = 0;
+			  		console.log("complete new");
+				    $(".fs-text-section").animate({
+					    opacity: 1,
+					    left: "0",
+				  	}, animateTime);
+				  	$(".fs-header-li").animate({
+				  		opacity: 1,
+				  		left: "0",
+				  	}, animateTime);
+				  	$(".fs-lang-menu").animate({
+				  		opacity: 1,
+				  		"margin-bottom": "0",
+				  	}, animateTime);
+			  	} else {
+				    flag += 1;
+				}
+			}
+			);
+
 	    }, 
 	    onSlidePrev: function($slideElement, oldIndex, newIndex){
   			this.switch($slideElement);
 	    },
 	    onSliderLoad: function(currentIndex){
 
+	    	// Випадання елементів при загрузці сторінки
 			$(".fs-text-header").stop().animate({
 			    opacity: 1,
 			    top: "0"
@@ -282,7 +318,7 @@ $(document).ready(function(){
 				}
 				}
 			);
-
+	    	// Випадання елементів при загрузці сторінки
 
 
 
@@ -438,17 +474,9 @@ $(document).ready(function(){
 		naturalHeight: 730,
 		zIndex: -10
 	});
-
-	$(".border-container").stick_in_parent();
-
 	// end parallax mode---------------------------------------------------------------
 
-	// footer menu hover
-	$(".bigger-td a").mouseover(function(){
-		$(this).css("color", "#cccccc").css("transition", "color .5s");
-		$(".footer-icon").css("opacity", "1").css("transition", "opacity .5s");
-	});
-	// end footer menu hover
+	$(".border-container").stick_in_parent();
 
 });
 

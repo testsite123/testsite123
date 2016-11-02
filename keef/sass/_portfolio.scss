@@ -360,6 +360,17 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 				a span {
 					font-size: 10px;
 					letter-spacing: 4px;
+
+					&:before, &:after {
+							width: 13px;
+							bottom: 7px;
+					}
+
+					&:hover {
+						&:before, &:after {
+							bottom: 7px;
+						}
+					}
 				}
 			}
 		}

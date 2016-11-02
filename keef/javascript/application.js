@@ -419,16 +419,14 @@ $(document).ready(function(){
 
 	$(".border-container").stick_in_parent();
 
-	// $(".logo").parallax({
-	// 	imageSrc: 'image/parallax/parallaxlarge.png',
-	// });
-
 	// end parallax mode---------------------------------------------------------------
 
-	// анімація головна сторінка
-	// $(window).load(function(){
-	// });
-	// анімація головна сторінка
+	// footer menu hover
+	$(".bigger-td a").mouseover(function(){
+		$(this).css("color", "#cccccc").css("transition", "color .5s");
+		$(".footer-icon").css("opacity", "1").css("transition", "opacity .5s");
+	});
+	// end footer menu hover
 
 });
 

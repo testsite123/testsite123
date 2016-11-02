@@ -150,7 +150,7 @@ div .fixed-portfolio-menu {
 							position: absolute;
 							content: '';
 							background: transparent;
-							bottom: 6px;
+							bottom: 10px;
 							-webkit-transition: right .5s, left .5s, background .5s;
 							transition: right .5s, left .5s, background .5s;
 						}
@@ -165,7 +165,7 @@ div .fixed-portfolio-menu {
 						
 						&:hover {
 							&:before, &:after {
-								bottom: 6px;
+								bottom: 10px;
 								-webkit-transition: left .5s, right .5s, background 1s; 
 								transition: left .5s, right .5s, background 1s; 
 								background: #000;
@@ -184,7 +184,7 @@ div .fixed-portfolio-menu {
 					.v-first-li {
 						&:hover {
 							&:before, &:after {
-								bottom: 6px;
+								bottom: 10px;
 								-webkit-transition: left .5s, right .5s, background 1s; 
 								transition: left .5s, right .5s, background 1s; 
 								background: #000;
@@ -1184,11 +1184,6 @@ a {
 			top: 0;
 			width: 1455px;
 			height: 730px;
-			
-			/*img {
-				width: 1455px;
-				height: 730px;
-			}*/
 		}
 
 		.photo-layer {
@@ -1209,31 +1204,45 @@ a {
 		}
 
 		.worker1 {
-			width: 348px;
-			height: 474px;
-			bottom: 0;
+			width: 263px;
+			height: 302px;
+			top: 0;
 			left: 0;
 		}
 
 		.worker2 {
-			width: 348px;
-			height: 465px;
-			top: 0;
-			right: 0;
+			width: 263px;
+			height: 302px;
+			bottom: 0;
+			left: 305px;
 		}
 
 		.worker3 {
+			width: 263px;
+			height: 302px;
+			top: 85px;
+			left: 394px;
+		}
+
+		.worker4 {
 			width: 263px;
 			height: 302px;
 			bottom: 84px;
 			right: 494px;
 		}
 
-		.worker4 {
+		.worker5 {
 			width: 263px;
 			height: 302px;
 			top: 0;
-			left: 0;
+			right: 322px;
+		}
+
+		.worker6 {
+			width: 263px;
+			height: 302px;
+			bottom: 0;
+			right: 59px;
 		}
 	}
 	/*-- - - - - - end paralax layer - - - - - --*/	
@@ -1317,31 +1326,30 @@ a {
 					cursor: pointer;
 					position: relative;
 
-					&:hover {
-						.mini-td-passive {
-							opacity: 1;
-							-webkit-transition: opacity .5s;
-							transition: opacity .5s;
-						}
-					}
-
 					.mini-td-passive {
 						width: 100%;
 						height: 100%;
 						position: absolute;
 						top: 0;
-						opacity: 0.6;
 
 						a {
 							display: block;
 							width: 100%;
 							height: 100%;
 
-							img {
+							.footer-icon {
+								opacity: 0.6;
 								position: absolute;
 								top: 50%;
 								left: 50%;
+								-webkit-transform: translate(-50%, -50%);
 								transform: translate(-50%, -50%);
+
+								&:hover {
+									opacity: 1;
+									-webkit-transition: opacity .5s;
+									transition: opacity .5s;
+								}
 							}
 						}
 					}
@@ -1463,28 +1471,46 @@ a {
 				height: 650px;
 			}
 
-			.par-img1 {
-				margin: 0 0 0 0; 
-			}
-
 			.worker1 {
-				width: 328px;
-				height: 421px;
+				width: 249px;
+				height: 270px;
+				top: 0;
+				left: 0;
 			}
 
 			.worker2 {
-				width: 328px;
-				height: 414px;
+				width: 249px;
+				height: 270px;
+				bottom: 0;
+				left: 230px;
 			}
 
 			.worker3 {
-				width: 248px;
-				height: 269px;
+				width: 249px;
+				height: 270px;
+				top: 60px;
+				left: 394px;
 			}
 
 			.worker4 {
-				width: 248px;
-				height: 269px;
+				width: 249px;
+				height: 270px;
+				bottom: 65px;
+				right: 465px;
+			}
+
+			.worker5 {
+				width: 249px;
+				height: 270px;
+				top: 0;
+				right: 265px;
+			}
+
+			.worker6 {
+				width: 249px;
+				height: 270px;
+				bottom: 0;
+				right: 59px;
 			}
 		}
 
@@ -1647,23 +1673,45 @@ a {
 			}
 
 			.worker1 {
-				width: 298px;
-				height: 399px;
+				width: 226px;
+				height: 258px;
+				top: 0;
+				left: 0;
 			}
 
 			.worker2 {
-				width: 298px;
-				height: 393px;
+				width: 226px;
+				height: 258px;
+				bottom: 0;
+				left: 200px;
 			}
 
 			.worker3 {
-				width: 224px;
-				height: 255px;
+				width: 226px;
+				height: 258px;
+				top: 55px;
+				left: 375px;
 			}
 
 			.worker4 {
-				width: 224px;
-				height: 255px;
+				width: 226px;
+				height: 258px;
+				bottom: 34px;
+				right: 430px;
+			}
+
+			.worker5 {
+				width: 226px;
+				height: 258px;
+				top: 0;
+				right: 230px;
+			}
+
+			.worker6 {
+				width: 226px;
+				height: 258px;
+				bottom: 0;
+				right: 59px;
 			}
 		}
 
@@ -1874,23 +1922,45 @@ a {
 			}
 
 			.worker1 {
-				width: 235px;
-				height: 344px;
+				width: 182px;
+				height: 233px;
+				top: 0;
+				left: 0;
 			}
 
 			.worker2 {
-				width: 235px;
-				height: 339px;
+				width: 182px;
+				height: 233px;
+				bottom: 0;
+				left: 150px;
 			}
 
 			.worker3 {
-				width: 177px;
-				height: 220px;
+				width: 182px;
+				height: 233px;
+				top: 40px;
+				left: 310px;
 			}
 
 			.worker4 {
-				width: 177px;
-				height: 220px;
+				width: 182px;
+				height: 233px;
+				bottom: 44px;
+				right: 374px;
+			}
+
+			.worker5 {
+				width: 182px;
+				height: 233px;
+				top: 0;
+				right: 175px;
+			}
+
+			.worker6 {
+				width: 182px;
+				height: 233px;
+				bottom: 0;
+				right: 59px;
 			}
 		}
 
@@ -2119,23 +2189,45 @@ a {
 			}
 
 			.worker1 {
-				width: 193px;
-				height: 274px;
+				width: 172px;
+				height: 229px;
+				top: 0;
+				left: 0;
 			}
 
 			.worker2 {
-				width: 193px;
-				height: 270px;
+				width: 172px;
+				height: 229px;
+				bottom: 0;
+				left: 115px;
 			}
 
 			.worker3 {
-				width: 145px;
-				height: 175px;
+				width: 172px;
+				height: 229px;
+				top: 35px;
+				left: 304px;
 			}
 
 			.worker4 {
-				width: 145px;
-				height: 175px;
+				width: 172px;
+				height: 229px;
+				bottom: 34px;
+				right: 384px;
+			}
+
+			.worker5 {
+				width: 172px;
+				height: 229px;
+				top: 0;
+				right: 202px;
+			}
+
+			.worker6 {
+				width: 172px;
+				height: 229px;
+				bottom: 0;
+				right: 59px;
 			}
 		}
 

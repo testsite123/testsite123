@@ -16,6 +16,8 @@ $testcolor-five: rgba(157, 0, 255, 0.4);
 
 /*-- - - - - - vertical menu - - - - - --*/
 
+
+
 div .visible-menu {
 	position: fixed;
 	top: 46px;
@@ -249,7 +251,7 @@ div .fixed-portfolio-menu {
 /*END FONT-FACE*/
 
 body {
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 }
 
 a {

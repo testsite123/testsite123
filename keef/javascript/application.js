@@ -92,8 +92,8 @@ $(document).ready(function(){
 
 	// bxslider main page------------------------------------------------------
 	var bxslider = $(".header-slider").bxSlider({
-		// auto: true,
-		// pause: 6000,
+		auto: true,
+		pause: 6000,
 
 		switch: function ($slideElement) {
 				var arrayString = $slideElement[0].className.split(" ");

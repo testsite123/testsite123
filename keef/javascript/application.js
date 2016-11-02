@@ -4,6 +4,28 @@ $(document).ready(function(){
  	var windowHeight = $(window).height();
  	var windowWidth = $(window).width();
 
+ 	// плавний якір
+	$("#header-menu div").on("click", "a", function(event){
+		event.preventDefault();
+
+		var idMenu = $(this).attr("href")
+		
+		var top = $(idMenu).offset().top
+
+		$("body, html").animate({scrollTop: top}, 1500);
+	});
+
+	$("#vertical-nav div").on("click", "a", function(event){
+		event.preventDefault();
+
+		var idMenu = $(this).attr("href")
+		
+		var top = $(idMenu).offset().top
+
+		$("body, html").animate({scrollTop: top}, 1500);
+	});
+	// end плавний якір
+
 
  	// висота header
  	$(".header").css("height", windowHeight);

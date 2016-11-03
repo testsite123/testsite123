@@ -630,10 +630,16 @@ $(document).ready(function(){
 	});
 	// end parallax mode---------------------------------------------------------------
 
-
 	if ($("#border-container").length) {
-		$("#border-container").stick_in_parent();
-	}
+		$("#border-container").stickyfloat( {
+			duration: 0,
+			startOffset : 145,
+			lockBottom: true,
+			stickToTop: true,
+			delay: 0
+		});
+	}	
+
 
 });
 

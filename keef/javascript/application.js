@@ -87,42 +87,45 @@ $(document).ready(function(){
 	var doubleHeight = portsecHeight*2;
 
 	$(".see-all-show").click(function(){
-		//$(".portfolio").css("height", "100%").css("overflow", "visible");
-		//$(".see-all-visibility").css("display", "none");
+		$(".portfolio").css("height", "100%").css("overflow", "visible");
+		$(".see-all-visibility").css("display", "none");
+		$(window).trigger('resize').trigger('scroll');
+
+		$("html, body").animate({
+          	scrollTop: $(".portfolio").offset().top
+    	}, animateTime);
 
 
 
-		$(".portfolio").stop().animate({
-			"height": "100%"
-		}, 500).promise().done(function (){ 
-			$(".portfolio").css("overflow", "visible");
-			$(".see-all-visibility").css("display", "none");
-			$(window).trigger('resize').trigger('scroll');
-		});
-		// $(".see-all-visibility").animate({
-		// 	"display" : "none"
+		// $(".see-all-visibility").css("display", "none");
+		// $(".portfolio").animate({
+		// 	"height": "100%"
+		// }, 500).promise().done(function (){ 
+		// 	$(".portfolio").css("overflow", "visible");
+		// 	$(window).trigger('resize').trigger('scroll');
 		// });
-			$(window).trigger('resize').trigger('scroll');
 
 	});
 
 	$(".up-btn-show").click(function(){
-		$(".portfolio").animate({
-			"height": doubleHeight
-			
-		}, 500).promise().done(function (){
-			$(".see-all-visibility").css("display", "block");
-			// $(".portfolio-section-add").css("display", "none")
-			$(".portfolio").css("overflow", "hidden");
-			$(window).trigger('resize').trigger('scroll');
-
-		});
-		// $(".see-all-visibility").animate({
-		// 	"display" : "block"
-		// });
-		//$(".portfolio").css("height", doubleHeight).css("overflow", "hidden");
-		//$(".see-all-visibility").css("display", "block");
+		$(".see-all-visibility").css("display", "block");
+		$(".portfolio").css("height", doubleHeight).css("overflow", "hidden");
 		$(window).trigger('resize').trigger('scroll');
+
+        	$("html, body").animate({
+	          	scrollTop: $(".portfolio").offset().top
+        	}, animateTime);
+
+
+		// $(".portfolio").animate({
+		// 	"height": doubleHeight
+			
+		// }, 500).promise().done(function (){
+		// 	// $(".portfolio-section-add").css("display", "none")
+		// 	$(".portfolio").css("overflow", "hidden");
+		// 	$(window).trigger('resize').trigger('scroll');
+		
+		// });
 	});
 	// end portfolio height----------------------------------------------------
 

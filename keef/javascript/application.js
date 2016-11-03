@@ -3,6 +3,7 @@ $(document).ready(function(){
  	var animateTime = 1000;
  	var windowHeight = $(window).height();
  	var windowWidth = $(window).width();
+ 	var flagBetweenSlides = 0;
 
  	// плавний якір
 	$("#header-menu div").on("click", "a", function(event){
@@ -27,9 +28,9 @@ $(document).ready(function(){
 	});
 	// end плавний якір
 
-
- 	// висота header
- 		if (windowWidth >= 1650) {
+	// висота header
+	function doWidth() {
+		if (windowWidth >= 1650) {
  			$(".header").css("height", windowHeight);
 		 	$(".header-wrapper").css("height", windowHeight);
 		 	$(".header-slider").css("height", windowHeight);
@@ -37,7 +38,12 @@ $(document).ready(function(){
 
 		 	$(".lang-wrapper").css("height", windowHeight * 83 / 100);
  		}
- 	// висота header
+	}
+
+	doWidth();
+	// висота header
+
+	
 
 
 	// header langmenu---------------------------------------------------------
@@ -81,22 +87,49 @@ $(document).ready(function(){
 	var doubleHeight = portsecHeight*2;
 
 	$(".see-all-show").click(function(){
-		$(".see-all-visibility").css("display", "none");
-		$(".portfolio").css("height", "100%").css("overflow", "visible");
-		$(window).trigger('resize').trigger('scroll');
+		//$(".portfolio").css("height", "100%").css("overflow", "visible");
+		//$(".see-all-visibility").css("display", "none");
+
+
+
+		$(".portfolio").stop().animate({
+			"height": "100%"
+		}, 500).promise().done(function (){ 
+			$(".portfolio").css("overflow", "visible");
+			$(".see-all-visibility").css("display", "none");
+			$(window).trigger('resize').trigger('scroll');
+		});
+		// $(".see-all-visibility").animate({
+		// 	"display" : "none"
+		// });
+			$(window).trigger('resize').trigger('scroll');
+
 	});
 
 	$(".up-btn-show").click(function(){
-		$(".portfolio").css("height", doubleHeight).css("overflow", "hidden");
-		$(".see-all-visibility").css("display", "block");
+		$(".portfolio").animate({
+			"height": doubleHeight
+			
+		}, 500).promise().done(function (){
+			$(".see-all-visibility").css("display", "block");
+			// $(".portfolio-section-add").css("display", "none")
+			$(".portfolio").css("overflow", "hidden");
+			$(window).trigger('resize').trigger('scroll');
+
+		});
+		// $(".see-all-visibility").animate({
+		// 	"display" : "block"
+		// });
+		//$(".portfolio").css("height", doubleHeight).css("overflow", "hidden");
+		//$(".see-all-visibility").css("display", "block");
 		$(window).trigger('resize').trigger('scroll');
 	});
 	// end portfolio height----------------------------------------------------
 
 	// bxslider main page------------------------------------------------------
-	var bxslider = $(".header-slider").bxSlider({
-		auto: true,
-		pause: 6000,
+	var bxslider = $("#new-bx-slider-id").bxSlider({
+		// auto: true,
+		// pause: 6000,
 
 		switch: function ($slideElement) {
 				var arrayString = $slideElement[0].className.split(" ");
@@ -135,58 +168,168 @@ $(document).ready(function(){
   			}
 		},
   		onSlideNext: function($slideElement, oldIndex, newIndex){
+
   			this.switch($slideElement);
 
-  			$(".text-header").css("top", -4556);
+			var current = bxslider.getCurrentSlide();
+  			var numbOfSlides = $(".text-section").length;
 
-			$(".text-header").stop().animate({
-			    opacity: 1,
-			    top: "0"
-			  }, animateTime).promise().done(
-			  function (){
-				console.log(flag);
-
-			  	console.log("new");
-			  	if(flag === 1) {
-				  	flag = 0;
-			  		console.log("complete new");
-				    $(".fs-text-section").animate({
-					    opacity: 1,
-					    left: "0",
-				  	}, animateTime);
-				  	$(".fs-header-li").animate({
-				  		opacity: 1,
-				  		left: "0",
-				  	}, animateTime);
-				  	$(".fs-lang-menu").animate({
-				  		opacity: 1,
-				  		"margin-bottom": "0",
-				  	}, animateTime);
-			  	} else {
-				    flag += 1;
+			for (var i = 0; i < numbOfSlides; i++) {
+				if (i === current+1) {
+					continue;
+				} else {
+					$(".text-header").eq(current+1).css({
+			   			top: "-500px",
+			    		opacity: 0
+			  		});
 				}
 			}
-			);
+
+			for (var i = 0; i < numbOfSlides; i++) {
+				if (i === current+1) {
+					continue;
+				} else {
+					$(".text-section").eq(current+1).css({
+			   			left: "-1000px",
+			    		opacity: 0
+			  		});
+				}
+			}
+
+			for (var i = 0; i < numbOfSlides; i++) {
+				if (i === current+1) {
+					continue;
+				} else {
+					$(".text-footer").eq(current+1).css({
+			   			bottom: "-450px",
+			    		opacity: 0
+			  		});
+				}
+			}
+
+			$(".text-header").eq(current+1).stop().animate({
+			    top: 0,
+			    opacity: 1
+			}, 1500).promise().done(function (){
+				if(flagBetweenSlides === 1) {
+				  	flagBetweenSlides = 0;
+			  		//console.log("complete betweenOfSlides .fs-text-header");
+				   $(".text-section").eq(current+1).animate({
+					    left: 0,
+					    opacity: 1
+					}, animateTime);
+			  	} else {
+				    flagBetweenSlides += 1;
+				}
+			});
+
+			$(".text-footer").eq(current+1).stop().animate({
+			    bottom: 0,
+			    opacity: 1
+			}, 1500).promise().done(function (){
+				if(flagBetweenSlides === 1) {
+				  	flagBetweenSlides = 0;
+			  		//console.log("complete betweenOfSlides .fs-text-footer");
+				   $(".text-section").eq(current+1).animate({
+					    left: 0,
+					    opacity: 1
+					}, animateTime);
+			  	} else {
+				    flagBetweenSlides += 1;
+				}
+			});
 
 	    }, 
 	    onSlidePrev: function($slideElement, oldIndex, newIndex){
   			this.switch($slideElement);
+
+  			var current = bxslider.getCurrentSlide();
+  			var numbOfSlides = $(".text-header").length;
+
+			for (var i = 0; i < numbOfSlides; i++) {
+				if (i === current+1) {
+					continue;
+				} else {
+					$(".text-header").eq(current+1).css({
+			   			top: "-500px",
+			    		opacity: 0
+			  		});
+				}
+			}
+
+			for (var i = 0; i < numbOfSlides; i++) {
+				if (i === current+1) {
+					continue;
+				} else {
+					$(".text-section").eq(current+1).css({
+			   			left: "-1000px",
+			    		opacity: 0
+			  		});
+				}
+			}
+
+			for (var i = 0; i < numbOfSlides; i++) {
+				if (i === current+1) {
+					continue;
+				} else {
+					$(".text-footer").eq(current+1).css({
+			   			bottom: "-450px",
+			    		opacity: 0
+			  		});
+				}
+			}
+
+			$(".text-header").eq(current+1).stop().animate({
+			    top: 0,
+			    opacity: 1
+			}, 1500).promise().done(function (){
+				if(flagBetweenSlides === 1) {
+				  	flagBetweenSlides = 0;
+			  		//console.log("complete betweenOfSlides .fs-text-header");
+				   $(".text-section").eq(current+1).animate({
+					    left: 0,
+					    opacity: 1
+					}, animateTime);
+			  	} else {
+				    flagBetweenSlides += 1;
+				}
+			});
+
+			$(".text-footer").eq(current+1).stop().animate({
+			    bottom: 0,
+			    opacity: 1
+			}, 1500).promise().done(function (){
+				if(flagBetweenSlides === 1) {
+				  	flagBetweenSlides = 0;
+			  		//console.log("complete betweenOfSlides .fs-text-footer");
+				   $(".text-section").eq(current+1).animate({
+					    left: 0,
+					    opacity: 1
+					}, animateTime);
+			  	} else {
+				    flagBetweenSlides += 1;
+				}
+			});
+
 	    },
+
 	    onSliderLoad: function(currentIndex){
 
+	    	//console.log("get it");
+
 	    	// Випадання елементів при загрузці сторінки
-			$(".fs-text-header").stop().animate({
+			$(".fs-text-header").eq(1).stop().animate({
 			    opacity: 1,
 			    top: "0"
 			  }, animateTime).promise().done(
 			  function (){
-				console.log(flag);
+				// console.log(flag);
 
-			  	console.log(".fs-text-header");
-			  	if(flag === 1) {
+			  	// console.log(".fs-text-header");
+			  	if(flag === 4) {
 				  	flag = 0;
-			  		console.log("complete .fs-text-header");
-				    $(".fs-text-section").animate({
+			  		//console.log("complete .fs-text-header");
+				    $(".fs-text-section").eq(1).animate({
 					    opacity: 1,
 					    left: "0",
 				  	}, animateTime);
@@ -201,20 +344,19 @@ $(document).ready(function(){
 			  	} else {
 				    flag += 1;
 				}
-				}
-			);
+			});
 
-			$(".fs-text-footer").stop().animate({
+			$(".fs-text-footer").eq(1).stop().animate({
 			    opacity: 1,
 			    bottom: "0"
 			  }, animateTime).promise().done(function (){
-				console.log(flag);
+				// console.log(flag);
 
-			  	console.log(".fs-text-header");
-			  	if(flag === 1) {
+			  	// console.log(".fs-text-header");
+			  	if(flag === 4) {
 				  	flag = 0;
-			  		console.log("complete .fs-text-header");
-				    $(".fs-text-section").animate({
+			  		//console.log("complete .fs-text-footer");
+				    $(".fs-text-section").eq(1).animate({
 					    opacity: 1,
 					    left: "0",
 				  	}, animateTime);
@@ -235,15 +377,14 @@ $(document).ready(function(){
 			$(".fs-header-logo").stop().animate({
 				"margin-top": "0",
 				opacity: 1
-			  }, animateTime).promise().done(
-			  function (){
-				console.log(flag);
+			  }, animateTime).promise().done(function (){
+				// console.log(flag);
 
-			  	console.log(".fs-text-header");
-			  	if(flag === 1) {
+			  	// console.log(".fs-text-header");
+			  	if(flag === 4) {
 				  	flag = 0;
-			  		console.log("complete .fs-text-header");
-				    $(".fs-text-section").animate({
+			  		//console.log("complete .fs-header-logo");
+				    $(".fs-text-section").eq(1).animate({
 					    opacity: 1,
 					    left: "0",
 				  	}, animateTime);
@@ -258,7 +399,7 @@ $(document).ready(function(){
 			  	} else {
 				    flag += 1;
 				}
-				}
+			}
 			);
 
 			$(".bx-controls-direction a").stop().animate({
@@ -266,13 +407,13 @@ $(document).ready(function(){
 			    top: "94.5%"
 			  }, animateTime).promise().done(
 			  function (){
-				console.log(flag);
+				// console.log(flag);
 
-			  	console.log(".fs-text-header");
-			  	if(flag === 1) {
+			  	// console.log(".fs-text-header");
+			  	if(flag === 4) {
 				  	flag = 0;
-			  		console.log("complete .fs-text-header");
-				    $(".fs-text-section").animate({
+			  		//console.log("complete .bx-controls-direction a");
+				    $(".fs-text-section").eq(1).animate({
 					    opacity: 1,
 					    left: "0",
 				  	}, animateTime);
@@ -295,13 +436,13 @@ $(document).ready(function(){
 			    right: "3.65%"
 			  }, animateTime).promise().done(
 			  function (){
-				console.log(flag);
+				// console.log(flag);
 
-			  	console.log(".fs-text-header");
-			  	if(flag === 1) {
+			  	// console.log(".fs-text-header");
+			  	if(flag === 4) {
 				  	flag = 0;
-			  		console.log("complete .fs-text-header");
-				    $(".fs-text-section").animate({
+			  		//console.log("complete .fs-lang-wrapper");
+				    $(".fs-text-section").eq(1).animate({
 					    opacity: 1,
 					    left: "0",
 				  	}, animateTime);
@@ -444,26 +585,36 @@ $(document).ready(function(){
 		"width": mainImgWidth,
 		"opacity": "1",
 		"transition": "opacity .6s"
-	}
+	};
 	
-
-
 	if ($(this).scrollTop() < 220) {
+		// mainImgWidth = $(".portfolio-main-image").width();
 		imgHoverBlock.css("position", "absolute").css("opacity", "0").css("transition", "opacity .3s");
-	}
-	if ($(this).scrollTop() > 220) {
+	} else {
+		mainImgWidth = $(".portfolio-main-image").width();
 		imgHoverBlock.css(imgHoverStyle);
+		imgHoverBlock.css("width", mainImgWidth);
 	} 
 
 	$(window).on("scroll", function(e) {
-		 if ($(this).scrollTop() < 220) {
+		if ($(this).scrollTop() < 220) {
+		 	//mainImgWidth = $(".portfolio-main-image").width();
 			imgHoverBlock.css("position", "absolute").css("opacity", "0").css("transition", "opacity .3s");
-		}
-		if ($(this).scrollTop() > 220) {
+		} else {
+			mainImgWidth = $(".portfolio-main-image").width();
 			imgHoverBlock.css(imgHoverStyle);
-		} 
-
+			imgHoverBlock.css("width", mainImgWidth);
+		}
 	});
+
+	if ($(".main-image").length) {
+		$(window).resize(function() {
+			mainImgWidth = $(".portfolio-main-image").width();
+			imgHoverBlock.css("width", mainImgWidth);
+		});
+	}
+
+	
 	// END second-page scrolling
 
 	// parallax mode-------------------------------------------------------------------
@@ -476,7 +627,10 @@ $(document).ready(function(){
 	});
 	// end parallax mode---------------------------------------------------------------
 
-	$(".border-container").stick_in_parent();
+
+	if ($("#border-container").length) {
+		$("#border-container").stick_in_parent();
+	}
 
 });
 

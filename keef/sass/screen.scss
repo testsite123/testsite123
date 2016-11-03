@@ -863,51 +863,51 @@ a {
 		    	}
 
 		    	.all-passive {
-		    		background: url('../image/filters/filters.png') -83px 17px no-repeat;
+		    		background: url('../image/filters/all.png') -82px 19px no-repeat;
 		    	}
 
 		    	.all-active {
-		    		background: url('../image/filters/filters.png') 3px 21px no-repeat;
+		    		background: url('../image/filters/all.png') 3px 19px no-repeat;
 		    	}
 
 		    	.brand-passive {
-		    		background: url('../image/filters/filters.png') -82px -47px no-repeat;
+		    		background: url('../image/filters/brand.png') -93px 15px no-repeat;
 		    	}
 
 		    	.brand-active {
-		    		background: url('../image/filters/filters.png') 2.5px -42px no-repeat;
+		    		background: url('../image/filters/brand.png') 3px 19px no-repeat;
 		    	}
 
 		    	.dimention-passive {
-		    		background: url('../image/filters/filters.png') -87px -119px no-repeat;
+		    		background: url('../image/filters/dimention.png') -80px 15px no-repeat;
 		    	}
 
 		    	.dimention-active {
-		    		background: url('../image/filters/filters.png') 3px -115px no-repeat;
+		    		background: url('../image/filters/dimention.png') 3px 19px no-repeat;
 		    	}
 
 		    	.web-passive {
-		    		background: url('../image/filters/filters.png') -83px -188px no-repeat;
+		    		background: url('../image/filters/web.png') -83px 17px no-repeat;
 		    	}
 
 		    	.web-active {
-		    		background: url('../image/filters/filters.png') 2.5px -183px no-repeat;
+		    		background: url('../image/filters/web.png') 3px 19px no-repeat;
 		    	}
 
 		    	.graphic-passive {
-		    		background: url('../image/filters/filters.png') -85px -255px no-repeat;
+		    		background: url('../image/filters/graphic.png') -85px 17px no-repeat;
 		    	}
 
 		    	.graphic-active {
-		    		background: url('../image/filters/filters.png') 3px -250px no-repeat;
+		    		background: url('../image/filters/graphic.png') 3px 19px no-repeat;
 		    	}
 
 		    	.craft-passive {
-		    		background: url('../image/filters/filters.png') -85px -329px no-repeat;
+		    		background: url('../image/filters/craft.png') -85px 15px no-repeat;
 		    	}
 
 		    	.craft-active {
-		    		background: url('../image/filters/filters.png') 3px -323px no-repeat;
+		    		background: url('../image/filters/craft.png') 3px 19px no-repeat;
 		    	}
 			}
 
@@ -2005,6 +2005,11 @@ a {
 					td {
 						font-size: 11px;
 						height: 33px;
+
+						a {
+							height: 33px !important;
+							line-height: 33px !important;
+						}
 					}
 
 					.bigger-td {
@@ -2270,7 +2275,6 @@ a {
 
 					td {
 						font-size: 11px;
-						height: 33px;
 					}
 
 					.bigger-td {

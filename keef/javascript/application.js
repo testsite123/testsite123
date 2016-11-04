@@ -634,6 +634,7 @@ $(document).ready(function(){
 			//offsetY: auto,
 			lockBottom: true,
 			stickToTop: true,
+			scrollArea: document
 			//delay: 0
 		});
 

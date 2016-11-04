@@ -633,8 +633,7 @@ $(document).ready(function(){
 			//startOffset : 145,
 			//offsetY: auto,
 			lockBottom: true,
-			stickToTop: true,
-			scrollArea: document
+			stickToTop: true
 			//delay: 0
 		});
 

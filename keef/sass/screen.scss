@@ -1266,6 +1266,7 @@ a {
 		&:hover .footer-table .sprite-td div {
 			opacity: 1;
 			-webkit-transition: opacity .7s;
+			-moz-transition: opacity .7s;
 			transition: opacity .7s;
 		}
 

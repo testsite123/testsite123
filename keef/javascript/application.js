@@ -628,7 +628,6 @@ $(document).ready(function(){
 	});
 	// end parallax mode---------------------------------------------------------------
 
-	if ($("#border-container").length) {
 		$("#border-container").stickyfloat( {
 			duration: 0,
 			//startOffset : 145,
@@ -637,7 +636,6 @@ $(document).ready(function(){
 			stickToTop: true,
 			//delay: 0
 		});
-	}	
 
 
 });

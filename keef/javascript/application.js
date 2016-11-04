@@ -131,8 +131,8 @@ $(document).ready(function(){
 
 	// bxslider main page------------------------------------------------------
 	var bxslider = $("#new-bx-slider-id").bxSlider({
-		// auto: true,
-		// pause: 6000,
+		auto: true,
+		pause: 3000,
 
 		switch: function ($slideElement) {
 				var arrayString = $slideElement[0].className.split(" ");

@@ -1692,7 +1692,7 @@ a {
   }
 }
 /*MEDIA HEAIGHT*/
-@media only screen and (max-height: 740px) {
+@media only screen and (max-height: 810px) {
   /* line 325, ../sass/_portfolio.scss */
   .portfolio-header .container .slider-wrapper .portfolio-page .main-image-info .border-container {
     min-height: 570px;

@@ -628,14 +628,21 @@ $(document).ready(function(){
 	});
 	// end parallax mode---------------------------------------------------------------
 
-		$("#border-container").stickyfloat( {
-			duration: 0,
-			//startOffset : 145,
-			//offsetY: auto,
-			lockBottom: true,
-			stickToTop: true
-			//delay: 0
-		});
+	// stick in parent mode (portfolio page)
+
+		$(".border-container").stick_in_parent();
+
+
+		// $("#border-container").stickyfloat( {
+		// 	duration: 0,
+		// 	//startOffset : 145,
+		// 	//offsetY: auto,
+		// 	lockBottom: true,
+		// 	stickToTop: true
+		// 	//delay: 0
+		// });
+
+	// stick in parent mode (portfolio page)
 
 
 });

@@ -1042,33 +1042,39 @@ a {
 				
 				/*change background photoes*/
 				.photo1 {
-					background: url('../image/portfolio/passive/solo.png') 0 0 no-repeat;
-					background-size: 107%;
+					background: url('../image/portfolio/passive/solo.jpg') 0 0 no-repeat;
+					/*background-size: 107%;*/
+					background-size: cover;
 				}
 
 				.photo2 {
-					background: url('../image/portfolio/passive/mill.png') -2px 0 no-repeat;
-					background-size: 107%;
+					background: url('../image/portfolio/passive/mill.jpg') 0 0 no-repeat;
+					/*background-size: 107%;*/
+					background-size: cover;
 				}
 
 				.photo3 {
-					background: url('../image/portfolio/passive/fff.png') 0 0 no-repeat;
-					background-size: 107%;
+					background: url('../image/portfolio/passive/fff.jpg') 0 0 no-repeat;
+					/*background-size: 107%;*/
+					background-size: cover;
 				}
 
 				.photo4 {
-					background: url('../image/portfolio/passive/drift.png') 0 0 no-repeat;
-					background-size: 107%;
+					background: url('../image/portfolio/passive/drift.jpg') 0 0 no-repeat;
+					/*background-size: 107%;*/
+					background-size: cover;
 				}
 
 				.photo5 {
-					background: url('../image/portfolio/passive/lash.png') 0 0 no-repeat;
-					background-size: 107%;
+					background: url('../image/portfolio/passive/lash.jpg') 0 0 no-repeat;
+					/*background-size: 107%;*/
+					background-size: cover;
 				}
 
 				.photo6 {
-					background: url('../image/portfolio/passive/badaro.png') 0 0 no-repeat;
-					background-size: 107%;
+					background: url('../image/portfolio/passive/badaro.jpg') 0 0 no-repeat;
+					/*background-size: 107%;*/
+					background-size: cover;
 				}
 				/* end change background photoes*/
 			}
@@ -1266,7 +1272,6 @@ a {
 		&:hover .footer-table .sprite-td div {
 			opacity: 1;
 			-webkit-transition: opacity .7s;
-			-moz-transition: opacity .7s;
 			transition: opacity .7s;
 		}
 

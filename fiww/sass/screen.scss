@@ -199,6 +199,7 @@ a {
 				position: absolute;
 				left: -90px;
 				top: 55%;
+
 				p {
 					font-size: 24.4px;
 					font-family: opensanslight;
@@ -311,6 +312,19 @@ a {
 
 						&:nth-child(3) {
 							width: auto;
+
+							img {
+								transition: ease-in-out 1s;
+							}
+						}
+
+						&:hover {
+							&:nth-child(3) {
+								img {
+									-webkit-transform: rotateY(360deg);
+									transform: rotateY(360deg);
+								}
+							}
 						}
 
 				    	a {
@@ -327,12 +341,14 @@ a {
 				    		-webkit-transform: translate(-50%, -50%);
 				    		transform: translate(-50%, -50%);
 				    		text-transform: uppercase;
-				    		-webkit-transition: opacity ease-in-out .1s, letter-spacing .3s ease-out, line-height .3s ease-in-out;
-				    		transition: opacity ease-in-out .1s, letter-spacing .3s ease-out, line-height .3s ease-in-out;
+				    		-webkit-transition: opacity ease-in-out .1s, letter-spacing ease-out .3s, line-height ease-in-out .3s;
+				    		-moz-transition: opacity ease-in-out .1s, letter-spacing ease-out .3s, line-height ease-in-out .3s;
+				    		transition: opacity ease-in-out .1s, letter-spacing ease-out .3s, line-height ease-in-out .3s;
 
 				    		&:hover {
 				    			opacity: 1;
 				    			letter-spacing: .8px;
+
 				    		}
 				    	}
 				    }

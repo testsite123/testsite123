@@ -40,13 +40,13 @@ $(document).ready(function(){
 // Portfolio---Portfolio---Portfolio---Portfolio---Portfolio---
 	$(".open-projects").click(function(){
 		$(".portfolio-open-projects").css("display", "none");
-		$(".portfolio").css("height", "100%").css("overflow", "visible");
+		$(".portfolio-block-hidden, .resizer-hidden").css("display", "block");
 		$(window).trigger('resize').trigger('scroll');
 	});
 
 	$(".close-projects").click(function(){
 		$(".portfolio-open-projects").css("display", "block");
-		$(".portfolio").css("height", "1360px").css("overflow", "hidden");
+		$(".portfolio-block-hidden, .resizer-hidden").css("display", "none");
 		$(window).trigger('resize').trigger('scroll');
 
 		$("html, body").animate({

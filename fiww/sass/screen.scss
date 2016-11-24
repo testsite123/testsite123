@@ -336,7 +336,8 @@ a {
 .portfolio {
 	background: #000;
 	width: 100%;
-	height: 1360px; 
+	/*height: 1360px; */
+	height: 100%;
 	overflow: hidden;
 	position: relative;
 
@@ -469,6 +470,10 @@ a {
 		}
 	}
 
+	.portfolio-block-hidden {
+		display: none;
+	}
+
 	.portfolio-resizer {
 		width: 100%;
 		height: 71px;
@@ -516,6 +521,9 @@ a {
 				}
 			}
 		}
+	}
+	.resizer-hidden {
+		display: none;
 	}
 }
 /*END PORTFOLIO*/
@@ -576,7 +584,8 @@ a {
 		}
 
 		.workers-block {
-			width: 305px;
+			/*width: 305px;*/
+			width: 24.8%;
 			height: 390px;
 			margin: 0 3px 0 0;
 			float: left;
@@ -1311,14 +1320,6 @@ a {
 	/*- - - - - CONTACTS - - - - -*/
 	.contacts {
 		.parallax-layer {
-			.contact-links {
-				max-width: 1200px;
-
-				.contact-links-section {
-					width: 375px;
-					margin-right: 35px;
-				}
-			}
 			/*FOOTER*/
 			.footer {
 				.footer-left-side {
@@ -1339,7 +1340,11 @@ a {
 @media only screen and (max-width: 1400px) {
 	.container {
 		.section-topic {
-			padding: 45px 0 0 40px;
+			padding: 45px 0 0 70px;
+
+			span {
+				font-size: 24px;
+			}
 		}
 	}
 	/*- - - - -HEADER - - - - -*/
@@ -1362,8 +1367,14 @@ a {
 				.header-menu {
 					max-width: 900px;
 
-					ul.menu li a {
-						font-size: 15px;
+					ul.menu li  {
+						img {
+							width: 200px;	
+						}
+
+						a {
+							font-size: 15px;
+						}
 					}
 				}	
 			}
@@ -1390,9 +1401,12 @@ a {
 	.about {
 		.about-workers {
 			width: 96%;
+			height: 395px;
 			margin: 70px auto 40px auto;
 
 			.workers-block {
+				height: 375px;
+
 				.workers-hover-block {
 					.center-text {
 						margin: 36px auto 0 auto;
@@ -1416,6 +1430,14 @@ a {
 
 			.categories {
 				width: 34%;
+
+				.categories-wrapper {
+					.categories-field {
+						.build-icon-hover {
+							background-position: 17px 12.5px;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1425,19 +1447,7 @@ a {
 	.contacts {
 		.parallax-layer {
 			.contact-links {
-				max-width: 1100px;
 				margin: 110px auto 0 auto;
-				display: -webkit-box;
-			    display: -ms-flexbox;
-			    display: flex;
-			    -webkit-box-pack: justify;
-			        -ms-flex-pack: justify;
-			            justify-content: space-between;
-
-				.contact-links-section {
-					width: 340px;
-					margin-right: 35px;
-				}
 			}
 			/*FOOTER*/
 			.footer {
@@ -1463,26 +1473,32 @@ a {
 @media only screen and (max-width: 1280px) {
 	.container {
 		.section-topic {
-			padding: 45px 0 0 50px;
+			padding: 45px 0 0 68px;
+
+			span {
+				font-size: 22px;
+			}
 		}
 	}
 	/*- - - - -HEADER - - - - -*/
 	.header {
 		.header-text {
-			top: 43%;
+			top: 245px;
 			left: -160px;	
 
 			p {
-				font-size: 14.5px;
+				font-size: 14px;
 			}
 		}
 
 		.header-social {
 			right: 50px;
-			top: 35%;
+			top: 220px;
 
 			.menu-social {
 				.menu-social-wrapper {
+					height: 43px;
+					width: 43px;
 					a {
 						.header-social-wrapper {
 							width: 33px;
@@ -1512,8 +1528,14 @@ a {
 				.header-menu {
 					max-width: 900px;
 
-					ul.menu li a {
-						font-size: 14px;
+					ul.menu li  {
+						img {
+							width: 180px;	
+						}
+
+						a {
+							font-size: 14px;
+						}
 					}
 				}	
 			}
@@ -1553,15 +1575,20 @@ a {
 		}
 
 		.about-workers {
-			width: 96%;
+			height: 385px;
 			margin: 70px auto 40px auto;
 
 			.workers-block {
+				width: 24.7%;
+				height: 365px;
+
 				.workers-hover-block {
 					.center-text {
-						margin: 36px auto 0 auto;
+						height: 270px;
+						margin: 25px auto 0 auto;
 
 						.mini-text {
+							font-size: 14.5px;
 							margin-top: 18px;
 							line-height: 23.5px;
 						}
@@ -1595,18 +1622,8 @@ a {
 
 					.categories-field {
 
-						.img-wrapper {
-							.main-icon {
-								width: 34px;
-							}
-
-							.hover-icon {
-								width: 36.5px;
-							}
-
-							.build-icon {
-								width: 42px;
-							}
+						.build-icon-hover {
+							background-position: center;
 						}
 
 						.text-wrapper {
@@ -1639,22 +1656,15 @@ a {
 	.contacts {
 		.parallax-layer {
 			.contact-links {
-				max-width: 980px;
 				margin: 110px auto 0 auto;
-				display: -webkit-box;
-			    display: -ms-flexbox;
-			    display: flex;
-			    -webkit-box-pack: justify;
-			        -ms-flex-pack: justify;
-			            justify-content: space-between;
 
 				.contact-links-section {
-					width: 340px;
 					margin-right: 35px;
+					width: 210px;
 
 					.link-info {
 						p {
-							font-size: 18px;
+							font-size: 16px;
 						}
 					}
 				}
@@ -1680,17 +1690,17 @@ a {
 	/*- - - - -HEADER - - - - -*/
 	.header {
 		.header-text {
-			top: 40%;
+			top: 210px;
 			left: -160px;	
 
 			p {
-				font-size: 12.5px;
+				font-size: 12px;
 			}
 		}
 
 		.header-social {
 			right: 50px;
-			top: 35%;
+			top: 220px;
 
 			.menu-social {
 				.menu-social-wrapper {
@@ -1723,8 +1733,14 @@ a {
 				.header-menu {
 					max-width: 750px;
 
-					ul.menu li a {
-						font-size: 12.5px;
+					ul.menu li  {
+						img {
+							width: 160px;	
+						}
+
+						a {
+							font-size: 12.5px;
+						}
 					}
 				}	
 			}
@@ -1764,15 +1780,17 @@ a {
 		}
 
 		.about-workers {
-			height: 370px;
+			height: 350px;
 			width: 96%;
 			margin: 70px auto 40px auto;
 
 			.workers-block {
-				height: 350px;
+				/*width: 220px;*/
+				height: 330px;
+
 				.workers-hover-block {
 					.center-text {
-						margin: 36px auto 0 auto;
+						margin: 20px auto 0 auto;
 
 						.mini-text {
 							margin-top: 18px;
@@ -1865,22 +1883,14 @@ a {
 	.contacts {
 		.parallax-layer {
 			.contact-links {
-				max-width: 850px;
 				margin: 110px auto 0 auto;
-				display: -webkit-box;
-			    display: -ms-flexbox;
-			    display: flex;
-			    -webkit-box-pack: justify;
-			        -ms-flex-pack: justify;
-			            justify-content: space-between;
-
 				.contact-links-section {
-					width: 340px;
-					margin-right: 35px;
+					width: 200px;
+					margin-right: 20px;
 
 					.link-info {
 						p {
-							font-size: 18px;
+							font-size: 15px;
 						}
 					}
 				}

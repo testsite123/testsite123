@@ -34,6 +34,7 @@
 				display: inline-block;
 				margin: 0 10px 10px 0;
 				vertical-align: middle;
+				cursor: pointer;
 
 				&:nth-child(5), &:nth-child(10), &:nth-child(15), &:nth-child(20), &:nth-child(25), &:nth-child(30), &:nth-child(35), &:nth-child(40), &:nth-child(45), &:last-child {
 					margin-right: 0;
@@ -49,13 +50,6 @@
 						height: 100%;
 					}
 
-					&:hover {
-						.project-block-hover {
-							opacity: 1;
-							visibility: visible;
-						}						
-					}
-
 					.project-block-hover {
 						width: 100%;
 						height: 100%;
@@ -65,8 +59,8 @@
 						background: rgba(0, 0, 0, .5);
 						opacity: 0;
 						visibility: hidden;
-						-webkit-transition: opacity ease-in-out .4s;
-						transition: opacity ease-in-out .4s;
+						-webkit-transition: opacity ease-in-out .1s;
+						transition: opacity ease-in-out .1s;
 						z-index: 200;
 
 						.project-block-icon {
@@ -78,12 +72,22 @@
 							background: url('../image/icons/pen2.png') no-repeat center;
 						}
 					}
+
+					.visible {
+						opacity: 1;
+						visibility: visible;
+					}
 				}
 			}
 
 			.add-project-block {
 				border: 1px solid #7c7c7c;
 				background: url('../image/icons/plus.png') no-repeat center;
+				width: 162.5px;
+				height: 98px;
+				display: inline-block;
+				margin: 0 10px 10px 0;
+				vertical-align: middle;
 			}
 		} 
 	}
@@ -188,8 +192,10 @@
 			/*border: 1px solid blue;*/
 			padding-top: 7px;
 			float: right;
+			position: relative;
+			overflow-y: hidden;
 
-			.slider-box {
+			.slider-box, .slider-add-box {
 				width: 122px;
 				height: 74px;
 				/*border: 1px solid red;*/
@@ -234,6 +240,19 @@
 						background-size: cover;
 					}
 				}
+
+				.visible {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+
+			.hidden {
+				display: none;
+			}
+
+			.label-hidden {
+				display: none;
 			}
 
 			.slider-add-box {
@@ -242,8 +261,10 @@
 			}
 
 			.buttons-wrapper {
-				text-align: right;
-				padding-right: 22px;
+				padding-right: 25px;
+				position: absolute;
+				bottom: 2px;
+				right: 0;
 
 				input {
 					width: 122px;
@@ -268,5 +289,9 @@
 		}
 	}
 	
+}
+
+.project-about-hidden {
+	display: none;
 }
 /*END PROJECT-DESCRIPTION*/

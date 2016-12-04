@@ -27,6 +27,12 @@
 	}
 }
 
+.button-submit-active {
+	input {
+		background: #ebdbc0;
+	}
+}
+
 .contacts {
 	width: 100%;
 	height: auto;
@@ -50,32 +56,6 @@
 				background: rgba(255, 255, 255, .4);
 				padding: 19px;
 				position: relative;
-
-				.icon-wr {
-					width: 45px;
-					height: 25px;
-					position: absolute;
-					bottom: 2px;
-					right: 20px;
-
-					&:after {
-						content: '';
-						display: block;
-						clear: both;
-						height: 0;
-					}
-
-					.success {
-						padding-top: 2px;
-						float: left;
-					}
-					
-					.change {
-						padding-top: 2px;
-						float: right;
-					}	
-
-				}
 
 				label {
 					p {

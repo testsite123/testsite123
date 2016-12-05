@@ -124,18 +124,22 @@
 						height: 100%;
 					}
 
-					.file-field {
+					.file-field, .del-photo {
+						width: 22px;
+						height: 22px;
 						position: absolute;
+						cursor: pointer;
+						opacity: .7;
+					}
+
+					.file-field {
 						bottom: 3px;
 						right: 4px;
-						cursor: pointer;
 					}
 
 					.del-photo {
-						position: absolute;
 						bottom: 3px;
-						right: 20px;
-						cursor: pointer;
+						right: 26px;
 					}
 
 					input {

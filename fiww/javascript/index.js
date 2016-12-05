@@ -132,7 +132,11 @@ $(document).ready(function(){
 	});
 
 // END MODAL WINDOW-----------------
+
 });
+
+
+
 
 
 // MODAL WINDOW------------------

@@ -9,6 +9,7 @@ $(document).ready(function(){
 		$(".slide-block").on('click', function(){
 			$(this).children().css("height", "98%").css("width", "98%");
 			$(this).children().children().eq(1).addClass("visible");
+			$(this).addClass("remove");
 		});
 
 		// add slide-box div
@@ -89,11 +90,6 @@ $(document).ready(function(){
 
 	// PORTFOLIO PAGE-------------------------------------------------------
 
-
-	// ABOUT PAGE-----------------------------------------------------------
-	// ABOUT PAGE-----------------------------------------------------------
-
-
 	// MODAL WINDOW---------------------------------------------------------
 
 	// Get the modal
@@ -108,4 +104,15 @@ $(document).ready(function(){
 	});
 
 	// MODAL WINDOW---------------------------------------------------------
+
+	$("#yesBtn").click(function(){
+		// $(".slide-box-wrapper").remove($(".slide-block").hasClass("remove"));
+		$(".admin-modal").addClass("hidden");
+		$(".slide-box-hover, .slider-box-hover").removeClass("visible");
+	});
+
+	$("#noBtn").click(function(){
+		$(".admin-modal").addClass("hidden");
+		$(".slide-box-hover, .slider-box-hover").removeClass("visible");
+	});
 });

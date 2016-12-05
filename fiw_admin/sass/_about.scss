@@ -126,26 +126,16 @@
 
 					.file-field {
 						position: absolute;
-						top: 4px;
+						bottom: 3px;
 						right: 4px;
+						cursor: pointer;
 					}
 
 					.del-photo {
-						border-radius: 50%;
-						width: 20px;
-						height: 20px;
 						position: absolute;
-						top: 4px;
-						left: 4px;
-						background: rgba(180, 180, 180, .9); 
-						text-align: center;
-						padding: 2px 0 0 0;
+						bottom: 3px;
+						right: 20px;
 						cursor: pointer;
-
-						img {
-							width: 55%;
-							height: 55%;
-						}
 					}
 
 					input {

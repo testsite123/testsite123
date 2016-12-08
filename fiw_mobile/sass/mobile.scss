@@ -1,0 +1,250 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+/*FONT-FACE*/
+@font-face {
+    font-family: 'opensanslight';
+    src: url('../font/opensanslight/opensans-light.eot');
+    src: url('../font/opensanslight/opensans-light.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensanslight/opensans-light.woff2') format('woff2'),
+         url('../font/opensanslight/opensans-light.woff') format('woff'),
+         url('../font/opensanslight/opensans-light.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('../font/opensansregular/opensans-regular.eot');
+    src: url('../font/opensansregular/opensans-regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensansregular/opensans-regular.woff2') format('woff2'),
+         url('../font/opensansregular/opensans-regular.woff') format('woff'),
+         url('../font/opensansregular/opensans-regular.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*END FONT-FACE*/
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.m-hidden {
+	display: none;
+}
+
+.m-uppercase {
+	text-transform: uppercase;
+}
+
+
+
+
+.mobile-wrapper {
+	max-width: 320px;
+	width: 100%;
+	border: 1px solid red;
+	margin: 0 auto;
+
+	/*header-menu*/
+	.m-menu {
+		max-width: 320px;
+		width: 100%;
+		height: 30px;
+		background: #0d0d0d;
+		position: fixed;
+		top: 0;
+		box-shadow: 0 15px 15px -12px #000;
+		overflow: hidden;
+		text-align: right;
+		z-index: 99999;
+
+		.menu-img {
+			height: 15px;
+			width: 23px;
+			position: absolute;
+			right: 15px;
+			top: 7px;
+			/*background: url('../image/menu.png') center no-repeat;*/
+			cursor: pointer;
+			z-index: 9999;
+
+			img {
+				z-index: 99999;
+			}
+		}
+
+		.m-nav {
+			opacity: 0;
+		}
+	}
+
+	.m-menu-active {
+		height: 157px;
+
+		.menu-img {
+			top: 14px;
+			right: 15px;
+			height: 17px;
+		}
+
+		.m-nav {
+			margin-top: 45px;
+			opacity: 1;
+
+			li {
+				text-align: right;
+				padding-right: 54px;
+				margin: 0 0 7px 0;
+
+				a {
+					font-size: 9.39px;
+					font-family: opensanslight;
+					text-transform: uppercase;
+					position: relative;
+
+					&:hover {
+						&:before {
+							opacity: 1;
+						}
+					}
+
+					&:before {
+						content: '';
+						display: block;
+						background: #a37f61;
+						height: 2px;
+						width: 350px;
+						position: absolute;
+						right: calc(100% + 10px);
+						top: 50%;
+						opacity: 0;
+						-webkit-transition: opacity ease-in-out .3s;
+						transition: opacity ease-in-out .3s;
+					}
+				}
+			}
+		}
+	}
+	/*end header-menu*/
+
+	/*header-logo*/
+	.m-header {
+		width: 100%;
+		height: 192px;
+		background: url('../image/main-img.png') no-repeat;
+
+		.m-logo {
+			width: 100%;
+			height: 100%;
+			background: url('../image/logo.png') center no-repeat;
+		}
+	}
+	/*end header-logo*/
+	
+	/*portfolio*/
+	.m-portfolio {
+		width: 100%;
+		padding: 13px 10px 20px 10px;
+		position: relative;
+		background: #0d0d0d;
+		color: #fff;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 296px;
+			height: 1px;
+			background: #a37f61;
+			left: 50%;
+			margin-left: -148px;
+		}
+
+		.margin-top {
+			margin-top: 30px;
+		}
+
+		.m-portfolio-wrapper {
+
+			.m-portfolio-block {
+				height: 105px;
+				width: 100%;
+				margin-bottom: 2px;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				.m-left-block, .m-right-block {
+					height: 100%;
+					width: 49.835%;
+				}
+
+				.m-left-block {
+					margin-right: 1px;
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+				.m-right-block {
+					background: #161616;
+
+					p {
+						text-align: center;
+						font-size: 6.65px;
+						line-height: 8px;
+						color: #a0a0a0;
+					}
+
+					.m-name-wr {
+						width: 127px;
+						min-height: 23px;
+						border: 1px solid #a3856d;
+						margin: 0 auto;
+						margin-top: 34px;
+						padding-top: 6px;
+
+						.m-project-name {
+							height: 100%;
+							font-family: opensans;
+						}
+
+					}
+					
+					.m-project-head {
+						width: 75px;
+						font-family: opensanslight;
+						margin: 8px auto 0 auto;
+					}
+				}
+			}
+		}
+
+		.m-resizer {
+			font-size: 8px;
+			font-family: opensanslight;
+			color: #a0a0a0;
+			width: 70px;
+			height: auto;
+			margin: 17px auto 0 auto;
+			cursor: pointer;
+		}
+	}
+	/*end portfolio*/
+}

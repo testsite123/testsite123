@@ -108,7 +108,6 @@ a {
 .mobile-wrapper {
   max-width: 320px;
   width: 100%;
-  border: 1px solid red;
   margin: 0 auto;
   /*header-menu*/
   /*end header-menu*/
@@ -117,7 +116,7 @@ a {
   /*portfolio*/
   /*end portfolio*/
 }
-/* line 59, ../sass/mobile.scss */
+/* line 58, ../sass/mobile.scss */
 .mobile-wrapper .m-menu {
   max-width: 320px;
   width: 100%;
@@ -130,7 +129,7 @@ a {
   text-align: right;
   z-index: 99999;
 }
-/* line 71, ../sass/mobile.scss */
+/* line 70, ../sass/mobile.scss */
 .mobile-wrapper .m-menu .menu-img {
   height: 15px;
   width: 23px;
@@ -141,47 +140,47 @@ a {
   cursor: pointer;
   z-index: 9999;
 }
-/* line 81, ../sass/mobile.scss */
+/* line 80, ../sass/mobile.scss */
 .mobile-wrapper .m-menu .menu-img img {
   z-index: 99999;
 }
-/* line 86, ../sass/mobile.scss */
+/* line 85, ../sass/mobile.scss */
 .mobile-wrapper .m-menu .m-nav {
   opacity: 0;
 }
-/* line 91, ../sass/mobile.scss */
+/* line 90, ../sass/mobile.scss */
 .mobile-wrapper .m-menu-active {
   height: 157px;
 }
-/* line 94, ../sass/mobile.scss */
+/* line 93, ../sass/mobile.scss */
 .mobile-wrapper .m-menu-active .menu-img {
   top: 14px;
   right: 15px;
   height: 17px;
 }
-/* line 100, ../sass/mobile.scss */
+/* line 99, ../sass/mobile.scss */
 .mobile-wrapper .m-menu-active .m-nav {
   margin-top: 45px;
   opacity: 1;
 }
-/* line 104, ../sass/mobile.scss */
+/* line 103, ../sass/mobile.scss */
 .mobile-wrapper .m-menu-active .m-nav li {
   text-align: right;
   padding-right: 54px;
   margin: 0 0 7px 0;
 }
-/* line 109, ../sass/mobile.scss */
+/* line 108, ../sass/mobile.scss */
 .mobile-wrapper .m-menu-active .m-nav li a {
   font-size: 9.39px;
   font-family: opensanslight;
   text-transform: uppercase;
   position: relative;
 }
-/* line 116, ../sass/mobile.scss */
+/* line 115, ../sass/mobile.scss */
 .mobile-wrapper .m-menu-active .m-nav li a:hover:before {
   opacity: 1;
 }
-/* line 121, ../sass/mobile.scss */
+/* line 120, ../sass/mobile.scss */
 .mobile-wrapper .m-menu-active .m-nav li a:before {
   content: '';
   display: block;
@@ -192,22 +191,22 @@ a {
   right: calc(100% + 10px);
   top: 50%;
   opacity: 0;
-  -webkit-transition: opacity ease-in-out .3s;
-  transition: opacity ease-in-out .3s;
+  -webkit-transition: opacity ease-in-out;
+  transition: opacity ease-in-out;
 }
-/* line 141, ../sass/mobile.scss */
+/* line 140, ../sass/mobile.scss */
 .mobile-wrapper .m-header {
   width: 100%;
   height: 192px;
   background: url("../image/main-img.png") no-repeat;
 }
-/* line 146, ../sass/mobile.scss */
+/* line 145, ../sass/mobile.scss */
 .mobile-wrapper .m-header .m-logo {
   width: 100%;
   height: 100%;
   background: url("../image/logo.png") center no-repeat;
 }
-/* line 155, ../sass/mobile.scss */
+/* line 154, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio {
   width: 100%;
   padding: 13px 10px 20px 10px;
@@ -215,22 +214,22 @@ a {
   background: #0d0d0d;
   color: #fff;
 }
-/* line 162, ../sass/mobile.scss */
+/* line 161, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio:before {
   content: '';
   display: block;
   position: absolute;
-  width: 296px;
+  width: 300px;
   height: 1px;
   background: #a37f61;
-  left: 50%;
-  margin-left: -148px;
+  /*left: 50%;*/
+  /*margin-left: -148px;*/
 }
-/* line 173, ../sass/mobile.scss */
+/* line 172, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .margin-top {
   margin-top: 30px;
 }
-/* line 179, ../sass/mobile.scss */
+/* line 178, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block {
   height: 105px;
   width: 100%;
@@ -239,36 +238,36 @@ a {
   display: -ms-flexbox;
   display: flex;
 }
-/* line 187, ../sass/mobile.scss */
+/* line 186, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block:last-child {
   margin-bottom: 0;
 }
-/* line 191, ../sass/mobile.scss */
+/* line 190, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-left-block, .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block {
   height: 100%;
   width: 49.835%;
 }
-/* line 196, ../sass/mobile.scss */
+/* line 195, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-left-block {
   margin-right: 1px;
 }
-/* line 199, ../sass/mobile.scss */
+/* line 198, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-left-block img {
   width: 100%;
   height: 100%;
 }
-/* line 205, ../sass/mobile.scss */
+/* line 204, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block {
   background: #161616;
 }
-/* line 208, ../sass/mobile.scss */
+/* line 207, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block p {
   text-align: center;
   font-size: 6.65px;
   line-height: 8px;
   color: #a0a0a0;
 }
-/* line 215, ../sass/mobile.scss */
+/* line 214, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block .m-name-wr {
   width: 127px;
   min-height: 23px;
@@ -277,18 +276,18 @@ a {
   margin-top: 34px;
   padding-top: 6px;
 }
-/* line 223, ../sass/mobile.scss */
+/* line 222, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block .m-name-wr .m-project-name {
   height: 100%;
   font-family: opensans;
 }
-/* line 230, ../sass/mobile.scss */
+/* line 229, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block .m-project-head {
   width: 75px;
   font-family: opensanslight;
   margin: 8px auto 0 auto;
 }
-/* line 239, ../sass/mobile.scss */
+/* line 238, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-resizer {
   font-size: 8px;
   font-family: opensanslight;

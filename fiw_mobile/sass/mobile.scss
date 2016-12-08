@@ -52,7 +52,6 @@ a {
 .mobile-wrapper {
 	max-width: 320px;
 	width: 100%;
-	border: 1px solid red;
 	margin: 0 auto;
 
 	/*header-menu*/
@@ -128,8 +127,8 @@ a {
 						right: calc(100% + 10px);
 						top: 50%;
 						opacity: 0;
-						-webkit-transition: opacity ease-in-out .3s;
-						transition: opacity ease-in-out .3s;
+						-webkit-transition: opacity ease-in-out;
+						transition: opacity ease-in-out;
 					}
 				}
 			}
@@ -163,11 +162,11 @@ a {
 			content: '';
 			display: block;
 			position: absolute;
-			width: 296px;
+			width: 300px;
 			height: 1px;
 			background: #a37f61;
-			left: 50%;
-			margin-left: -148px;
+			/*left: 50%;*/
+			/*margin-left: -148px;*/
 		}
 
 		.margin-top {

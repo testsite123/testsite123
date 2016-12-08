@@ -19,6 +19,7 @@ $(document).ready(function(){
 		$(this).addClass("m-hidden");
 		$(".m-portfolio-wrapper").removeClass("m-hidden");
 		$(".m-portfolio-wrapper").css("margin-top", "2px");
+		$(".margin-top").css("margin-top", "30px");
 	});
 	// end portfolio resizer
 

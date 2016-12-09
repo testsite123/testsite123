@@ -19,13 +19,16 @@
 			margin-top: 12px;
 		}
 
-		a {
+		.etc {
 			position: absolute;
 			bottom: 0;
-			right: 12px;
-			font-size: 30px;
-			color: #977b66;
-			letter-spacing: -2px;
+			right: 10px;
+			
+			a {
+				font-size: 30px;
+				color: #977b66;
+				letter-spacing: -2px;
+			}
 		}
 	}
 }

@@ -582,16 +582,19 @@ body {
   margin-top: 12px;
 }
 /* line 22, ../sass/_m-services.scss */
-.m-services-wr .m-services-info a {
+.m-services-wr .m-services-info .etc {
   position: absolute;
   bottom: 0;
-  right: 12px;
+  right: 10px;
+}
+/* line 27, ../sass/_m-services.scss */
+.m-services-wr .m-services-info .etc a {
   font-size: 30px;
   color: #977b66;
   letter-spacing: -2px;
 }
 
-/* line 33, ../sass/_m-services.scss */
+/* line 36, ../sass/_m-services.scss */
 .m-services-name {
   width: 170px;
   height: 17px;
@@ -599,7 +602,7 @@ body {
   text-transform: uppercase;
   margin-top: 3px;
 }
-/* line 40, ../sass/_m-services.scss */
+/* line 43, ../sass/_m-services.scss */
 .m-services-name:after {
   content: '';
   display: block;
@@ -610,7 +613,7 @@ body {
   bottom: 0;
 }
 
-/* line 51, ../sass/_m-services.scss */
+/* line 54, ../sass/_m-services.scss */
 .m-services-icon, .m-contacts-icon {
   width: 82px;
   height: 82px;
@@ -619,7 +622,7 @@ body {
   margin: 0 auto;
   position: relative;
 }
-/* line 59, ../sass/_m-services.scss */
+/* line 62, ../sass/_m-services.scss */
 .m-services-icon:after, .m-contacts-icon:after {
   content: '';
   display: block;
@@ -633,7 +636,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 73, ../sass/_m-services.scss */
+/* line 76, ../sass/_m-services.scss */
 .m-services-icon img, .m-contacts-icon img {
   height: 40px;
   width: 28px;

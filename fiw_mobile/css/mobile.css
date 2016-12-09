@@ -288,24 +288,25 @@ body {
 /* line 236, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-left-block {
   margin-right: 1px;
+  text-align: center;
 }
-/* line 239, ../sass/mobile.scss */
+/* line 240, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-left-block img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 97%;
 }
-/* line 245, ../sass/mobile.scss */
+/* line 246, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block {
   background: #161616;
 }
-/* line 248, ../sass/mobile.scss */
+/* line 249, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block p {
   text-align: center;
   font-size: 6.65px;
   line-height: 8px;
   color: #a0a0a0;
 }
-/* line 255, ../sass/mobile.scss */
+/* line 256, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block .m-name-wr {
   width: 127px;
   min-height: 23px;
@@ -314,13 +315,13 @@ body {
   margin-top: 34px;
   padding-top: 6px;
 }
-/* line 264, ../sass/mobile.scss */
+/* line 265, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block .m-project-head {
   width: 75px;
   font-family: opensanslight;
   margin: 8px auto 0 auto;
 }
-/* line 273, ../sass/mobile.scss */
+/* line 274, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-resizer {
   font-size: 8px;
   font-family: opensanslight;
@@ -331,6 +332,13 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 480px) {
+  /* line 293, ../sass/mobile.scss */
+  .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-left-block img {
+    width: 100%;
+    height: 100%;
+  }
+}
 /*mobile portfolio PAGE*/
 /* line 1, ../sass/_m-portfolio.scss */
 .m-slider-section {

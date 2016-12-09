@@ -235,10 +235,11 @@ body {
 
 				.m-left-block {
 					margin-right: 1px;
+					text-align: center;
 
 					img {
-						width: 100%;
-						height: 100%;
+						width: 90%;
+						height: 97%;
 					}
 				}
 
@@ -281,6 +282,23 @@ body {
 		}
 	}
 	/*end portfolio*/
+}
+
+@media only screen and (max-width: 480px) {
+	.mobile-wrapper {
+		.m-portfolio {
+			.m-portfolio-wrapper {
+				.m-portfolio-block {
+					.m-left-block {
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 

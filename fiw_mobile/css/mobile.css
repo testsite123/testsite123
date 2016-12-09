@@ -141,7 +141,7 @@ body {
 .mobile-wrapper .m-menu {
   max-width: 640px;
   width: 100%;
-  height: 30px;
+  height: 42px;
   background: #0d0d0d;
   position: fixed;
   top: 0;
@@ -155,18 +155,18 @@ body {
   width: 22px;
   height: 22px;
   position: absolute;
-  left: 10px;
-  top: 4px;
+  left: 13px;
+  top: 9px;
   cursor: pointer;
   z-index: 9999;
 }
 /* line 102, ../sass/mobile.scss */
 .mobile-wrapper .m-menu .menu-img {
-  height: 15px;
-  width: 23px;
+  height: 18px;
+  width: 33px;
   position: absolute;
   right: 15px;
-  top: 7px;
+  top: 13px;
   /*background: url('../image/menu.png') center no-repeat;*/
   cursor: pointer;
   z-index: 9999;
@@ -181,7 +181,7 @@ body {
 }
 /* line 122, ../sass/mobile.scss */
 .mobile-wrapper .m-menu-active {
-  height: 157px;
+  height: 177px;
 }
 /* line 125, ../sass/mobile.scss */
 .mobile-wrapper .m-menu-active .menu-img {
@@ -198,11 +198,11 @@ body {
 .mobile-wrapper .m-menu-active .m-nav li {
   text-align: right;
   padding-right: 54px;
-  margin: 0 0 7px 0;
+  margin: 0 0 18px 0;
 }
 /* line 140, ../sass/mobile.scss */
 .mobile-wrapper .m-menu-active .m-nav li a {
-  font-size: 9.39px;
+  font-size: 12px;
   font-family: opensanslight;
   text-transform: uppercase;
   position: relative;
@@ -231,29 +231,31 @@ body {
   height: 192px;
   background: url("../image/main-img.png") center no-repeat;
   background-size: cover;
+  /*margin-top: 42px;*/
 }
-/* line 180, ../sass/mobile.scss */
+/* line 181, ../sass/mobile.scss */
 .mobile-wrapper .m-header .m-logo {
   width: 100%;
   height: 100%;
-  background: url("../image/logo.png") center no-repeat;
+  background: url("../image/logo.svg") center no-repeat;
+  background-size: 100px 80px;
 }
-/* line 189, ../sass/mobile.scss */
+/* line 191, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio {
   width: 100%;
   padding: 13px 10px 20px 10px;
   position: relative;
   color: #fff;
 }
-/* line 196, ../sass/mobile.scss */
+/* line 198, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .margin-top {
   margin-top: 40px;
 }
-/* line 200, ../sass/mobile.scss */
+/* line 202, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper {
   position: relative;
 }
-/* line 204, ../sass/mobile.scss */
+/* line 206, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper:first-child:before {
   content: '';
   display: block;
@@ -265,7 +267,7 @@ body {
   /*left: 50%;*/
   /*margin-left: -148px;*/
 }
-/* line 217, ../sass/mobile.scss */
+/* line 219, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block {
   height: 105px;
   width: 100%;
@@ -274,36 +276,36 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-/* line 225, ../sass/mobile.scss */
+/* line 227, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block:last-child {
   margin-bottom: 0;
 }
-/* line 229, ../sass/mobile.scss */
+/* line 231, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-left-block, .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block {
   height: 100%;
   width: 49.835%;
 }
-/* line 234, ../sass/mobile.scss */
+/* line 236, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-left-block {
   margin-right: 1px;
 }
-/* line 237, ../sass/mobile.scss */
+/* line 239, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-left-block img {
   width: 100%;
   height: 100%;
 }
-/* line 243, ../sass/mobile.scss */
+/* line 245, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block {
   background: #161616;
 }
-/* line 246, ../sass/mobile.scss */
+/* line 248, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block p {
   text-align: center;
   font-size: 6.65px;
   line-height: 8px;
   color: #a0a0a0;
 }
-/* line 253, ../sass/mobile.scss */
+/* line 255, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block .m-name-wr {
   width: 127px;
   min-height: 23px;
@@ -312,13 +314,13 @@ body {
   margin-top: 34px;
   padding-top: 6px;
 }
-/* line 262, ../sass/mobile.scss */
+/* line 264, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block .m-project-head {
   width: 75px;
   font-family: opensanslight;
   margin: 8px auto 0 auto;
 }
-/* line 271, ../sass/mobile.scss */
+/* line 273, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-resizer {
   font-size: 8px;
   font-family: opensanslight;

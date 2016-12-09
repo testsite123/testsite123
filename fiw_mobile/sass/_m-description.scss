@@ -1,0 +1,36 @@
+.m-description-field {
+	width: 234px;
+	height: auto;
+	margin: 0 auto;
+	padding: 58px 0 45px 0;
+
+	p {
+		font-family: opensanslight;
+		font-size: 11px;
+		color: #fff;
+
+		&:after {
+			width: 234px;
+		}
+	}
+
+	.m-services-img {
+		width: 100%;
+		height: 109px;
+		margin-top: 10px;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.m-services-text {
+		margin-top: 12px;
+		font-size: 9px;
+		font-family: opensanslight;
+		color: #9c9c9c;
+		text-align: justify;
+		line-height: 14px;
+	}
+}

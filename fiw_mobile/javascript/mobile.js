@@ -12,6 +12,11 @@ $(document).ready(function(){
 		$(".menu-open").removeClass("m-hidden");
 		$(".menu-close").addClass("m-hidden");
 	});
+
+	$(".m-nav").on("click", ".m-li", function(e){
+		$(this).siblings("li").removeClass("active-li");
+		$(this).addClass("active-li");
+	});
 	// end header-menu
 
 	// portfolio resizer
@@ -22,5 +27,15 @@ $(document).ready(function(){
 		$(".margin-top").css("margin-top", "30px");
 	});
 	// end portfolio resizer
+
+	// back btn
+	$(".back-btn").click(function(){
+		history.back();
+	});
+	// end back btn
+
+	// slider
+	$(".m-slider").bxSlider();
+	// end slider
 
 });

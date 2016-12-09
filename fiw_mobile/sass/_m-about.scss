@@ -4,7 +4,7 @@
 	padding: 45px 0 10px 0;
 
 	.m-company-text-wr {
-		width: 300px;
+		width: 95%;
 		height: auto;
 		margin: 0 auto 11px auto; 
 		padding: 18px 0;
@@ -37,7 +37,7 @@
 
 /*about workers*/
 .m-box-wr {
-	width: 300px;
+	width: 95%;
 	height: auto;
 	margin: 0 auto 3px auto;
 	background: #111111; 
@@ -47,13 +47,14 @@
 	display: flex;
 
 	.m-photo-wr {
-		width: 100px;
+		width: 37%;
 
 		.m-worker-photo {
 			width: 97px;
 			height: 97px;
 			border-radius: 50%;
-			border: 1px solid #343434; 
+			border: 1px solid #343434;
+			margin: 0 auto; 
 
 			img {
 				width: 100%;
@@ -65,8 +66,8 @@
 	}
 
 	.m-box-info {
-		width: 186px;
-		padding: 5px 0 0 5px;
+		width: 63%;
+		padding: 5px 0 0 40px;
 
 		span {
 			font-family: opensanslight;
@@ -104,3 +105,13 @@
 	}
 }
 /*end about workers*/
+
+
+@media only screen and (max-width: 480px) {
+
+	.m-box-wr {
+		.m-box-info {
+			padding-left: 5px;
+		}
+	}
+}

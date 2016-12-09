@@ -7,7 +7,7 @@
 	}
 
 	.m-box-inner {
-		width: 175px;
+		width: 250px;
 		height: 93px;
 		border: 1px solid #a6876f;
 		position: relative;
@@ -50,6 +50,13 @@
 				border-color: #47240d;
 				color: #47240d;
 			} 
+		}
+	}
+}
+@media only screen and (max-width: 480px) {
+	.m-contacts-wr {
+		.m-box-inner {
+			width: 175px;
 		}
 	}
 }

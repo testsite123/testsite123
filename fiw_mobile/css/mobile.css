@@ -152,11 +152,11 @@ body {
 }
 /* line 92, ../sass/mobile.scss */
 .mobile-wrapper .m-menu .m-back {
-  width: 22px;
-  height: 22px;
+  width: 33px;
+  height: 33px;
   position: absolute;
   left: 13px;
-  top: 9px;
+  top: 5px;
   cursor: pointer;
   z-index: 9999;
 }
@@ -292,8 +292,8 @@ body {
 }
 /* line 240, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-left-block img {
-  width: 90%;
-  height: 97%;
+  width: 100%;
+  height: 100%;
 }
 /* line 246, ../sass/mobile.scss */
 .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-right-block {
@@ -332,13 +332,6 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 480px) {
-  /* line 293, ../sass/mobile.scss */
-  .mobile-wrapper .m-portfolio .m-portfolio-wrapper .m-portfolio-block .m-left-block img {
-    width: 100%;
-    height: 100%;
-  }
-}
 /*mobile portfolio PAGE*/
 /* line 1, ../sass/_m-portfolio.scss */
 .m-slider-section {
@@ -659,7 +652,10 @@ body {
 
 /*mobile services PAGE*/
 /*mobile services-description page*/
-/* line 1, ../sass/_m-description.scss */
+/*.m-inline {
+	display: inline-block;
+}*/
+/* line 5, ../sass/_m-description.scss */
 .m-description-field {
   /*width: 234px;*/
   width: 73%;
@@ -667,30 +663,78 @@ body {
   margin: 0 auto;
   padding: 58px 0 45px 0;
 }
-/* line 8, ../sass/_m-description.scss */
-.m-description-field .m-services-name {
+/* line 12, ../sass/_m-description.scss */
+.m-description-field .m-description-topic {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+/* line 17, ../sass/_m-description.scss */
+.m-description-field .m-description-topic .m-img-wr {
+  width: 44px;
+  height: 45px;
+  float: left;
+}
+/* line 22, ../sass/_m-description.scss */
+.m-description-field .m-description-topic .m-img-wr img {
+  width: 100%;
+  height: 100%;
+}
+/* line 29, ../sass/_m-description.scss */
+.m-description-field .m-description-topic:after {
+  width: 100%;
+  content: '';
+  display: block;
+  background: #a6876f;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  clear: both;
+}
+/* line 40, ../sass/_m-description.scss */
+.m-description-field .m-description-topic .m-services-name-wr {
+  width: 200px;
+  height: 45px;
+  float: left;
+  position: relative;
+}
+/* line 46, ../sass/_m-description.scss */
+.m-description-field .m-description-topic .m-services-name-wr .m-services-name {
   font-family: opensanslight;
-  font-size: 11px;
+  font-size: 14px;
   color: #fff;
   width: 100%;
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 5px;
 }
-/* line 14, ../sass/_m-description.scss */
-.m-description-field .m-services-name:after {
-  width: 100%;
+/* line 56, ../sass/_m-description.scss */
+.m-description-field .m-description-topic .m-services-name-wr .m-services-name:after {
+  display: none;
 }
-/* line 19, ../sass/_m-description.scss */
+/* line 62, ../sass/_m-description.scss */
+.m-description-field .m-description-topic .m-services-price-wr {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  font-size: 14px;
+  font-family: opensanslight;
+  color: #cccccc;
+}
+/* line 73, ../sass/_m-description.scss */
 .m-description-field .m-services-img {
   width: 100%;
   /*height: 109px;*/
   height: 160px;
   margin-top: 10px;
 }
-/* line 25, ../sass/_m-description.scss */
+/* line 79, ../sass/_m-description.scss */
 .m-description-field .m-services-img img {
   width: 100%;
   height: 100%;
 }
-/* line 31, ../sass/_m-description.scss */
+/* line 85, ../sass/_m-description.scss */
 .m-description-field .m-services-text {
   margin-top: 12px;
   font-size: 9px;
@@ -701,7 +745,7 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 43, ../sass/_m-description.scss */
+  /* line 97, ../sass/_m-description.scss */
   .m-description-field .m-services-img {
     height: 109px;
   }

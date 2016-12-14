@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+	// плавний якір
+	$(".m-nav li").on("click", "a", function(event){
+		event.preventDefault();
+
+		var menuId = $(this).attr("href") 
+		var top = $(menuId).offset().top;
+
+		$("body, html").animate({scrollTop: top}, 1500);
+	});
+	// end плавний якір
+	
 	// header-menu
 	$(".menu-open").click(function(){
 		$(".m-menu").addClass("m-menu-active");
@@ -37,5 +48,6 @@ $(document).ready(function(){
 	// slider
 	$(".m-slider").bxSlider();
 	// end slider
+
 
 });

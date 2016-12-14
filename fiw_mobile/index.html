@@ -6,6 +6,7 @@
 	<title>Главная</title>
 
 	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
 </head>
 <body>
 	<section class="mobile-wrapper">
@@ -17,10 +18,10 @@
 				<img src="image/close.png" class="menu-close m-hidden">
 			</div>
 			<ul class="m-nav">
-				<li class="m-li active-li"><a href="index.html">Портфолио</a></li>
-				<li class="m-li"><a href="m.about.html">О Нас</a></li>
-				<li class="m-li"><a href="m.services.html">Услуги</a></li>
-				<li class="m-li"><a href="m.contacts.html">Контакты</a></li>
+				<li class="m-li active-li"><a href="#m-portfolio">Портфолио</a></li>
+				<li class="m-li"><a href="#m-about">О Нас</a></li>
+				<li class="m-li"><a href="#m-services">Услуги</a></li>
+				<li class="m-li"><a href="#m-contacts">Контакты</a></li>
 			</ul>
 		</nav>
 		<!-- end header menu - - - - - - - -->  -->
@@ -32,7 +33,7 @@
 		<!-- end header-logo -->
 
 		<!-- portfolio -->
-		<div class="m-portfolio">
+		<div class="m-portfolio" id="m-portfolio">
 			<!-- portfolio-wrapper -->
 			<div class="m-portfolio-wrapper margin-top">
 				<!-- portfolio-block -->
@@ -47,7 +48,8 @@
 							<div class="m-name-wr">
 								<p class="m-project-name">Гостинница <span class="m-uppercase">"Домашний уют"</span></p>
 							</div>
-							<p class="m-project-head">Дизайнер <br> Андрей Сергеев</p>
+							<p class="post">Дизайнер</p>
+							<p class="m-project-head">Андрей Сергеев</p>
 						</a>
 					</div>
 				</div>
@@ -65,7 +67,8 @@
 							<div class="m-name-wr">
 								<p class="m-project-name">Гостинница <span class="m-uppercase">"Теплый уголок"</span></p>
 							</div>
-							<p class="m-project-head">Дизайнер <br> Анастасия Немальцева</p>
+							<p class="post">Дизайнер</p>
+							<p class="m-project-head">Анастасия Немальцева</p>
 						</a>
 					</div>
 				</div>
@@ -83,7 +86,8 @@
 							<div class="m-name-wr">
 								<p class="m-project-name">Гостинница <span class="m-uppercase">"Яркий свет"</span></p>
 							</div>
-							<p class="m-project-head">Дизайнер <br> Ирина Сергеевна</p>
+							<p class="post">Дизайнер</p>
+							<p class="m-project-head">Ирина Сергеевна</p>
 						</a>
 					</div>
 				</div>
@@ -101,7 +105,8 @@
 							<div class="m-name-wr">
 								<p class="m-project-name">Гостинница <span class="m-uppercase">"Кактус"</span></p>
 							</div>
-							<p class="m-project-head">Дизайнер <br> Кристина Анисимова</p>
+							<p class="post">Дизайнер</p>
+							<p class="m-project-head">Кристина Анисимова</p>
 						</a>
 					</div>
 				</div>
@@ -119,7 +124,8 @@
 							<div class="m-name-wr">
 								<p class="m-project-name">Гостинница <span class="m-uppercase">"Кактус"</span></p>
 							</div>
-							<p class="m-project-head">Дизайнер <br> Антон Лаврентьев</p>
+							<p class="post">Дизайнер</p>
+							<p class="m-project-head">Антон Лаврентьев</p>
 						</a>
 					</div>
 				</div>
@@ -145,7 +151,8 @@
 							<div class="m-name-wr">
 								<p class="m-project-name">Гостинница <span class="m-uppercase">"Домашний уют"</span></p>
 							</div>
-							<p class="m-project-head">Дизайнер <br> Андрей Сергеев</p>
+							<p class="post">Дизайнер</p>
+							<p class="m-project-head">Андрей Сергеев</p>
 						</a>
 					</div>
 				</div>
@@ -163,7 +170,8 @@
 							<div class="m-name-wr">
 								<p class="m-project-name">Гостинница <span class="m-uppercase">"Теплый уголок"</span></p>
 							</div>
-							<p class="m-project-head">Дизайнер <br> Анастасия Немальцева</p>
+							<p class="post">Дизайнер</p>
+							<p class="m-project-head">Анастасия Немальцева</p>
 						</a>
 					</div>
 				</div>
@@ -173,6 +181,253 @@
 
 		</div>
 		<!-- end portfolio -->
+
+		<!-- about wrapper -->
+		<div class="m-about-wr" id="m-about">
+
+			<!-- company-text -->
+			<div class="m-company-text-wr">
+				<p>FORMA Interior Workshop</p>
+				<p class="m-company-text">Создание уникальных жилых интерьеров. Дизайн интерьер коттеджа, дома, квартиры. Мы работаем как в Киеве и во Львове, так и по всей территории Украины. Разработка стиля интерьера для кафе, ресторана, бутиков.</p> <!-- цей текст буде мінятись (верхній - нє) -->
+			</div>
+			<!-- end company-text -->
+	
+			<!-- about workers -->
+			<div class="m-box-wr">
+				<div class="m-photo-wr">	
+					<div class="m-worker-photo">
+						<img src="image/workers/worker1.png" alt="worker">
+					</div>
+				</div>
+				<div class="m-box-info">
+					<span>Дизайнер</span>
+					<p class="m-worker-name m-uppercase">Анастасия Немальцева</p>
+					<p class="m-worker-about">
+						Он конструирует мир для пользователя - удобный - симпатичный. Он знает, что сконструировано хорошо, а что плохо. Кому-то ведь нужно это решать. Основная задача професионала
+					</p>
+				</div>
+			</div>
+			<div class="m-box-wr">
+				<div class="m-photo-wr">	
+					<div class="m-worker-photo">
+						<img src="image/workers/worker2.png" alt="worker">
+					</div>
+				</div>
+				<div class="m-box-info">
+					<span>Дизайнер</span>
+					<p class="m-worker-name m-uppercase">Анастасия Немальцева</p>
+					<p class="m-worker-about">
+						Он конструирует мир для пользователя - удобный - симпатичный. Он знает, что сконструировано хорошо, а что плохо. Кому-то ведь нужно это решать. Основная задача професионала
+					</p>
+				</div>
+			</div>
+			<div class="m-box-wr">
+				<div class="m-photo-wr">	
+					<div class="m-worker-photo">
+						<img src="image/workers/worker3.png" alt="worker">
+					</div>
+				</div>
+				<div class="m-box-info">
+					<span>Дизайнер</span>
+					<p class="m-worker-name m-uppercase">Анастасия Немальцева</p>
+					<p class="m-worker-about">
+						Он конструирует мир для пользователя - удобный - симпатичный. Он знает, что сконструировано хорошо, а что плохо. Кому-то ведь нужно это решать. Основная задача професионала
+					</p>
+				</div>
+			</div>
+			<div class="m-box-wr">
+				<div class="m-photo-wr">	
+					<div class="m-worker-photo">
+						<img src="image/workers/worker1.png" alt="worker">
+					</div>
+				</div>
+				<div class="m-box-info">
+					<span>Дизайнер</span>
+					<p class="m-worker-name m-uppercase">Анастасия Немальцева</p>
+					<p class="m-worker-about">
+						Он конструирует мир для пользователя - удобный - симпатичный. Он знает, что сконструировано хорошо, а что плохо. Кому-то ведь нужно это решать. Основная задача професионала
+					</p>
+				</div>
+			</div>
+			<!-- end about workers -->
+		</div>
+		<!-- about wrapper -->
+
+		<!-- services-wrapper -->
+		<div class="m-services-wr" id="m-services">
+			<div class="m-box-wr">
+				<div class="m-photo-wr">
+					<a href="m.services-description.html" title="Подробнее">
+						<div class="m-services-icon">
+							<img src="image/icon/lamp.svg">
+						</div>
+					</a>
+				</div>
+				<div class="m-box-info">
+					<div class="m-services-info">
+						<a href="m.services-description.html" title="Подробнее">
+							<p class="m-services-name">Дизайн</p>
+							<p class="m-services-price">1200 грн</p>
+						</a>
+
+						<div class="etc">
+							<a href="m.services-description.html" title="Подробнее">...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="m-box-wr">
+				<div class="m-photo-wr">
+					<a href="m.services-description.html" title="Подробнее">
+						<div class="m-services-icon">
+							<img src="image/icon/circle.svg">
+						</div>
+					</a>
+				</div>
+				<div class="m-box-info">
+					<div class="m-services-info">
+						<a href="m.services-description.html" title="Подробнее">
+							<p class="m-services-name">Архитектура</p>
+							<p class="m-services-price">1200 грн</p>
+						</a>
+
+						<div class="etc">
+							<a href="m.services-description.html" title="Подробнее">...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="m-box-wr">
+				<div class="m-photo-wr">
+					<a href="m.services-description.html" title="Подробнее">
+						<div class="m-services-icon">
+							<img src="image/icon/shpat.svg">
+						</div>
+					</a>
+				</div>
+				<div class="m-box-info">
+					<div class="m-services-info">
+						<a href="m.services-description.html" title="Подробнее">
+							<p class="m-services-name">Строительство</p>
+							<p class="m-services-price">1200 грн</p>
+						</a>
+
+						<div class="etc">
+							<a href="m.services-description.html" title="Подробнее">...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="m-box-wr">
+				<div class="m-photo-wr">
+					<a href="m.services-description.html" title="Подробнее">
+						<div class="m-services-icon">
+							<img src="image/icon/chair.svg">
+						</div>
+					</a>
+				</div>
+				<div class="m-box-info">
+					<div class="m-services-info">
+						<a href="m.services-description.html" title="Подробнее">
+							<p class="m-services-name">Мебель</p>
+							<p class="m-services-price">1200 грн</p>
+						</a>
+						
+						<div class="etc">
+							<a href="m.services-description.html" title="Подробнее">...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end services-wrapper -->
+
+		<!-- contacts-wrapper -->
+		<div class="m-contacts-wr" id="m-contacts">
+			<!-- phone-box-wr -->
+			<div class="m-box-wr">
+				<div class="m-photo-wr cont-ph-wr">
+					<a href="tel:+380675551699">
+						<div class="m-contacts-icon">
+							<img src="image/icon/phone.svg">
+						</div>
+					</a>
+				</div>
+				<div class="m-box-info">
+					<div class="m-box-inner">
+						<p><a href="tel:+380675551699">+38 (067) 555 16 99</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- phone-box-wr -->
+			
+			<!-- email-box-wr -->
+			<div class="m-box-wr">
+				<div class="m-photo-wr cont-ph-wr">
+					<a href="mailto:info@formainterior.com.ua">
+						<div class="m-contacts-icon">
+							<img src="image/icon/envelope.svg">
+						</div>
+					</a>
+				</div>
+				<div class="m-box-info">
+					<div class="m-box-inner">
+						<p>info@formainterior.com.ua</p>
+					</div>
+				</div>
+			</div>
+			<!-- email-box-wr -->
+			
+			<!-- location-box-wr -->
+			<div class="m-box-wr">
+				<div class="m-photo-wr cont-ph-wr">
+					<a href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9E%D0%BB%D0%B5%D0%B3%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0,+36,+%D0%9A%D0%B8%D1%97%D0%B2/@50.465938,30.5018042,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4ce6c371a3817:0x91a64d5aff2ddd82!8m2!3d50.465938!4d30.5039929?hl=ru">
+						<div class="m-contacts-icon">
+							<img src="image/icon/home.svg">
+						</div>
+					</a>
+				</div>
+				<div class="m-box-info">
+					<div class="m-box-inner">
+						<p>г. Киев <br> ул. Олеговская, 36</p>
+					</div>
+				</div>
+			</div>
+			<!-- location-box-wr -->
+	
+			<!-- social-box-wr -->
+			<div class="m-box-wr">
+				<div class="m-social-wr">
+					<a href="">
+						<div class="m-icon-section">
+							<i class="fa fa-twitter"></i>
+						</div>
+					</a>
+					<a href="">
+						<div class="m-icon-section">
+							<i class="fa fa-pinterest-p"></i>
+						</div>
+					</a>
+					<a href="">
+						<div class="m-icon-section">
+							<i class="fa fa-facebook"></i>
+						</div>
+					</a>
+					<a href="">
+						<div class="m-icon-section">
+							<i class="fa fa-google-plus"></i>
+						</div>
+					</a>
+					<a href="">
+						<div class="m-icon-section">
+							<i class="fa fa-vk"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!-- social-box-wr -->
+		</div>
+		<!-- end contacts-wrapper -->
 	</section>
 
 

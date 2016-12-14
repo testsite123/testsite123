@@ -1,71 +1,54 @@
-/*.m-inline {
-	display: inline-block;
-}*/
 
 .m-description-field {
 	/*width: 234px;*/
-	width: 73%;
+	width: 80%;
 	height: auto;
 	margin: 0 auto;
 	padding: 58px 0 45px 0;
 
 	.m-description-topic {
 		width: 100%;
-		height: 50px;
+		height: 60px;
 		position: relative;
+		overflow: hidden;
 		
-		.m-img-wr {
-			width: 44px;
-			height: 45px;
-			float: left;
+		.m-description-icon {
+			position: absolute;
+			left: 0;
+			width: 60px;
+			height: 60px;
 
 			img {
-				width: 100%;
-				height: 100%;
+				width: 20px;
+				height: 30px;
 			}
 		}
 
-
-		&:after {
-			width: 100%;
-			content: '';
-			display: block;
-			background: #a6876f;
-			height: 1px;
+		.m-description-info {
+			/*width: 230px;*/
+			width: 70%;
+			height: 100%;
 			position: absolute;
-			bottom: 0;
-			clear: both;
-		}
+			right: 0;
+			color: #bfbfbf;
+			padding-top: 10px;
 
-		.m-services-name-wr {
-			width: 200px;
-			height: 45px;
-			float: left;
-			position: relative;	
-
-			.m-services-name {
-				font-family: opensanslight;
-				font-size: 14px;
-				color: #fff;
+			.m-descr-name {
+				padding-bottom: 5px;
 				width: 100%;
-				width: 150px; 
-				position: absolute;
-				bottom: 0;
-				padding-left: 5px;
+				font-size: 13.84px;
+				position: relative;
 
 				&:after {
-					display: none;
+					width: 140%;
+					position: absolute;
+					left: -5px;
 				}
 			}
-		}
 
-		.m-services-price-wr {
-			position: absolute;
-			bottom: 5px;
-			right: 0;
-			font-size: 14px;
-			font-family: opensanslight;
-			color: #cccccc;
+			.m-descr-price {
+				padding-top: 4px;
+			}
 		}
 	}
 	
@@ -84,7 +67,7 @@
 
 	.m-services-text {
 		margin-top: 12px;
-		font-size: 9px;
+		font-size: 13px;
 		font-family: opensanslight;
 		color: #9c9c9c;
 		text-align: justify;
@@ -95,7 +78,7 @@
 @media only screen and (max-width: 480px) {
 	.m-description-field {
 		.m-services-img {
-			height: 109px;
+			height: 154px;
 		}
 	}
 }

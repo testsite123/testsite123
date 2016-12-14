@@ -173,7 +173,7 @@ body {
 	/*header-logo*/
 	.m-header {
 		width: 100%;
-		height: 192px;
+		height: 212px;
 		background: url('../image/main-img.png') center no-repeat;
 		background-size: cover;
 		/*margin-top: 42px;*/
@@ -181,8 +181,9 @@ body {
 		.m-logo {
 			width: 100%;
 			height: 100%;
-			background: url('../image/logo.svg') center no-repeat;
-			background-size: 100px 80px;
+			background: url('../image/logo.svg') no-repeat;
+			background-size: 190px 170px;
+			background-position: center 35px;
 		}
 	}
 	/*end header-logo*/
@@ -248,24 +249,35 @@ body {
 
 					p {
 						text-align: center;
-						font-size: 6.65px;
-						line-height: 8px;
+						font-size: 8px;
+						line-height: 10px;
 						color: #a0a0a0;
 					}
 
 					.m-name-wr {
-						width: 127px;
-						min-height: 23px;
+						width: 139px;
+						min-height: 28px;
 						border: 1px solid #a3856d;
-						margin: 0 auto;
-						margin-top: 34px;
+						margin: 27px auto 0 auto;
 						padding-top: 6px;
+						font-family: opensans;
+
+						p {
+							line-height: 12px;
+						}
+					}
+
+					.post {
+						margin-top: 8px;
+						color: #838181;
+						font-size: 8px;
 					}
 					
 					.m-project-head {
-						width: 75px;
 						font-family: opensanslight;
-						margin: 8px auto 0 auto;
+						margin: 0 auto 0 auto;
+						font-size: 10px;
+						color: #a4a4a4;
 					}
 				}
 			}

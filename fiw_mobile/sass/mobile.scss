@@ -195,30 +195,25 @@ body {
 		position: relative;
 		color: #fff;
 
-
-		.margin-top {
-			margin-top: 40px;
-		}
-
 		.m-portfolio-wrapper {
 			position: relative;
+			margin-top: 40px;
 
-			&:first-child {
-				&:before {
-					content: '';
-					display: block;
-					position: absolute;
-					width: 100%;
-					height: 1px;
-					background: #a37f61;
-					top: -35px;
-					/*left: 50%;*/
-					/*margin-left: -148px;*/
-				}
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				background: #a37f61;
+				top: -35px;
+				/*left: 50%;*/
+				/*margin-left: -148px;*/
 			}
 
 			.m-portfolio-block {
-				height: 105px;
+				/*height: 105px;*/
+				height: 135px;
 				width: 100%;
 				margin-bottom: 2px;
 				display: -webkit-box;
@@ -237,15 +232,18 @@ body {
 				.m-left-block {
 					margin-right: 1px;
 					text-align: center;
+					overflow: hidden;
 
 					img {
 						width: 100%;
-						height: 100%;
+						height: auto;
+						min-height: 105px;
 					}
 				}
 
 				.m-right-block {
 					background: #161616;
+					position: relative;
 
 					p {
 						text-align: center;
@@ -258,7 +256,7 @@ body {
 						width: 139px;
 						min-height: 28px;
 						border: 1px solid #a3856d;
-						margin: 27px auto 0 auto;
+						margin: 45px auto 0 auto;
 						padding-top: 6px;
 						font-family: opensans;
 
@@ -316,3 +314,22 @@ body {
 /*mobile about PAGE*/
 @import "m-contacts";
 /*mobile about PAGE*/
+
+
+@media only screen and (max-width: 480px) {
+	.mobile-wrapper {
+		.m-portfolio {
+			.m-portfolio-wrapper {
+				.m-portfolio-block {
+					height: 105px;
+
+					.m-right-block {
+						.m-name-wr {
+							margin-top: 27px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

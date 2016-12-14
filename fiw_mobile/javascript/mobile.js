@@ -10,7 +10,7 @@ $(document).ready(function(){
 		$("body, html").animate({scrollTop: top}, 1500);
 	});
 	// end плавний якір
-	
+
 	// header-menu
 	$(".menu-open").click(function(){
 		$(".m-menu").addClass("m-menu-active");
@@ -31,12 +31,6 @@ $(document).ready(function(){
 	// end header-menu
 
 	// portfolio resizer
-	$(".m-resizer").click(function(){
-		$(this).addClass("m-hidden");
-		$(".m-portfolio-wrapper").removeClass("m-hidden");
-		$(".m-portfolio-wrapper").css("margin-top", "2px");
-		$(".margin-top").css("margin-top", "40px");
-	});
 	// end portfolio resizer
 
 	// back btn
